@@ -1,3 +1,1 @@
-arquivo onde haverá as instruções e padrões a serem seguidos nos códigos de cada integrante
-
-ou não também :p
+arquivo sem utilidade no momento. caso tenha qualquer sugestão p/ o uso desse arquivo, envie a ideia no grupo.
