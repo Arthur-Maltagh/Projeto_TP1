@@ -1,0 +1,14 @@
+#ifndef LIMITE_H_INCLUDED
+#define LIMITE_H_INCLUDED
+
+class Limite{
+private:
+    const int LIMITE_INF = 0;
+    const int LIMITE_SUP = 25;
+    int valor;
+    bool validar();
+public:
+    
+};
+
+#endif // LIMITE_H_INCLUDED

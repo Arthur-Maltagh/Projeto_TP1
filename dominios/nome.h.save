@@ -1,0 +1,25 @@
+#ifndef NOME_H_INCLUDED
+#define NOME_H_INCLUDED
+#include <string>
+using namespace std;
+
+
+/*
+Texto com até 15 caracteres.
+Caractere pode ser letra maiúscula (A-Z), letra minúscula (a-z) ou espaço em branco; espaço em
+branco é seguido por letra; primeiro caractere não é espaço em branco; último caractere não é
+espaço em branco.
+*/
+
+class Nome{
+private:
+    string nome;
+    bool validar(string nome);
+public:
+    void Setnome(string nome);
+    string getNome();
+    
+
+};
+
+#endif // NOME_H_INCLUDED

@@ -1,0 +1,45 @@
+#include "nome.h"
+#include <stdexcept>
+#include <cctype>
+using namespace std;
+
+string Nome::getNome(){
+    return nome;
+}
+
+void Nome::setNome(string nome){
+    if(!validar(nome)){
+        throw invalid_argument("Argumento invalido!");
+    }
+    this -> nome = nome;
+}
+
+bool Nome::validar(string nome){
+    if(nome.empty()){
+        return false;
+    }
+    if(nome[0] == ' ' || nome[nome.length() - 1] == ' ' || nome.length() > 15)
+        return false;
+
+    for(int i = 0;i < nome.length();i++){
+        bool espaco = nome[i] == ' ';
+        if(!isalpha(nome[i]) && !espaco)
+            return false;
+
+        if(espaco){
+           if(!isalpha(nome[i + 1]))
+                return false;
+        }
+
+    }
+    return true;
+}
+
+
+
+/*
+Texto com até 15 caracteres.
+Caractere pode ser letra maiúscula (A-Z), letra minúscula (a-z) ou espaço em branco; espaço em
+branco é seguido por letra; primeiro caractere não é espaço em branco; último caractere não é
+espaço em branco.
+*/

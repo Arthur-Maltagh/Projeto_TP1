@@ -1,0 +1,39 @@
+#include <string>
+#include "Identificador.h"
+#include <stdexcept>
+#include <cctype>
+
+using namespace std;
+
+bool Identificador::validar(string id){
+
+    if(id.empty()){
+        return false;
+    }
+    if(id.length() != TAMANHO_ID){
+        return false;
+    }
+
+    for(int i = 0;i < TAMANHO_ID;i++){
+        if(i < 3){
+            if(!isalpha(id[i]))
+                return false;
+        }else{
+            if(!isdigit(id[i]))
+                return false;
+            }
+    }
+    return true;
+}
+
+void Identificador::setIdentificador(string id){
+    if(!validar(id))
+        throw invalid_argument("Argumento invalido");
+    this -> id = id;
+}
+
+string Identificador::getIdentificador(){
+    return id;
+}
+
+
