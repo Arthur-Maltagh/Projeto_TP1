@@ -1,0 +1,44 @@
+#include <iostream>
+#include <stdexcept>
+#include "../../entidades/pessoa.h"
+
+using namespace std;
+
+bool teste_Pessoa(){
+    try{
+        Identificador identificador;
+        EMAIL email;
+        Nome nome;
+        Senha senha;
+
+        identificador.setIdentificador("nao157");
+        email.setEMAIL("agnaldo-timoteo@nao.sou157.nao");
+        nome.setNome("Agnaldo Timoteo");
+        senha.setSenha("a157t");
+
+        Pessoa pessoa;
+
+        pessoa.setIdentificador(identificador);
+        pessoa.setEmail(email);
+        pessoa.setNome(nome);
+        pessoa.setSenha(senha);
+
+        if (pessoa.getIdentificador().getIdentificador() != "nao157")
+            return false;
+
+        if (pessoa.getEmail().getEMAIL() != "agnaldo-timoteo@nao.sou157.nao")
+            return false;
+
+        if (pessoa.getNome().getNome() != "Agnaldo Timoteo")
+            return false;
+
+        if (pessoa.getSenha().getSenha() != "a157t")
+            return false;
+    }
+    catch (const invalid_argument&) {
+        //não deve haver nenhuma excecao
+        return false;
+    }
+
+    return true;
+}

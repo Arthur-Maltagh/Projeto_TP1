@@ -20,6 +20,8 @@ bool teste_Texto(){
 
     try {
         texto.setTexto("SABO DE TUDO,, E MAS UM Poco!!");
+
+
         return false;
 
     } catch(const invalid_argument&) {

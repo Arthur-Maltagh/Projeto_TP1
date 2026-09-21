@@ -1,0 +1,63 @@
+#include <iostream>
+using namespace std;
+bool teste_Limite();
+bool teste_Nome();
+bool teste_Senha();
+bool teste_Texto();
+bool teste_Identificador();
+bool teste_Email();
+bool teste_Pessoa();
+
+int main() {
+
+    if (teste_Limite()) {
+        cout << "Teste de Limite: Aprovado" << endl;
+    } else {
+        cout << "Teste de Limite: Falhou" << endl;
+    }
+
+     if (teste_Nome()) {
+        cout << "Teste do nome: Aprovado!" << endl;
+    } else {
+        cout << "Teste do nome: Falhou!" << endl;
+    }
+
+
+     if (teste_Senha()) {
+        cout << "Teste da Senha: Aprovado!" << endl;
+    } else {
+        cout << "Teste da Senha: Falhou!" << endl;
+    }
+
+    if (teste_Texto()) {
+        cout << "Teste do Texto: Aprovado!" << endl;
+    } else {
+        cout << "Teste do Texto: Falhou!" << endl;
+    }
+
+    if (teste_Identificador()) {
+        cout << "Teste do Identificador: Aprovado!" << endl;
+    } else {
+        cout << "Teste do Identificador: Falhou!" << endl;
+    }
+
+    if(teste_Email()){
+        cout << "Teste do EMAIL: Aprovado!" << endl;
+    } else {
+        cout << "Teste do EMAIL: Falhou!" << endl;
+    }
+    
+    //teste das entidades
+    if(teste_Pessoa()){
+        cout << "Teste da Entidade Pessoa: Aprovado!" << endl;
+    } else {
+        cout << "Teste da Entidade Pessoa: Falhou!" << endl;
+    }
+
+
+
+    cout << "\nPressione ENTER para sair...";
+    cin.get();
+
+    return 0;
+}

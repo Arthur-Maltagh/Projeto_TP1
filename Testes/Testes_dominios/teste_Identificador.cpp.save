@@ -19,7 +19,7 @@ bool teste_Identificador(){
     }
 
     try {
-        identificador.setIdentificador("666Flu");
+        identificador.setIdentificador("666flu");
         return false;
 
     } catch(const invalid_argument&) {

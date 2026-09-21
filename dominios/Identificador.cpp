@@ -32,7 +32,3 @@ string Identificador::getIdentificador(){
     return id;
 }
 
-/*
-6 caracteres
-Sendo letras (a-z ou A-Z) os três primeiros caracteres.
-Sendo dígitos (0-9) os três últimos caracteres.*/

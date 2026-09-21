@@ -1,12 +1,14 @@
 #include <iostream>
 #include <stdexcept>
-#include "../../dominios/Limite.h"
+#include "../dominios/Limite.h"
 
 using namespace std;
 
 bool teste_Limite(){
 
     Limite limite;
+
+    // Caso de sucesso
     try{
         limite.setLimite(5);
 
@@ -16,12 +18,16 @@ bool teste_Limite(){
     catch(const exception& e){
         return false;
     }
+
+    // Caso inválido: deve lançar exceção
     try{
         limite.setLimite(67);
+
+        // Se chegou aqui, a exceção não foi lançada
         return false;
     }
     catch(const invalid_argument& e){
-        // exceção esperada
+        // comportamento esperado
     }
 
     return true;

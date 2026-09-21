@@ -98,13 +98,3 @@ bool EMAIL::validarDominio(string dominio) {
     return true;
 }
 
-
-/*parte-local@domínio
-Parte local pode conter letra (a-z), dígito (0-9) ou ponto(.) ou hífen (-); não pode iniciar ou terminar
-com ponto ou hífen; ponto ou hífen deve ser seguido por letra(s) ou dígito(s); comprimento
-máximo é 64 caracteres.
-
-Domínio é composto por uma ou mais partes separadas por ponto (.); cada parte pode conter letra
-(a-z), dígito (0-9) ou hífen (-); não pode iniciar ou terminar com hífen; comprimento máximo é 255
-caracteres.
-*/

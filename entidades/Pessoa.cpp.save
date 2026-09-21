@@ -1,0 +1,35 @@
+#include <>
+
+inline void Pessoa::setEmail(const EMAIL& email) {
+    this->email = email;
+}
+
+inline EMAIL Pessoa::getEmail() const {
+    return email;
+}
+
+inline void Pessoa::setNome(const Nome& nome) {
+    this->nome = nome;
+}
+
+inline Nome Pessoa::getNome() const {
+    return nome;
+}
+
+inline void Pessoa::setSenha(const Senha& senha) {
+    this->senha = senha;
+}
+
+inline Senha Pessoa::getSenha() const {
+    return senha;
+}
+
+/*
+inline void Pessoa::setPapel(const Papel& papel) {
+    this->papel = papel;
+}
+
+inline Papel Pessoa::getPapel() const {
+    return papel;
+}
+*/

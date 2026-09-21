@@ -15,10 +15,10 @@ bool Texto::validar(string texto){
 
     for(int i = 0;i < texto.length() - 1;i++){
         if(!isalnum(texto[i])){
-            if(texto[i] != ',' && texto[i] != ';' && texto[i] != '.' && texto[i] != ':' && texto[i] != '?' && texto[i] != '!' && texto[i] != ' '){
+            if(texto[i] != ',' && texto[i] != ';' && texto[i] != '.' && texto[i] != ':' && texto[i] != '?' && texto[i] != '!' &&  texto[i] != ' '){
                 return false;
             }else{
-                if(texto[i + 1] == ',' || texto[i + 1] == ';' || texto[i + 1] == '.' || texto[i + 1] == ':' || texto[i + 1] == '?' || texto[i + 1] == '!' || texto[i + 1] == ' ')
+                if(texto[i + 1] == ',' || texto[i + 1] == ';' || texto[i + 1] == '.' || texto[i + 1] == ':' || texto[i + 1] == '?' || texto[i + 1] == '!')
                     return false;
             }
         }

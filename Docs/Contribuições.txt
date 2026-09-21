@@ -1,0 +1,21 @@
+# Contribuições da equipe
+
+## Arthur
+- Classe domínio Nome
+- Classe domínio Limite
+- Classe domínio Identificador
+- Classe domínio Senha
+- Classe domínio EMAIL
+- Classe domínio Texto
+- Testes unitários dos domínios Nome,Limite,Identificador,Senha,EMAIL,Texto
+## João
+- Classe domínio Timestamp
+
+## Maria
+- Classe domínio Estado
+- Classe domínio Tamanho
+- Classe domínio Prioridade
+- Classe domínio Papel
+
+## Murilo
+-  Classe entidade Pessoa

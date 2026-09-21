@@ -33,6 +33,3 @@ string Senha::getSenha(){
     return senha;
 }
 
-/*
-5 caracteres
-Caractere pode ser letra (a-z ou A-Z) ou dígito (0-9); existe pelo menos uma letra e um dígito*/
