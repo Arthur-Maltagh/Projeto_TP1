@@ -1,13 +1,5 @@
 #include "pessoa.h"
 
-void Pessoa::setIdentificador(const Identificador& identificador) {
-    this->identificador = identificador;
-}
-
-Identificador Pessoa::getIdentificador() const {
-    return identificador;
-}
-
 void Pessoa::setEmail(const EMAIL& email) {
     this->email = email;
 }
