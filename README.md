@@ -1,6 +1,6 @@
 # Contribuições da equipe
 
-# Arthur
+## Arthur
 - Classe domínio Nome
 - Classe domínio Limite
 - Classe domínio Identificador
@@ -9,10 +9,10 @@
 - Classe domínio Texto
 - Testes unitários dos domínios Nome, Limite, Identificador, Senha, EMAIL, Texto
 
-# João Victor
+## João Victor
 - Classe domínio Timestamp
 
-# Maria Eduarda
+## Maria Eduarda
 - Classe domínio Estado
 - Classe domínio Tamanho
 - Classe domínio Prioridade
