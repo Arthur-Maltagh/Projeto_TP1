@@ -1,29 +1,45 @@
 #include <iostream>
 #include <stdexcept>
 #include "../../dominios/EMAIL.h"
+#include "Teste_EMAIL.h"
 
 using namespace std;
 
-bool teste_Email(){
+void Teste_EMAIL::construtor(){
+    Email = new EMAIL();
+    estado = SUCESSO;
+}
 
-    EMAIL Email;
+void Teste_EMAIL::destrutor(){
+    delete Email;
+}
 
-    try {
-        Email.setEMAIL("manoel-70-gomes@caneta-30-azul.com.br");
-
-        if(Email.getEMAIL() != "manoel-70-gomes@caneta-30-azul.com.br")
-            return false;
-
-    } catch(const exception& e) {
-        return false;
+void Teste_EMAIL::testa_valor_valido(){
+    try{
+        Email->setEMAIL(VALOR_VALIDO);
+        if(Email->getEMAIL() != VALOR_VALIDO){
+            estado = FALHA;
+        }
+    }catch(invalid_argument &excecao){
+        estado = FALHA;
     }
 
-    try {
-        Email.setEMAIL("Bin09@-metal1.1.com");
-        return false;
+}
 
-    } catch(const invalid_argument&) {
-        // exceção esperada
+void Teste_EMAIL::testa_valor_invalido(){
+     try{
+        Email->setEMAIL(VALOR_INVALIDO);
+        estado = FALHA;
+    }catch(invalid_argument &excecao){
+        if(Email->getEMAIL() == VALOR_INVALIDO)
+            estado = FALHA;
     }
-    return true;
+}
+
+int Teste_EMAIL::run(){
+    construtor();
+    testa_valor_valido();
+    testa_valor_invalido();
+    destrutor();
+    return estado;
 }

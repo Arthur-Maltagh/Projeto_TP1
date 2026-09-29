@@ -1,30 +1,45 @@
 #include <iostream>
 #include <stdexcept>
 #include "../../dominios/Texto.h"
+#include "Teste_Texto.h"
 
 using namespace std;
 
-bool teste_Texto(){
+void Teste_Texto::construtor(){
+    texto = new Texto();
+    estado = SUCESSO;
+}
 
-    Texto texto;
+void Teste_Texto::destrutor(){
+    delete texto;
+}
 
-    try {
-        texto.setTexto("So sei que nada sei.");
-
-        if(texto.getTexto() != "So sei que nada sei.")
-            return false;
-
-    } catch(const exception& e) {
-        return false;
+void Teste_Texto::testa_valor_valido(){
+    try{
+        texto->setTexto(VALOR_VALIDO);
+        if(texto->getTexto() != VALOR_VALIDO){
+            estado = FALHA;
+        }
+    }catch(invalid_argument &excecao){
+        estado = FALHA;
     }
 
-    try {
-        texto.setTexto("SABO DE TUDO,, E MAS UM Poco!!");
-        return false;
+}
 
-    } catch(const invalid_argument&) {
-        // exceção esperada
+void Teste_Texto::testa_valor_invalido(){
+     try{
+        texto->setTexto(VALOR_INVALIDO);
+        estado = FALHA;
+    }catch(invalid_argument &excecao){
+        if(texto->getTexto() == VALOR_INVALIDO)
+            estado = FALHA;
     }
+}
 
-    return true;
+int Teste_Texto::run(){
+    construtor();
+    testa_valor_valido();
+    testa_valor_invalido();
+    destrutor();
+    return estado;
 }

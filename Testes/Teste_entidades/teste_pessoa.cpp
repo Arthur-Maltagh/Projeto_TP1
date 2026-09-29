@@ -1,44 +1,51 @@
 #include <iostream>
 #include <stdexcept>
 #include "../../entidades/pessoa.h"
+#include "teste_pessoa.h"
 
 using namespace std;
 
-bool teste_Pessoa(){
+void Teste_Pessoa::construtor(){
+    pessoa = new Pessoa();
+    estado = SUCESSO;
+}
+
+void Teste_Pessoa::destrutor(){
+    delete pessoa;
+}
+
+void Teste_Pessoa::testa_valor_valido(){
     try{
-        Identificador identificador;
         EMAIL email;
         Nome nome;
         Senha senha;
 
-        identificador.setIdentificador("nao157");
-        email.setEMAIL("agnaldo-timoteo@nao.sou157.nao");
-        nome.setNome("Agnaldo Timoteo");
-        senha.setSenha("a157t");
+        email.setEMAIL(VALOR_EMAIL);
+        nome.setNome(VALOR_NOME);
+        senha.setSenha(VALOR_SENHA);
 
-        Pessoa pessoa;
+        pessoa->setEmail(email);
+        pessoa->setNome(nome);
+        pessoa->setSenha(senha);
 
-        pessoa.setIdentificador(identificador);
-        pessoa.setEmail(email);
-        pessoa.setNome(nome);
-        pessoa.setSenha(senha);
+        if(pessoa->getEmail().getEMAIL() != VALOR_EMAIL)
+            estado = FALHA;
 
-        if (pessoa.getIdentificador().getIdentificador() != "nao157")
-            return false;
+        if(pessoa->getNome().getNome() != VALOR_NOME)
+            estado = FALHA;
 
-        if (pessoa.getEmail().getEMAIL() != "agnaldo-timoteo@nao.sou157.nao")
-            return false;
-
-        if (pessoa.getNome().getNome() != "Agnaldo Timoteo")
-            return false;
-
-        if (pessoa.getSenha().getSenha() != "a157t")
-            return false;
+        if(pessoa->getSenha().getSenha() != VALOR_SENHA)
+            estado = FALHA;
     }
-    catch (const invalid_argument&) {
-        //não deve haver nenhuma excecao
-        return false;
+    catch(invalid_argument &excecao){
+        estado = FALHA;
     }
+}
 
-    return true;
+int Teste_Pessoa::run(){
+    construtor();
+    testa_valor_valido();
+    destrutor();
+
+    return estado;
 }
