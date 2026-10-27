@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Projeto_TP1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Projeto_TP1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="C:/Users/Pichau/OneDrive/Desktop/Engenharia_da_Computacao/Projeto_TP1/Headers" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Projeto_TP1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="Tests">
+				<Option output="bin/Projeto_TP1_Testes" prefix_auto="1" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="C:/Users/Pichau/OneDrive/Desktop/Engenharia_da_Computacao/Projeto_TP1/Headers" />
+		</Compiler>
+		<Unit filename="Testes/Teste_entidades/Teste_Pessoa.h" />
+		<Unit filename="Testes/Teste_entidades/teste_pessoa.cpp" />
+		<Unit filename="Testes/Testes_dominios/Teste_EMAIL.h" />
+		<Unit filename="Testes/Testes_dominios/Teste_Identificador.h" />
+		<Unit filename="Testes/Testes_dominios/Teste_Nome.cpp" />
+		<Unit filename="Testes/Testes_dominios/Teste_Nome.h" />
+		<Unit filename="Testes/Testes_dominios/Teste_Texto.h" />
+		<Unit filename="Testes/Testes_dominios/Teste_limite.h" />
+		<Unit filename="Testes/Testes_dominios/teste_EMAIL.cpp" />
+		<Unit filename="Testes/Testes_dominios/teste_Identificador.cpp" />
+		<Unit filename="Testes/Testes_dominios/teste_Limite.cpp" />
+		<Unit filename="Testes/Testes_dominios/teste_Senha.cpp" />
+		<Unit filename="Testes/Testes_dominios/teste_Senha.h" />
+		<Unit filename="Testes/Testes_dominios/teste_Texto.cpp" />
+		<Unit filename="Testes/main.cpp" />
+		<Unit filename="dominios/EMAIL.cpp" />
+		<Unit filename="dominios/EMAIL.h" />
+		<Unit filename="dominios/Identificador.cpp" />
+		<Unit filename="dominios/Identificador.h" />
+		<Unit filename="dominios/Limite.cpp" />
+		<Unit filename="dominios/Limite.h" />
+		<Unit filename="dominios/Senha.cpp" />
+		<Unit filename="dominios/Senha.h" />
+		<Unit filename="dominios/Texto.cpp" />
+		<Unit filename="dominios/Texto.h" />
+		<Unit filename="dominios/nome.cpp" />
+		<Unit filename="dominios/nome.h" />
+		<Unit filename="entidades/CartaoAtividade.cpp" />
+		<Unit filename="entidades/CartaoAtividades.h" />
+		<Unit filename="entidades/Pessoa.cpp" />
+		<Unit filename="entidades/Projeto.cpp" />
+		<Unit filename="entidades/Projeto.h" />
+		<Unit filename="entidades/Quadro.h" />
+		<Unit filename="entidades/pessoa.h" />
+		<Unit filename="entidades/quadro.cpp" />
+		<Unit filename="main.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
