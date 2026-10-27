@@ -12,6 +12,7 @@ private:
     const string VALOR_EMAIL = "shaolin-matador@de.porco.com";
     const string VALOR_NOME = "Shaolin Porco";
     const string VALOR_SENHA = "S609P";
+    const string VALOR_PAPEL = "GESTOR";
 
     Pessoa *pessoa;
     int estado;

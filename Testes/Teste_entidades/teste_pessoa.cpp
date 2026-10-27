@@ -19,14 +19,17 @@ void Teste_Pessoa::testa_valor_valido(){
         EMAIL email;
         Nome nome;
         Senha senha;
+        Papel papel;
 
         email.setEMAIL(VALOR_EMAIL);
         nome.setNome(VALOR_NOME);
         senha.setSenha(VALOR_SENHA);
+        papel.setPapel(VALOR_PAPEL);
 
         pessoa->setEmail(email);
         pessoa->setNome(nome);
         pessoa->setSenha(senha);
+        pessoa->setPapel(papel);
 
         if(pessoa->getEmail().getEMAIL() != VALOR_EMAIL)
             estado = FALHA;
@@ -35,6 +38,9 @@ void Teste_Pessoa::testa_valor_valido(){
             estado = FALHA;
 
         if(pessoa->getSenha().getSenha() != VALOR_SENHA)
+            estado = FALHA;
+
+        if(pessoa->getPapel().getPapel() != VALOR_PAPEL)
             estado = FALHA;
     }
     catch(invalid_argument &excecao){

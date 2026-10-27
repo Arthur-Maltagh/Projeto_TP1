@@ -5,8 +5,7 @@
 #include "../dominios/nome.h"
 #include "../dominios/Senha.h"
 #include "../dominios/Identificador.h"
-
-//#include "papel.h"
+#include "../dominios/Papel.h"
 
 using namespace std;
 
@@ -15,7 +14,7 @@ private:
     EMAIL email;
     Nome nome;
     Senha senha;
-    //Papel papel;
+    Papel papel;
 
 public:
     void setEmail(const EMAIL& email);
@@ -27,8 +26,8 @@ public:
     void setSenha(const Senha& senha);
     Senha getSenha() const;
 
-    //void setPapel(const Papel& papel);
-    //Papel getPapel() const;
+    void setPapel(const Papel& papel);
+    Papel getPapel() const;
 };
 
 #endif // PESSOA_H_INCLUDED

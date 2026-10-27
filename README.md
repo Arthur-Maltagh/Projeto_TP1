@@ -11,12 +11,14 @@
 ## João Victor
 - Classe domínio Timestamp
 
+
 ## Maria Eduarda
 - Classe domínio Papel
 - Classe domínio Estado
 - Classe domínio Prioridade
 - Classe domínio Tamanho
 - Testes unitários dos domínios acima
+- Documentação das classes acima
 
 ## Murilo
 - Classe entidade Pessoa

@@ -5,7 +5,11 @@
 #include "Testes_dominios/Teste_Texto.h"
 #include "Testes_dominios/Teste_Identificador.h"
 #include "Testes_dominios/Teste_EMAIL.h"
+#include "Testes_dominios/Teste_Estado.h"
+#include "Testes_dominios/Teste_Papel.h"
+#include "Testes_dominios/Teste_Prioridade.h"
 #include "Teste_entidades/Teste_Pessoa.h"
+#include "Testes_dominios/Teste_Tamanho.h"
 
 
 using namespace std;
@@ -16,15 +20,19 @@ Teste_Nome nome;
 Teste_Texto texto;
 Teste_Identificador identificador;
 Teste_EMAIL Email;
+Teste_Estado estado;
+Teste_Prioridade prioridade;
+Teste_Papel papel;
 Teste_Pessoa pessoa;
+Teste_Tamanho tamanho;
 
 int main() {
 
     //teste dominios
     if (limite.run() == 0) {
-        cout << "Teste do Dominio Limite: Aprovado" << endl;
+        cout << "Teste do Dominio Limite: Aprovado!" << endl;
     } else {
-        cout << "Teste do Dominio Limite: Falhou" << endl;
+        cout << "Teste do Dominio Limite: Falhou!" << endl;
     }
 
      if (nome.run() == 0) {
@@ -58,12 +66,37 @@ int main() {
         cout << "Teste do Dominio EMAIL: Falhou!" << endl;
     }
 
+      if (estado.run() == 0) {
+        cout << "Teste do Dominio Estado: Aprovado!" << endl;
+    } else {
+        cout << "Teste do Dominio Estado: Falhou!" << endl;
+    }
+     if(papel.run() == 0) {
+        cout << "Teste do Dominio Papel: Aprovado!" << endl;
+    } else {
+        cout << "Teste do Dominio Papel: Falhou!" << endl;
+    }
+     if(prioridade.run() == 0) {
+        cout << "Teste do Dominio Prioridade: Aprovado!" << endl;
+    } else {
+        cout << "Teste do Dominio Prioridade: Falhou" << endl;
+    }
+     if(tamanho.run() == 0) {
+        cout << "Teste do Dominio tamanho: Aprovado!" << endl;
+    } else {
+        cout << "Teste do Dominio tamanho: Falhou" << endl;
+    }
+
+
+
     //teste das entidades
     if(pessoa.run() == 0){
         cout << "Teste da Entidade Pessoa: Aprovado!" << endl;
     } else {
         cout << "Teste da Entidade Pessoa: Falhou!" << endl;
     }
+
+
 
 
 

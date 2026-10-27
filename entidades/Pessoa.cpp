@@ -24,12 +24,10 @@ Senha Pessoa::getSenha() const {
     return senha;
 }
 
-/*
-inline void Pessoa::setPapel(const Papel& papel) {
+void Pessoa::setPapel(const Papel& papel) {
     this->papel = papel;
 }
 
-inline Papel Pessoa::getPapel() const {
+Papel Pessoa::getPapel() const {
     return papel;
 }
-*/
