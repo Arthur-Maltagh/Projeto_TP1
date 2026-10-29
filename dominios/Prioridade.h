@@ -15,6 +15,7 @@ using namespace std;
 /**
  * @class Prioridade
  * @brief Classe que representa a prioridade.
+ * @ingroup Dominios
  * PRIORIDADE (definição): a condição daquilo que ocupa o primeiro lugar em importância, urgência, necessidade ou ordem temporal.
  * Formato válido: ALTA, MÉDIA e BAIXA.
  * Métodos:

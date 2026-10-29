@@ -16,6 +16,7 @@ using namespace std;
 /**
  * @class Tamanho
  * @brief Classe que representa o tamanho.
+ * @ingroup Dominios
  * TAMANHO (definição): grandeza, volume, área, dimensões de um corpo, objeto ou  tarefa.
  * Formato válido: GRANDE, MÉDIO, PEQUENO.
  * Métodos:

@@ -1,0 +1,56 @@
+\doxysection{Estado Class Reference}
+\hypertarget{class_estado}{}\label{class_estado}\index{Estado@{Estado}}
+
+
+Classe que representa o estado.
+
+ESTADO (definição): condição em que um objeto ou tarefa se encontra. Formato válido: A FAZER, FAZENDO, FEITO. Métodos:  
+
+
+
+
+{\ttfamily \+\#include $<$Estado.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_estado_aea45365e7694f230b445b3cd0c8d155b}\label{class_estado_aea45365e7694f230b445b3cd0c8d155b} 
+void {\bfseries set\+Estado} (string estado)
+\item 
+\Hypertarget{class_estado_aedbb6c1d75f1dbe5d5869d147d14fc20}\label{class_estado_aedbb6c1d75f1dbe5d5869d147d14fc20} 
+string {\bfseries get\+Estado} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe que representa o estado.
+
+ESTADO (definição): condição em que um objeto ou tarefa se encontra. Formato válido: A FAZER, FAZENDO, FEITO. Métodos: 
+
+
+\begin{DoxyItemize}
+\item set\+Estado()
+\end{DoxyItemize}
+
+Método que atribui um valor a estado. 
+\begin{DoxyParams}[1]{Parameters}
+\doxymbox{\texttt{in}}  & {\em papel} & valor que será atribuído a estado. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+invalid\+\_\+argument} & caso o valor informado tenha formato inválido.
+\begin{DoxyItemize}
+\item get\+Estado()
+\end{DoxyItemize}\\
+\hline
+\end{DoxyExceptions}
+Método que retorna o valor atribuído a estado. \begin{DoxyReturn}{Returns}
+valor de estado válido e atualmente armazenado. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+dominios/\doxymbox{\hyperlink{_estado_8h}{Estado.\+h}}\item 
+dominios/Estado.\+cpp\end{DoxyCompactItemize}

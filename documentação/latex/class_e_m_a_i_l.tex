@@ -1,0 +1,75 @@
+\doxysection{EMAIL Class Reference}
+\hypertarget{class_e_m_a_i_l}{}\label{class_e_m_a_i_l}\index{EMAIL@{EMAIL}}
+
+
+Representa um endereço de e-\/mail.  
+
+
+
+
+{\ttfamily \+\#include $<$EMAIL.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_e_m_a_i_l_a16a064552ff273fc99193c11d892c545}{set\+EMAIL}} (string email)
+\begin{DoxyCompactList}\small\item\em Define o endereço de e-\/mail armazenado. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_e_m_a_i_l_a17fa3eb30537cd660c2fcfd454363af8}{get\+EMAIL}} ()
+\begin{DoxyCompactList}\small\item\em Consulta o endereço de e-\/mail armazenado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa um endereço de e-\/mail. 
+
+A classe permite armazenar e consultar um endereço de e-\/mail, respeitando as regras de formato definidas para o domínio \doxylink{class_e_m_a_i_l}{EMAIL}.
+
+O endereço é composto por uma parte local e um domínio, separados pelo caractere \textquotesingle{}@\textquotesingle{}.
+
+A parte local aceita letras, dígitos, pontos e hífens, possui comprimento máximo de 64 caracteres e não pode começar ou terminar com ponto ou hífen. Cada ponto ou hífen deve ser seguido por letra ou dígito.
+
+O domínio é composto por uma ou mais partes separadas por pontos. Cada parte aceita letras, dígitos e hífens, não podendo começar ou terminar com hífen. O comprimento máximo do domínio é de 255 caracteres. 
+
+\label{class_e_m_a_i_l_doc-func-members}
+\Hypertarget{class_e_m_a_i_l_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_e_m_a_i_l_a17fa3eb30537cd660c2fcfd454363af8}\index{EMAIL@{EMAIL}!getEMAIL@{getEMAIL}}
+\index{getEMAIL@{getEMAIL}!EMAIL@{EMAIL}}
+\doxysubsubsection{\texorpdfstring{getEMAIL()}{getEMAIL()}}
+{\footnotesize\ttfamily \label{class_e_m_a_i_l_a17fa3eb30537cd660c2fcfd454363af8} 
+string EMAIL::\+get\+EMAIL (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Consulta o endereço de e-\/mail armazenado. 
+
+\begin{DoxyReturn}{Returns}
+O endereço de e-\/mail atualmente armazenado. 
+\end{DoxyReturn}
+\Hypertarget{class_e_m_a_i_l_a16a064552ff273fc99193c11d892c545}\index{EMAIL@{EMAIL}!setEMAIL@{setEMAIL}}
+\index{setEMAIL@{setEMAIL}!EMAIL@{EMAIL}}
+\doxysubsubsection{\texorpdfstring{setEMAIL()}{setEMAIL()}}
+{\footnotesize\ttfamily \label{class_e_m_a_i_l_a16a064552ff273fc99193c11d892c545} 
+void EMAIL::\+set\+EMAIL (\begin{DoxyParamCaption}\item[{string}]{email}{}\end{DoxyParamCaption})}
+
+
+
+Define o endereço de e-\/mail armazenado. 
+
+Recebe um endereço de e-\/mail, verifica se seu formato é válido e armazena o valor caso a validação seja bem-\/sucedida.
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & Endereço de e-\/mail a ser definido. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+invalid\+\_\+argument} & Se o endereço apresentar formato inválido. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+dominios/\doxymbox{\hyperlink{_e_m_a_i_l_8h}{EMAIL.\+h}}\item 
+dominios/EMAIL.\+cpp\end{DoxyCompactItemize}

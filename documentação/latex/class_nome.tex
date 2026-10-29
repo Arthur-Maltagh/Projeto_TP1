@@ -1,0 +1,74 @@
+\doxysection{Nome Class Reference}
+\hypertarget{class_nome}{}\label{class_nome}\index{Nome@{Nome}}
+
+
+Domínio que responsável por valdiar e armazenar nome de um usuário do sistema.  
+
+
+
+
+{\ttfamily \+\#include $<$nome.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_nome_a83b9f56ec9f86f4b976846f4c5c65b30}{set\+Nome}} (string nome)
+\begin{DoxyCompactList}\small\item\em Atribui um valor ao nome. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_nome_aad41176173eec20cbbae1576447a3697}{get\+Nome}} ()
+\begin{DoxyCompactList}\small\item\em Retorna o nome armazenado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Domínio que responsável por valdiar e armazenar nome de um usuário do sistema. 
+
+Regras do formato válido:
+\begin{DoxyEnumerate}
+\item texto com até 15 caracteres, não vazio;
+\item cada caractere é letra maiúscula, letra minúscula ou espaço em branco;
+\item o primeiro e o último caractere não são espaço em branco;
+\item todo espaço em branco é seguido por uma letra.
+\item acentos não são considerados 
+\end{DoxyEnumerate}
+
+\label{class_nome_doc-func-members}
+\Hypertarget{class_nome_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_nome_aad41176173eec20cbbae1576447a3697}\index{Nome@{Nome}!getNome@{getNome}}
+\index{getNome@{getNome}!Nome@{Nome}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily \label{class_nome_aad41176173eec20cbbae1576447a3697} 
+string Nome::\+get\+Nome (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Retorna o nome armazenado. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_texto}{Texto} com o nome, de até 15 caracteres. 
+\end{DoxyReturn}
+\Hypertarget{class_nome_a83b9f56ec9f86f4b976846f4c5c65b30}\index{Nome@{Nome}!setNome@{setNome}}
+\index{setNome@{setNome}!Nome@{Nome}}
+\doxysubsubsection{\texorpdfstring{setNome()}{setNome()}}
+{\footnotesize\ttfamily \label{class_nome_a83b9f56ec9f86f4b976846f4c5c65b30} 
+void Nome::\+set\+Nome (\begin{DoxyParamCaption}\item[{string}]{nome}{}\end{DoxyParamCaption})}
+
+
+
+Atribui um valor ao nome. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & será validada pelas condições de formato válido \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & Se o formato de {\ttfamily nome} for inválido. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+dominios/\doxymbox{\hyperlink{nome_8h}{nome.\+h}}\item 
+dominios/nome.\+cpp\end{DoxyCompactItemize}

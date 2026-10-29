@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['da_20equipe_0',['Contribui√ß√µes da equipe',['../md__r_e_a_d_m_e.html',1,'']]],
+  ['das_20classes_20kanban_1',['TP1 - Sistema de gest„o das classes Kanban',['../index.html',1,'']]],
+  ['de_20gest„o_20das_20classes_20kanban_2',['TP1 - Sistema de gest„o das classes Kanban',['../index.html',1,'']]]
+];

@@ -1,0 +1,69 @@
+\doxysection{Classes de domínio }
+\hypertarget{group___dominios}{}\label{group___dominios}\index{Classes de domínio@{Classes de domínio}}
+
+
+Classes que representam os domínios do sistema.  
+
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{class_identificador}{Identificador}}
+\begin{DoxyCompactList}\small\item\em DomÃ­nio que representa um identificador de entidade. \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{class_nome}{Nome}}
+\begin{DoxyCompactList}\small\item\em DomÃ­nio que responsÃ¡vel por valdiar e armazenar nome de um usuÃ¡rio do sistema. \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{class_senha}{Senha}}
+\begin{DoxyCompactList}\small\item\em DomÃ­nio que armazena e valida a senha de um usuÃ¡rio. \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{class_texto}{Texto}}
+\begin{DoxyCompactList}\small\item\em DomÃ­nio que representa e valida um texto, como uma descriÃ§Ã£o. \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{class_estado}{Estado}}
+\begin{DoxyCompactList}\small\item\em Classe que representa o estado.
+
+ESTADO (definição): condição em que um objeto ou tarefa se encontra. Formato válido: A FAZER, FAZENDO, FEITO. Métodos: \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{class_papel}{Papel}}
+\begin{DoxyCompactList}\small\item\em Classe que representa o papel.
+
+PAPEL (definição): conjunto de funções, expectativas, deveres e comportamentos que um sujeito deve desempenhar em uma determinada situação. Formato válido: GESTOR, DESENVOLVEDOR. Métodos: \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{class_prioridade}{Prioridade}}
+\begin{DoxyCompactList}\small\item\em Classe que representa a prioridade.
+
+PRIORIDADE (definição): a condição daquilo que ocupa o primeiro lugar em importância, urgência, necessidade ou ordem temporal. Formato válido: ALTA, MÉ\+DIA e BAIXA. Métodos: \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{class_tamanho}{Tamanho}}
+\begin{DoxyCompactList}\small\item\em Classe que representa o tamanho.
+
+TAMANHO (definição): grandeza, volume, área, dimensões de um corpo, objeto ou tarefa. Formato válido: GRANDE, MÉ\+DIO, PEQUENO. Métodos: \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{group___dominios_ga3e6880dfddcb4b70462da70635b74694}{Limite::\+set\+Limite}} (int valor)
+\begin{DoxyCompactList}\small\item\em Atribui um valor ao limite. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classes que representam os domínios do sistema. 
+
+Cada classe de domínio encapsula um valor e valida o seu formato. O método set lança invalid\+\_\+argument quando o formato é inválido. 
+
+\label{group___dominios_doc-func-members}
+\Hypertarget{group___dominios_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{group___dominios_ga3e6880dfddcb4b70462da70635b74694}\index{Classes de domínio@{Classes de domínio}!setLimite@{setLimite}}
+\index{setLimite@{setLimite}!Classes de domínio@{Classes de domínio}}
+\doxysubsubsection{\texorpdfstring{setLimite()}{setLimite()}}
+{\footnotesize\ttfamily \label{group___dominios_ga3e6880dfddcb4b70462da70635b74694} 
+void Limite::\+set\+Limite (\begin{DoxyParamCaption}\item[{int}]{valor}{}\end{DoxyParamCaption})}
+
+
+
+Atribui um valor ao limite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & NÃºmero inteiro entre 1 e 25. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & Se {\ttfamily valor} estiver fora do intervalo de 1 a 25. \\
+\hline
+\end{DoxyExceptions}

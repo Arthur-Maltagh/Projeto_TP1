@@ -1,0 +1,28 @@
+var annotated_dup =
+[
+    [ "CartaoDeAtividade", "class_cartao_de_atividade.html", null ],
+    [ "EMAIL", "class_e_m_a_i_l.html", "class_e_m_a_i_l" ],
+    [ "Estado", "class_estado.html", null ],
+    [ "Identificador", "class_identificador.html", "class_identificador" ],
+    [ "Limite", "class_limite.html", "class_limite" ],
+    [ "Nome", "class_nome.html", "class_nome" ],
+    [ "Papel", "class_papel.html", null ],
+    [ "Pessoa", "class_pessoa.html", null ],
+    [ "Prioridade", "class_prioridade.html", null ],
+    [ "Projeto", "class_projeto.html", null ],
+    [ "Quadro", "class_quadro.html", null ],
+    [ "Senha", "class_senha.html", "class_senha" ],
+    [ "Tamanho", "class_tamanho.html", null ],
+    [ "Teste_EMAIL", "class_teste___e_m_a_i_l.html", null ],
+    [ "Teste_Estado", "class_teste___estado.html", null ],
+    [ "Teste_Identificador", "class_teste___identificador.html", null ],
+    [ "Teste_Limite", "class_teste___limite.html", null ],
+    [ "Teste_Nome", "class_teste___nome.html", null ],
+    [ "Teste_Papel", "class_teste___papel.html", null ],
+    [ "Teste_Pessoa", "class_teste___pessoa.html", null ],
+    [ "Teste_Prioridade", "class_teste___prioridade.html", null ],
+    [ "Teste_Senha", "class_teste___senha.html", null ],
+    [ "Teste_Tamanho", "class_teste___tamanho.html", null ],
+    [ "Teste_Texto", "class_teste___texto.html", null ],
+    [ "Texto", "class_texto.html", "class_texto" ]
+];

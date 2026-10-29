@@ -1,0 +1,36 @@
+\doxysection{Teste\+\_\+\+Papel.\+h}
+\hypertarget{_teste___papel_8h_source}{}\label{_teste___papel_8h_source}\index{Testes/Testes\_dominios/Teste\_Papel.h@{Testes/Testes\_dominios/Teste\_Papel.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TESTE\_PAPEL\_H\_INCLUDED}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TESTE\_PAPEL\_H\_INCLUDED}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_papel_8h}{../../dominios/Papel.h}}"{}}\ \textcolor{comment}{//Importa\ header\ file}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00010\ \textcolor{comment}{//\ Exemplo\ de\ declaração\ de\ classe\ para\ teste\ de\ unidade\ de\ classe\ domínio.}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_teste___papel}{Teste\_Papel}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ std::string\ PAPEL\_VALIDO;\ \ \ \textcolor{comment}{//\ Definição\ de\ constante\ para\ evitar\ número\ mágico.}}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ std::string\ PAPEL\_INVALIDO;\ \ \ \textcolor{comment}{//\ Definição\ de\ constante\ para\ evitar\ número\ mágico.}}
+\DoxyCodeLine{00016\ \ \ \ \ \doxymbox{\hyperlink{class_papel}{Papel}}\ *papel;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Referência\ para\ unidade\ em\ teste.}}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ estado\_do\_teste;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Estado\ do\ teste.}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ construtor();\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Método\ para\ criar\ unidade\ em\ teste.}}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ destrutor();\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Método\ para\ destruir\ unidade\ em\ teste.}}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioSucesso();\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Cenário\ de\ teste.}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioFalha();\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Cenário\ de\ teste.}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ SUCESSO\ =\ \ 0;\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Definição\ de\ constante\ para\ reportar\ resultado\ de\ teste.}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ FALHA\ \ \ =\ -\/1;\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Definição\ de\ constante\ para\ reportar\ resultado\ de\ teste.}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ run();\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Método\ para\ executar\ teste.}}
+\DoxyCodeLine{00027\ \};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TESTE\_PAPEL\_H\_INCLUDED}}
+
+\end{DoxyCode}

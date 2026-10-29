@@ -1,6 +1,6 @@
 #include "Papel.h"
 
-// Método para validação de Papel.
+// MÃ©todo para validaÃ§Ã£o de Papel.
 void Papel::validar(string papel) {
     if (papel != "GESTOR" && papel != "DESENVOLVEDOR")
         throw invalid_argument("Argumento invalido.");

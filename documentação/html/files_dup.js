@@ -1,0 +1,6 @@
+var files_dup =
+[
+    [ "dominios", "dir_058e48040990403595b144e91b55fcd6.html", "dir_058e48040990403595b144e91b55fcd6" ],
+    [ "entidades", "dir_97eb6680ba814fee2720e6d851c9f3cb.html", "dir_97eb6680ba814fee2720e6d851c9f3cb" ],
+    [ "Testes", "dir_59c25d53ef7c41a6d022020f2a10f793.html", "dir_59c25d53ef7c41a6d022020f2a10f793" ]
+];

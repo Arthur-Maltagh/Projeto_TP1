@@ -17,6 +17,7 @@ using namespace std;
 /**
  * @class Estado
  * @brief Classe que representa o estado.
+* @ingroup Dominios
  * ESTADO (definição): condição em que um objeto ou tarefa se encontra.
  * Formato válido: A FAZER, FAZENDO, FEITO.
  * Métodos:

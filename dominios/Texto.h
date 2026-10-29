@@ -1,25 +1,49 @@
+/**
+ * @file Texto.h
+ * @brief Declara√ß√£o da classe de dom√≠nio Texto.
+ * @author Arthur Rodrigues Malta
+ * @date 2026
+ */
+
 #ifndef TEXTO_H_INCLUDED
 #define TEXTO_H_INCLUDED
 #include <string>
 using namespace std;
 
+/**
+ * @brief Dom√≠nio que representa e valida um texto, como uma descri√ß√£o.
+ * @ingroup Dominios
+ *
+ * Regras do formato v√°lido:
+ * 1. texto n√£o vazio com at√© 30 caracteres;
+ * 2. cada caractere pode ser letra, d√≠gito, espa√ßo em branco
+ * ou sinal de pontua√ß√£o (v√≠rgula, ponto e v√≠rgula, ponto, dois pontos,
+ * ponto de interroga√ß√£o ou ponto de exclama√ß√£o);
+ * 3. um sinal de pontua√ß√£o n√£o √© seguido por outro sinal de pontua√ß√£o;
+ * 4. o primeiro caractere √© letra mai√∫scula;
+ * 5. o √∫ltimo caractere √© ponto.
+ *
+ */
 class Texto{
 private:
     string texto;
     bool validar(string texto);
     static const int TAMANHO_MAX = 30;
 public:
+    /**
+     * @brief Atribui um valor ao texto.
+     *
+     * @param string que ser√° um texto que ser√° submetido a valida√ß√£o
+     * @throw invalid_argument Se o formato de @p texto for inv√°lido.
+     */
     void setTexto(string texto);
+
+    /**
+     * @brief Retorna o texto armazenado.
+     *
+     * @return string validada.
+     */
     string getTexto();
 };
 
 #endif // TEXTO_H_INCLUDED
-
-
-/*
-Texto com atÈ 30 caracteres.
-Caractere pode ser letra (a-z ou A-Z), dÌgito (0-9), espaÁo em branco ou sinal de pontuaÁ„o
-(vÌrgula, ponto-e-vÌrgula, ponto, dois pontos, ponto de interrogaÁ„o, ponto de exclamaÁ„o); sinal de
-pontuaÁ„o n„o È seguido por sinal de pontuaÁ„o; primeiro caractere È letra mai˙scula; ˙ltimo
-caractere È ponto.
-*/

@@ -1,0 +1,72 @@
+\doxysection{Identificador Class Reference}
+\hypertarget{class_identificador}{}\label{class_identificador}\index{Identificador@{Identificador}}
+
+
+Domínio que representa um identificador de entidade.  
+
+
+
+
+{\ttfamily \+\#include $<$Identificador.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_identificador_af9a65fd67002102ebe9ae5f5db30e928}{set\+Identificador}} (string id)
+\begin{DoxyCompactList}\small\item\em Atribui um valor ao identificador. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_identificador_a1866471e497bf55f0864404956d99b58}{get\+Identificador}} ()
+\begin{DoxyCompactList}\small\item\em Retorna o identificador armazenado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Domínio que representa um identificador de entidade. 
+
+Regras do formato válido:
+\begin{DoxyEnumerate}
+\item possui exatamente 6 caracteres;
+\item os três primeiros caracteres são letras maiúsculas ou minúsculas;
+\item os três últimos caracteres são dígitos. 
+\end{DoxyEnumerate}
+
+\label{class_identificador_doc-func-members}
+\Hypertarget{class_identificador_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_identificador_a1866471e497bf55f0864404956d99b58}\index{Identificador@{Identificador}!getIdentificador@{getIdentificador}}
+\index{getIdentificador@{getIdentificador}!Identificador@{Identificador}}
+\doxysubsubsection{\texorpdfstring{getIdentificador()}{getIdentificador()}}
+{\footnotesize\ttfamily \label{class_identificador_a1866471e497bf55f0864404956d99b58} 
+string Identificador::\+get\+Identificador (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Retorna o identificador armazenado. 
+
+\begin{DoxyReturn}{Returns}
+string texto com formato válido. 
+\end{DoxyReturn}
+\Hypertarget{class_identificador_af9a65fd67002102ebe9ae5f5db30e928}\index{Identificador@{Identificador}!setIdentificador@{setIdentificador}}
+\index{setIdentificador@{setIdentificador}!Identificador@{Identificador}}
+\doxysubsubsection{\texorpdfstring{setIdentificador()}{setIdentificador()}}
+{\footnotesize\ttfamily \label{class_identificador_af9a65fd67002102ebe9ae5f5db30e928} 
+void Identificador::\+set\+Identificador (\begin{DoxyParamCaption}\item[{string}]{id}{}\end{DoxyParamCaption})}
+
+
+
+Atribui um valor ao identificador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em recebe} & uma string candidata a ser um id, caso seja válida. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & Se o formato de {\ttfamily id} for inválido. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+dominios/\doxymbox{\hyperlink{_identificador_8h}{Identificador.\+h}}\item 
+dominios/Identificador.\+cpp\end{DoxyCompactItemize}

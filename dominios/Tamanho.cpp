@@ -1,7 +1,7 @@
 #include "Tamanho.h" //Importa header file
 
-// Método para validação de Tamanho.
+// MÃ©todo para validaÃ§Ã£o de Tamanho.
 void Tamanho::validar(string tamanho) {
-    if (tamanho != "GRANDE" && tamanho != "MÉDIO" && tamanho != "PEQUENO")
+    if (tamanho != "GRANDE" && tamanho != "MÃ‰DIO" && tamanho != "PEQUENO")
         throw invalid_argument("Argumento invalido.");
 }

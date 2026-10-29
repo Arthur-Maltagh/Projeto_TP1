@@ -1,0 +1,74 @@
+\doxysection{Texto Class Reference}
+\hypertarget{class_texto}{}\label{class_texto}\index{Texto@{Texto}}
+
+
+Domínio que representa e valida um texto, como uma descrição.  
+
+
+
+
+{\ttfamily \+\#include $<$Texto.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_texto_a004feae9e66adbde822d3c7738b8fbba}{set\+Texto}} (string texto)
+\begin{DoxyCompactList}\small\item\em Atribui um valor ao texto. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_texto_a4765daf4056dbd736344b9b18728e0a0}{get\+Texto}} ()
+\begin{DoxyCompactList}\small\item\em Retorna o texto armazenado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Domínio que representa e valida um texto, como uma descrição. 
+
+Regras do formato válido:
+\begin{DoxyEnumerate}
+\item texto não vazio com até 30 caracteres;
+\item cada caractere pode ser letra, dígito, espaço em branco ou sinal de pontuação (vírgula, ponto e vírgula, ponto, dois pontos, ponto de interrogação ou ponto de exclamação);
+\item um sinal de pontuação não é seguido por outro sinal de pontuação;
+\item o primeiro caractere é letra maiúscula;
+\item o último caractere é ponto. 
+\end{DoxyEnumerate}
+
+\label{class_texto_doc-func-members}
+\Hypertarget{class_texto_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_texto_a4765daf4056dbd736344b9b18728e0a0}\index{Texto@{Texto}!getTexto@{getTexto}}
+\index{getTexto@{getTexto}!Texto@{Texto}}
+\doxysubsubsection{\texorpdfstring{getTexto()}{getTexto()}}
+{\footnotesize\ttfamily \label{class_texto_a4765daf4056dbd736344b9b18728e0a0} 
+string Texto::\+get\+Texto (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Retorna o texto armazenado. 
+
+\begin{DoxyReturn}{Returns}
+string validada. 
+\end{DoxyReturn}
+\Hypertarget{class_texto_a004feae9e66adbde822d3c7738b8fbba}\index{Texto@{Texto}!setTexto@{setTexto}}
+\index{setTexto@{setTexto}!Texto@{Texto}}
+\doxysubsubsection{\texorpdfstring{setTexto()}{setTexto()}}
+{\footnotesize\ttfamily \label{class_texto_a004feae9e66adbde822d3c7738b8fbba} 
+void Texto::\+set\+Texto (\begin{DoxyParamCaption}\item[{string}]{texto}{}\end{DoxyParamCaption})}
+
+
+
+Atribui um valor ao texto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & que será um texto que será submetido a validação \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & Se o formato de {\ttfamily texto} for inválido. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+dominios/\doxymbox{\hyperlink{_texto_8h}{Texto.\+h}}\item 
+dominios/Texto.\+cpp\end{DoxyCompactItemize}

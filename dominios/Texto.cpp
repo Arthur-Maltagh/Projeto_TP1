@@ -36,12 +36,3 @@ string Texto::getTexto(){
     return texto;
 }
 
-
-
-/*
-Texto com até 30 caracteres.
-Caractere pode ser letra (a-z ou A-Z), dígito (0-9), espaço em branco ou sinal de pontuação
-(vírgula, ponto-e-vírgula, ponto, dois pontos, ponto de interrogação, ponto de exclamação); sinal de
-pontuação não é seguido por sinal de pontuação; primeiro caractere é letra maiúscula; último
-caractere é ponto.
-*/

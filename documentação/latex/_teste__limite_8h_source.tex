@@ -1,0 +1,31 @@
+\doxysection{Teste\+\_\+limite.\+h}
+\hypertarget{_teste__limite_8h_source}{}\label{_teste__limite_8h_source}\index{Testes/Testes\_dominios/Teste\_limite.h@{Testes/Testes\_dominios/Teste\_limite.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TESTE\_LIMITE\_H\_INCLUDED}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TESTE\_LIMITE\_H\_INCLUDED}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_limite_8h}{../../dominios/Limite.h}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_teste___limite}{Teste\_Limite}}\{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ VALOR\_VALIDO\ =\ 20;}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ VALOR\_INVALIDO\ =\ 67;}
+\DoxyCodeLine{00013\ \ \ \ \ \doxymbox{\hyperlink{class_limite}{Limite}}\ *limite;}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ estado;}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{void}\ construtor();}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ destrutor();}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ testa\_valor\_valido();}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ testa\_valor\_invalido();}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ SUCESSO\ =\ 0;}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ FALHA\ =\ -\/1;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{int}\ run();}
+\DoxyCodeLine{00023\ \};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TESTE\_LIMITE\_H\_INCLUDED}}
+
+\end{DoxyCode}

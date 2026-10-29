@@ -16,6 +16,7 @@ using namespace std;
 /**
  * @class Papel
  * @brief Classe que representa o papel.
+* @ingroup Dominios
  * PAPEL (definição): conjunto de funções, expectativas, deveres e comportamentos que um sujeito deve desempenhar em uma determinada situação.
  * Formato válido: GESTOR, DESENVOLVEDOR.
  * Métodos:

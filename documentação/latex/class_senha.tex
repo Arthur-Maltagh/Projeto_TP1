@@ -1,0 +1,72 @@
+\doxysection{Senha Class Reference}
+\hypertarget{class_senha}{}\label{class_senha}\index{Senha@{Senha}}
+
+
+Domínio que armazena e valida a senha de um usuário.  
+
+
+
+
+{\ttfamily \+\#include $<$Senha.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_senha_a8d8c97b325a445bd40c375627ed81e25}{set\+Senha}} (string senha)
+\begin{DoxyCompactList}\small\item\em Atribui um valor à senha. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_senha_a8786b3d03b1652e73df1cdce46cbbaaf}{get\+Senha}} ()
+\begin{DoxyCompactList}\small\item\em Retorna a senha armazenada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Domínio que armazena e valida a senha de um usuário. 
+
+Regras do formato válido:
+\begin{DoxyEnumerate}
+\item deve ser composta por 5 caracteres;
+\item cada caractere deve ser alfanumérico;
+\item deve ter pelo menos uma letra e um dígito. 
+\end{DoxyEnumerate}
+
+\label{class_senha_doc-func-members}
+\Hypertarget{class_senha_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_senha_a8786b3d03b1652e73df1cdce46cbbaaf}\index{Senha@{Senha}!getSenha@{getSenha}}
+\index{getSenha@{getSenha}!Senha@{Senha}}
+\doxysubsubsection{\texorpdfstring{getSenha()}{getSenha()}}
+{\footnotesize\ttfamily \label{class_senha_a8786b3d03b1652e73df1cdce46cbbaaf} 
+string Senha::\+get\+Senha (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Retorna a senha armazenada. 
+
+\begin{DoxyReturn}{Returns}
+string senha validada. 
+\end{DoxyReturn}
+\Hypertarget{class_senha_a8d8c97b325a445bd40c375627ed81e25}\index{Senha@{Senha}!setSenha@{setSenha}}
+\index{setSenha@{setSenha}!Senha@{Senha}}
+\doxysubsubsection{\texorpdfstring{setSenha()}{setSenha()}}
+{\footnotesize\ttfamily \label{class_senha_a8d8c97b325a445bd40c375627ed81e25} 
+void Senha::\+set\+Senha (\begin{DoxyParamCaption}\item[{string}]{senha}{}\end{DoxyParamCaption})}
+
+
+
+Atribui um valor à senha. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & que passará pela validação \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & Se o formato de {\ttfamily senha} for inválido. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+dominios/\doxymbox{\hyperlink{_senha_8h}{Senha.\+h}}\item 
+dominios/Senha.\+cpp\end{DoxyCompactItemize}
