@@ -15,5 +15,7 @@ var searchData=
   ['teste_5ftexto_12',['Teste_Texto',['../class_teste___texto.html',1,'']]],
   ['texto_13',['Texto',['../class_texto.html',1,'']]],
   ['texto_2eh_14',['Texto.h',['../_texto_8h.html',1,'']]],
-  ['tp1_20sistema_20de_20gestão_20das_20classes_20kanban_15',['TP1 - Sistema de gestão das classes Kanban',['../index.html',1,'']]]
+  ['timestamp_15',['Timestamp',['../class_timestamp.html',1,'']]],
+  ['timestamp_2eh_16',['Timestamp.h',['../_timestamp_8h.html',1,'']]],
+  ['tp1_20sistema_20de_20gestão_20das_20classes_20kanban_17',['TP1 - Sistema de gestão das classes Kanban',['../index.html',1,'']]]
 ];

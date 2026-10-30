@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "Testes_dominios/Teste_limite.h"
 #include "Testes_dominios/teste_Senha.h"
 #include "Testes_dominios/Teste_Nome.h"
@@ -8,8 +9,13 @@
 #include "Testes_dominios/Teste_Estado.h"
 #include "Testes_dominios/Teste_Papel.h"
 #include "Testes_dominios/Teste_Prioridade.h"
-#include "Teste_entidades/Teste_Pessoa.h"
 #include "Testes_dominios/Teste_Tamanho.h"
+#include "Testes_dominios/Teste_Timestamp.h"
+
+#include "Teste_entidades/Teste_Pessoa.h"
+#include "Teste_entidades/Teste_Projeto.h"
+#include "Teste_entidades/Teste_Quadro.h"
+#include "Teste_entidades/Teste_Cartaoatividade.h"
 
 
 using namespace std;
@@ -23,8 +29,13 @@ Teste_EMAIL Email;
 Teste_Estado estado;
 Teste_Prioridade prioridade;
 Teste_Papel papel;
-Teste_Pessoa pessoa;
 Teste_Tamanho tamanho;
+Teste_Timestamp timestamp;
+
+Teste_Pessoa pessoa;
+Teste_Projeto projeto;
+Teste_Quadro quadro;
+Teste_CartaoDeAtividade cartaodeatividade;
 
 int main() {
 
@@ -86,6 +97,11 @@ int main() {
     } else {
         cout << "Teste do Dominio tamanho: Falhou" << endl;
     }
+     if(timestamp.run() == 0) {
+        cout << "Teste do Dominio Timestamp: Aprovado!" << endl;
+    } else {
+        cout << "Teste do Dominio Timestamp: Falhou" << endl;
+    }
 
 
 
@@ -95,13 +111,37 @@ int main() {
     } else {
         cout << "Teste da Entidade Pessoa: Falhou!" << endl;
     }
-
-
-
-
+    if(quadro.run() == 0){
+        cout << "Teste da Entidade Quadro: Aprovado!" << endl;
+    } else {
+        cout << "Teste da Entidade Quadro: Falhou!" << endl;
+    }
+    if(projeto.run() == 0){
+        cout << "Teste da Entidade Projeto: Aprovado!" << endl;
+    } else {
+        cout << "Teste da Entidade Projeto: Falhou!" << endl;
+    }
+    if(cartaodeatividade.run() == 0){
+        cout << "Teste da Entidade Cartão de Atividade: Aprovado!" << endl;
+    } else {
+        cout << "Teste da Entidade Cartão de atividade: Falhou!" << endl;
+    }
 
     cout << "\nPressione ENTER para sair...";
     cin.get();
 
     return 0;
 }
+
+/*Timestamp timestamp;
+    string data;
+    cout << "digite uma data: ";
+    cin >> data;
+
+    try{
+        timestamp.setTimestamp(data);
+    }catch(invalid_argument &e){
+        cout << e.what();
+    }
+    cout << timestamp.getTimestamp() << endl;
+    */

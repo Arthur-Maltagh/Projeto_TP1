@@ -10,33 +10,25 @@
 \DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
 \DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <string>}}
 \DoxyCodeLine{00013\ }
-\DoxyCodeLine{00014\ \textcolor{keyword}{using\ namespace\ }std;}
-\DoxyCodeLine{00015\ }
-\DoxyCodeLine{00031\ }
-\DoxyCodeLine{00032\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_tamanho}{Tamanho}}\ \{}
-\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Atributo\ para\ armazenar\ tamanho.}}
-\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ tamanho;}
-\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Método\ para\ validar\ tamanho.}}
-\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ validar(\textcolor{keywordtype}{string});}
-\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Método\ para\ atribuir\ tamanho.}}
-\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setTamanho(\textcolor{keywordtype}{string}\ tamanho);}
-\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Método\ para\ recuperar\ tamanho.}}
-\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ getTamanho()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00043\ \};}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_tamanho}{Tamanho}}\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Atributo\ para\ armazenar\ tamanho.}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ std::string\ tamanho;}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Método\ para\ validar\ tamanho.}}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ validar(std::string);}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Método\ para\ atribuir\ tamanho.}}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setTamanho(std::string\ tamanho);}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Método\ para\ recuperar\ tamanho.}}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ std::string\ getTamanho()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ \};}
+\DoxyCodeLine{00043\ }
 \DoxyCodeLine{00044\ }
-\DoxyCodeLine{00045\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ Tamanho::setTamanho(\textcolor{keywordtype}{string}\ tamanho)\{}
-\DoxyCodeLine{00046\ \ \ \ \ validar(tamanho);}
-\DoxyCodeLine{00047\ \ \ \ \ this-\/>tamanho\ =\ tamanho;}
-\DoxyCodeLine{00048\ \}}
-\DoxyCodeLine{00049\ }
-\DoxyCodeLine{00050\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{string}\ Tamanho::getTamanho()\textcolor{keyword}{\ const}\{}
-\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordflow}{return}\ tamanho;}
-\DoxyCodeLine{00052\ \}}
-\DoxyCodeLine{00053\ }
-\DoxyCodeLine{00054\ }
-\DoxyCodeLine{00055\ }
-\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TAMANHO\_H\_INCLUDED}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TAMANHO\_H\_INCLUDED}}
 
 \end{DoxyCode}

@@ -10,31 +10,21 @@
 \DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
 \DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <string>}}
 \DoxyCodeLine{00013\ }
-\DoxyCodeLine{00014\ \textcolor{keyword}{using\ namespace\ }std;}
-\DoxyCodeLine{00015\ }
-\DoxyCodeLine{00031\ }
-\DoxyCodeLine{00032\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_papel}{Papel}}\ \{}
-\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Atributo\ para\ armazenar\ papel.}}
-\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ papel;}
-\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Método\ para\ validar\ papel.}}
-\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ validar(\textcolor{keywordtype}{string});}
-\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Método\ para\ atribuir\ papel.}}
-\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setPapel(\textcolor{keywordtype}{string}\ papel);}
-\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Método\ para\ recuperar\ papel.}}
-\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ getPapel()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00043\ \};}
-\DoxyCodeLine{00044\ }
-\DoxyCodeLine{00045\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ Papel::setPapel(\textcolor{keywordtype}{string}\ papel)\{}
-\DoxyCodeLine{00046\ \ \ \ \ validar(papel);}
-\DoxyCodeLine{00047\ \ \ \ \ this-\/>papel\ =\ papel;}
-\DoxyCodeLine{00048\ \}}
-\DoxyCodeLine{00049\ }
-\DoxyCodeLine{00050\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{string}\ Papel::getPapel()\textcolor{keyword}{\ const}\{}
-\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordflow}{return}\ papel;}
-\DoxyCodeLine{00052\ \}}
-\DoxyCodeLine{00053\ }
-\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PAPEL\_H\_INCLUDED}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_papel}{Papel}}\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Atributo\ para\ armazenar\ papel.}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ std::string\ papel;}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Método\ para\ validar\ papel.}}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ validar(std::string);}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Método\ para\ atribuir\ papel.}}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setPapel(std::string\ papel);}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Método\ para\ recuperar\ papel.}}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ std::string\ getPapel()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ \};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PAPEL\_H\_INCLUDED}}
 
 \end{DoxyCode}

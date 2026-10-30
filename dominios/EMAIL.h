@@ -1,8 +1,9 @@
 /**
  * @file EMAIL.h
- * @brief Declara a classe domínios responsável pela representação de endereços
- * de e-mail.
+ * @brief declaração da classe EMAIL
  *
+ * @author Arthur Rodrigues Malta
+ * @date 2026
  */
 
 #ifndef EMAIL_H_INCLUDED
@@ -11,7 +12,7 @@
 #include <string>
 
 /**
- * @brief Representa um endereço de e-mail.
+ * @brief Representa um endereço de e-mail de um usuário do sistema.
  *
  * A classe permite armazenar e consultar um endereço de e-mail,
  * respeitando as regras de formato definidas para o domínio EMAIL.

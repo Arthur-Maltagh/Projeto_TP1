@@ -9,5 +9,6 @@ var dir_058e48040990403595b144e91b55fcd6 =
     [ "Prioridade.h", "_prioridade_8h.html", null ],
     [ "Senha.h", "_senha_8h.html", null ],
     [ "Tamanho.h", "_tamanho_8h.html", null ],
-    [ "Texto.h", "_texto_8h.html", null ]
+    [ "Texto.h", "_texto_8h.html", null ],
+    [ "Timestamp.h", "_timestamp_8h.html", null ]
 ];

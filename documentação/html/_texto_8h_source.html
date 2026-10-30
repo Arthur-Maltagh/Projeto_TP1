@@ -116,25 +116,24 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('_texto_8h_sour
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef TEXTO_H_INCLUDED</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define TEXTO_H_INCLUDED</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">using namespace </span>std;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span></div>
-<div class="foldopen" id="foldopen00027" data-start="{" data-end="};">
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_texto.html">   27</a></span><span class="keyword">class </span><a class="code hl_class" href="class_texto.html">Texto</a>{</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">string</span> texto;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">bool</span> validar(<span class="keywordtype">string</span> texto);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> TAMANHO_MAX = 30;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_texto.html#a004feae9e66adbde822d3c7738b8fbba">setTexto</a>(<span class="keywordtype">string</span> texto);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="class_texto.html#a4765daf4056dbd736344b9b18728e0a0">getTexto</a>();</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>};</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_texto.html">   26</a></span><span class="keyword">class </span><a class="code hl_class" href="class_texto.html">Texto</a>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    std::string texto;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">bool</span> validar(std::string texto);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> TAMANHO_MAX = 30;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_texto.html#af13159f6a6d30c75d23aa8114e048400">setTexto</a>(std::string texto);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    std::string <a class="code hl_function" href="class_texto.html#a4765daf4056dbd736344b9b18728e0a0">getTexto</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>};</div>
 </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#endif </span><span class="comment">// TEXTO_H_INCLUDED</span></div>
-<div class="ttc" id="aclass_texto_html"><div class="ttname"><a href="class_texto.html">Texto</a></div><div class="ttdoc">Domínio que representa e valida um texto, como uma descrição.</div><div class="ttdef"><b>Definition</b> Texto.h:27</div></div>
-<div class="ttc" id="aclass_texto_html_a004feae9e66adbde822d3c7738b8fbba"><div class="ttname"><a href="class_texto.html#a004feae9e66adbde822d3c7738b8fbba">Texto::setTexto</a></div><div class="ttdeci">void setTexto(string texto)</div><div class="ttdoc">Atribui um valor ao texto.</div><div class="ttdef"><b>Definition</b> Texto.cpp:29</div></div>
-<div class="ttc" id="aclass_texto_html_a4765daf4056dbd736344b9b18728e0a0"><div class="ttname"><a href="class_texto.html#a4765daf4056dbd736344b9b18728e0a0">Texto::getTexto</a></div><div class="ttdeci">string getTexto()</div><div class="ttdoc">Retorna o texto armazenado.</div><div class="ttdef"><b>Definition</b> Texto.cpp:35</div></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#endif </span><span class="comment">// TEXTO_H_INCLUDED</span></div>
+<div class="ttc" id="aclass_texto_html"><div class="ttname"><a href="class_texto.html">Texto</a></div><div class="ttdoc">Domínio que representa e valida um texto, como uma descrição.</div><div class="ttdef"><b>Definition</b> Texto.h:26</div></div>
+<div class="ttc" id="aclass_texto_html_a4765daf4056dbd736344b9b18728e0a0"><div class="ttname"><a href="class_texto.html#a4765daf4056dbd736344b9b18728e0a0">Texto::getTexto</a></div><div class="ttdeci">std::string getTexto()</div><div class="ttdoc">Retorna o texto armazenado.</div><div class="ttdef"><b>Definition</b> Texto.cpp:35</div></div>
+<div class="ttc" id="aclass_texto_html_af13159f6a6d30c75d23aa8114e048400"><div class="ttname"><a href="class_texto.html#af13159f6a6d30c75d23aa8114e048400">Texto::setTexto</a></div><div class="ttdeci">void setTexto(std::string texto)</div><div class="ttdoc">Atribui um valor ao texto.</div><div class="ttdef"><b>Definition</b> Texto.cpp:29</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

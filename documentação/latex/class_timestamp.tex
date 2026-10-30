@@ -1,0 +1,78 @@
+\doxysection{Timestamp Class Reference}
+\hypertarget{class_timestamp}{}\label{class_timestamp}\index{Timestamp@{Timestamp}}
+
+
+Domínio que representa uma data e um horário.  
+
+
+
+
+{\ttfamily \+\#include $<$Timestamp.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_timestamp_a79eb730aed5c2ec867064877d8a85b6f}{set\+Timestamp}} (std::\+string data)
+\begin{DoxyCompactList}\small\item\em Atribui um valor ao timestamp. \end{DoxyCompactList}\item 
+std::\+string \doxymbox{\hyperlink{class_timestamp_a01b139146ed10a2e10c12eebc4cbfd15}{get\+Timestamp}} ()
+\begin{DoxyCompactList}\small\item\em Retorna o timestamp armazenado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Domínio que representa uma data e um horário. 
+
+O formato válido é DIA-\/\+MES-\/\+ANO-\/\+HORARIO, com os componentes separados por hífen.
+
+Regras do formato válido:
+
+
+\begin{DoxyEnumerate}
+\item DIA é um número de 1 a 31, com um ou dois dígitos;
+\item MES é uma sigla entre JAN, FEV, MAR, ABR, MAI, JUN, JUL, AGO, SET, OUT, NOV e DEZ (letras maiúsculas);
+\item ANO é um número de 4 dígitos, de 2000 a 2099;
+\item HORARIO está no formato HH:MM, de 00:00 a 23:59;
+\item a data deve existir no calendário, considerando o número de dias de cada mês e os anos bissextos 
+\end{DoxyEnumerate}
+
+\label{class_timestamp_doc-func-members}
+\Hypertarget{class_timestamp_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_timestamp_a01b139146ed10a2e10c12eebc4cbfd15}\index{Timestamp@{Timestamp}!getTimestamp@{getTimestamp}}
+\index{getTimestamp@{getTimestamp}!Timestamp@{Timestamp}}
+\doxysubsubsection{\texorpdfstring{getTimestamp()}{getTimestamp()}}
+{\footnotesize\ttfamily \label{class_timestamp_a01b139146ed10a2e10c12eebc4cbfd15} 
+string Timestamp::\+get\+Timestamp (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Retorna o timestamp armazenado. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_texto}{Texto} no formato DIA-\/\+MES-\/\+ANO-\/\+HORARIO. 
+\end{DoxyReturn}
+\Hypertarget{class_timestamp_a79eb730aed5c2ec867064877d8a85b6f}\index{Timestamp@{Timestamp}!setTimestamp@{setTimestamp}}
+\index{setTimestamp@{setTimestamp}!Timestamp@{Timestamp}}
+\doxysubsubsection{\texorpdfstring{setTimestamp()}{setTimestamp()}}
+{\footnotesize\ttfamily \label{class_timestamp_a79eb730aed5c2ec867064877d8a85b6f} 
+void Timestamp::\+set\+Timestamp (\begin{DoxyParamCaption}\item[{std::\+string}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Atribui um valor ao timestamp. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \doxylink{class_texto}{Texto} no formato DIA-\/\+MES-\/\+ANO-\/\+HORARIO \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+invalid\+\_\+argument} & Se o formato de {\ttfamily data} for inválido ou se a data não existir no calendário. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+dominios/\doxymbox{\hyperlink{_timestamp_8h}{Timestamp.\+h}}\item 
+dominios/Timestamp.\+cpp\end{DoxyCompactItemize}

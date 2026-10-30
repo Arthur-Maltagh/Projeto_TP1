@@ -24,5 +24,6 @@ var annotated_dup =
     [ "Teste_Senha", "class_teste___senha.html", null ],
     [ "Teste_Tamanho", "class_teste___tamanho.html", null ],
     [ "Teste_Texto", "class_teste___texto.html", null ],
-    [ "Texto", "class_texto.html", "class_texto" ]
+    [ "Texto", "class_texto.html", "class_texto" ],
+    [ "Timestamp", "class_timestamp.html", "class_timestamp" ]
 ];

@@ -3,27 +3,26 @@
 \doxymbox{\hyperlink{_e_m_a_i_l_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ }
-\DoxyCodeLine{00007\ }
-\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ EMAIL\_H\_INCLUDED}}
-\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ EMAIL\_H\_INCLUDED}}
-\DoxyCodeLine{00010\ }
-\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <string>}}
-\DoxyCodeLine{00012\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ EMAIL\_H\_INCLUDED}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ EMAIL\_H\_INCLUDED}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <string>}}
 \DoxyCodeLine{00013\ }
 \DoxyCodeLine{00033\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}}\ \{}
 \DoxyCodeLine{00034\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{string}\ email;}
-\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{bool}\ validar(\textcolor{keywordtype}{string}\ email);}
-\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ validarParteLocal(\textcolor{keywordtype}{string}\ parte\_local);}
-\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{bool}\ validarDominio(\textcolor{keywordtype}{string}\ dominio);}
+\DoxyCodeLine{00035\ \ \ \ \ std::string\ email;}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{bool}\ validar(std::string\ email);}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ validarParteLocal(std::string\ parte\_local);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{bool}\ validarDominio(std::string\ dominio);}
 \DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ TAMANHO\_MAX\_LOCAL\ =\ 64;}
 \DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ TAMANHO\_MAX\_DOMINIO\ =\ 255;}
 \DoxyCodeLine{00041\ }
 \DoxyCodeLine{00042\ \textcolor{keyword}{public}:}
 \DoxyCodeLine{00043\ }
-\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_e_m_a_i_l_a16a064552ff273fc99193c11d892c545}{setEMAIL}}(\textcolor{keywordtype}{string}\ email);}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_e_m_a_i_l_a323587bf2328834e1fce6fd657c9d8f9}{setEMAIL}}(std::string\ email);}
 \DoxyCodeLine{00055\ }
-\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{class_e_m_a_i_l_a17fa3eb30537cd660c2fcfd454363af8}{getEMAIL}}();}
+\DoxyCodeLine{00061\ \ \ \ \ std::string\ \doxymbox{\hyperlink{class_e_m_a_i_l_a17fa3eb30537cd660c2fcfd454363af8}{getEMAIL}}();}
 \DoxyCodeLine{00062\ \};}
 \DoxyCodeLine{00063\ }
 \DoxyCodeLine{00064\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ EMAIL\_H\_INCLUDED}}

@@ -10,7 +10,7 @@
 #include <string>
 
 /**
- * @brief Domínio que responsável por valdiar e armazenar nome de um usuário do sistema.
+ * @brief Domínio responsável por validar e armazenar nome de um usuário do sistema.
  * @ingroup Dominios
  *
  * Regras do formato válido:

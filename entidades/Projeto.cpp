@@ -23,7 +23,7 @@ void Projeto::setDescricao(const Texto& descricao) {
 Texto Projeto::getDescricao() const {
     return descricao;
 }
-/*
+
 void Projeto::setInicio(const Timestamp& inicio) {
     this->inicio = inicio;
 }
@@ -39,4 +39,4 @@ void Projeto::setTermino(const Timestamp& termino) {
 Timestamp Projeto::getTermino() const {
     return termino;
 }
-*/
+

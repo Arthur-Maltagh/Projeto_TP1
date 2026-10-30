@@ -112,35 +112,34 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('_e_m_a_i_l_8h_
 </div><!--header-->
 <div class="contents">
 <a href="_e_m_a_i_l_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef EMAIL_H_INCLUDED</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define EMAIL_H_INCLUDED</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef EMAIL_H_INCLUDED</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define EMAIL_H_INCLUDED</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span></div>
 <div class="foldopen" id="foldopen00033" data-start="{" data-end="};">
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_e_m_a_i_l.html">   33</a></span><span class="keyword">class </span><a class="code hl_class" href="class_e_m_a_i_l.html">EMAIL</a> {</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">string</span> email;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">bool</span> validar(<span class="keywordtype">string</span> email);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">bool</span> validarParteLocal(<span class="keywordtype">string</span> parte_local);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">bool</span> validarDominio(<span class="keywordtype">string</span> dominio);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    std::string email;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">bool</span> validar(std::string email);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">bool</span> validarParteLocal(std::string parte_local);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">bool</span> validarDominio(std::string dominio);</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> TAMANHO_MAX_LOCAL = 64;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> TAMANHO_MAX_DOMINIO = 255;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_e_m_a_i_l.html#a16a064552ff273fc99193c11d892c545">setEMAIL</a>(<span class="keywordtype">string</span> email);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_e_m_a_i_l.html#a323587bf2328834e1fce6fd657c9d8f9">setEMAIL</a>(std::string email);</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="class_e_m_a_i_l.html#a17fa3eb30537cd660c2fcfd454363af8">getEMAIL</a>();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    std::string <a class="code hl_function" href="class_e_m_a_i_l.html#a17fa3eb30537cd660c2fcfd454363af8">getEMAIL</a>();</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>};</div>
 </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#endif </span><span class="comment">// EMAIL_H_INCLUDED</span></div>
-<div class="ttc" id="aclass_e_m_a_i_l_html"><div class="ttname"><a href="class_e_m_a_i_l.html">EMAIL</a></div><div class="ttdoc">Representa um endereço de e-mail.</div><div class="ttdef"><b>Definition</b> EMAIL.h:33</div></div>
-<div class="ttc" id="aclass_e_m_a_i_l_html_a16a064552ff273fc99193c11d892c545"><div class="ttname"><a href="class_e_m_a_i_l.html#a16a064552ff273fc99193c11d892c545">EMAIL::setEMAIL</a></div><div class="ttdeci">void setEMAIL(string email)</div><div class="ttdoc">Define o endereço de e-mail armazenado.</div><div class="ttdef"><b>Definition</b> EMAIL.cpp:27</div></div>
-<div class="ttc" id="aclass_e_m_a_i_l_html_a17fa3eb30537cd660c2fcfd454363af8"><div class="ttname"><a href="class_e_m_a_i_l.html#a17fa3eb30537cd660c2fcfd454363af8">EMAIL::getEMAIL</a></div><div class="ttdeci">string getEMAIL()</div><div class="ttdoc">Consulta o endereço de e-mail armazenado.</div><div class="ttdef"><b>Definition</b> EMAIL.cpp:33</div></div>
+<div class="ttc" id="aclass_e_m_a_i_l_html"><div class="ttname"><a href="class_e_m_a_i_l.html">EMAIL</a></div><div class="ttdoc">Representa um endereço de e-mail de um usuário do sistema.</div><div class="ttdef"><b>Definition</b> EMAIL.h:33</div></div>
+<div class="ttc" id="aclass_e_m_a_i_l_html_a17fa3eb30537cd660c2fcfd454363af8"><div class="ttname"><a href="class_e_m_a_i_l.html#a17fa3eb30537cd660c2fcfd454363af8">EMAIL::getEMAIL</a></div><div class="ttdeci">std::string getEMAIL()</div><div class="ttdoc">Consulta o endereço de e-mail armazenado.</div><div class="ttdef"><b>Definition</b> EMAIL.cpp:34</div></div>
+<div class="ttc" id="aclass_e_m_a_i_l_html_a323587bf2328834e1fce6fd657c9d8f9"><div class="ttname"><a href="class_e_m_a_i_l.html#a323587bf2328834e1fce6fd657c9d8f9">EMAIL::setEMAIL</a></div><div class="ttdeci">void setEMAIL(std::string email)</div><div class="ttdoc">Define o endereço de e-mail armazenado.</div><div class="ttdef"><b>Definition</b> EMAIL.cpp:28</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

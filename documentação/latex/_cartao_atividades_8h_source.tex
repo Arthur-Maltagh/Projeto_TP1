@@ -8,22 +8,22 @@
 \DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_identificador_8h}{../dominios/Identificador.h}}"{}}}
 \DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{nome_8h}{../dominios/nome.h}}"{}}}
 \DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_texto_8h}{../dominios/Texto.h}}"{}}}
-\DoxyCodeLine{00007\ \textcolor{comment}{//\#include\ "{}../dominios/Prioridade.h"{}}}
-\DoxyCodeLine{00008\ \textcolor{comment}{//\#include\ "{}../dominios/Estado.h"{}}}
-\DoxyCodeLine{00009\ \textcolor{comment}{//\#include\ "{}../dominios/Tamanho.h"{}}}
-\DoxyCodeLine{00010\ \textcolor{comment}{//\#include\ "{}../dominios/Timestamp.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_prioridade_8h}{../dominios/Prioridade.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_estado_8h}{../dominios/Estado.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_tamanho_8h}{../dominios/Tamanho.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_timestamp_8h}{../dominios/Timestamp.h}}"{}}}
 \DoxyCodeLine{00011\ }
 \DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_cartao_de_atividade}{CartaoDeAtividade}}\ \{}
 \DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
 \DoxyCodeLine{00014\ \ \ \ \ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ identificador;}
 \DoxyCodeLine{00015\ \ \ \ \ \doxymbox{\hyperlink{class_nome}{Nome}}\ nome;}
 \DoxyCodeLine{00016\ \ \ \ \ \doxymbox{\hyperlink{class_texto}{Texto}}\ descricao;}
-\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//Prioridade\ prioridade;}}
-\DoxyCodeLine{00018\ \ \ \ \ \textcolor{comment}{//Estado\ estado;}}
-\DoxyCodeLine{00019\ \ \ \ \ \textcolor{comment}{//Tamanho\ tamanho;}}
-\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{//Timestamp\ entrada;}}
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{//Timestamp\ inicio;}}
-\DoxyCodeLine{00022\ \ \ \ \ \textcolor{comment}{//Timestamp\ termino;}}
+\DoxyCodeLine{00017\ \ \ \ \ \doxymbox{\hyperlink{class_prioridade}{Prioridade}}\ prioridade;}
+\DoxyCodeLine{00018\ \ \ \ \ \doxymbox{\hyperlink{class_estado}{Estado}}\ estado;}
+\DoxyCodeLine{00019\ \ \ \ \ \doxymbox{\hyperlink{class_tamanho}{Tamanho}}\ tamanho;}
+\DoxyCodeLine{00020\ \ \ \ \ \doxymbox{\hyperlink{class_timestamp}{Timestamp}}\ entrada;}
+\DoxyCodeLine{00021\ \ \ \ \ \doxymbox{\hyperlink{class_timestamp}{Timestamp}}\ inicio;}
+\DoxyCodeLine{00022\ \ \ \ \ \doxymbox{\hyperlink{class_timestamp}{Timestamp}}\ termino;}
 \DoxyCodeLine{00023\ }
 \DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
 \DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ setIdentificador(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\&\ identificador);}
@@ -35,24 +35,24 @@
 \DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ setDescricao(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_texto}{Texto}}\&\ descricao);}
 \DoxyCodeLine{00032\ \ \ \ \ \doxymbox{\hyperlink{class_texto}{Texto}}\ getDescricao()\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00033\ }
-\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//void\ setPrioridade(const\ Prioridade\&\ prioridade);}}
-\DoxyCodeLine{00035\ \ \ \ \ \textcolor{comment}{//Prioridade\ getPrioridade()\ const;}}
-\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{/*}}
-\DoxyCodeLine{00037\ \textcolor{comment}{\ \ \ \ void\ setEstado(const\ Estado\&\ estado);}}
-\DoxyCodeLine{00038\ \textcolor{comment}{\ \ \ \ Estado\ getEstado()\ const;}}
-\DoxyCodeLine{00039\ \textcolor{comment}{}}
-\DoxyCodeLine{00040\ \textcolor{comment}{\ \ \ \ void\ setTamanho(const\ Tamanho\&\ tamanho);}}
-\DoxyCodeLine{00041\ \textcolor{comment}{\ \ \ \ Tamanho\ getTamanho()\ const;}}
-\DoxyCodeLine{00042\ \textcolor{comment}{}}
-\DoxyCodeLine{00043\ \textcolor{comment}{\ \ \ \ void\ setEntrada(const\ Timestamp\&\ entrada);}}
-\DoxyCodeLine{00044\ \textcolor{comment}{\ \ \ \ Timestamp\ getEntrada()\ const;}}
-\DoxyCodeLine{00045\ \textcolor{comment}{}}
-\DoxyCodeLine{00046\ \textcolor{comment}{\ \ \ \ void\ setInicio(const\ Timestamp\&\ inicio);}}
-\DoxyCodeLine{00047\ \textcolor{comment}{\ \ \ \ Timestamp\ getInicio()\ const;}}
-\DoxyCodeLine{00048\ \textcolor{comment}{}}
-\DoxyCodeLine{00049\ \textcolor{comment}{\ \ \ \ void\ setTermino(const\ Timestamp\&\ termino);}}
-\DoxyCodeLine{00050\ \textcolor{comment}{\ \ \ \ Timestamp\ getTermino()\ const;}}
-\DoxyCodeLine{00051\ \textcolor{comment}{\ \ \ \ */}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ setPrioridade(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_prioridade}{Prioridade}}\&\ prioridade);}
+\DoxyCodeLine{00035\ \ \ \ \ \doxymbox{\hyperlink{class_prioridade}{Prioridade}}\ getPrioridade()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ setEstado(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_estado}{Estado}}\&\ estado);}
+\DoxyCodeLine{00038\ \ \ \ \ \doxymbox{\hyperlink{class_estado}{Estado}}\ getEstado()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ setTamanho(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_tamanho}{Tamanho}}\&\ tamanho);}
+\DoxyCodeLine{00041\ \ \ \ \ \doxymbox{\hyperlink{class_tamanho}{Tamanho}}\ getTamanho()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ setEntrada(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_timestamp}{Timestamp}}\&\ entrada);}
+\DoxyCodeLine{00044\ \ \ \ \ \doxymbox{\hyperlink{class_timestamp}{Timestamp}}\ getEntrada()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ setInicio(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_timestamp}{Timestamp}}\&\ inicio);}
+\DoxyCodeLine{00047\ \ \ \ \ \doxymbox{\hyperlink{class_timestamp}{Timestamp}}\ getInicio()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ setTermino(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_timestamp}{Timestamp}}\&\ termino);}
+\DoxyCodeLine{00050\ \ \ \ \ \doxymbox{\hyperlink{class_timestamp}{Timestamp}}\ getTermino()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00051\ }
 \DoxyCodeLine{00052\ \};}
 \DoxyCodeLine{00053\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CARTAOATIVIDADES\_H\_INCLUDED}}
 
