@@ -12,8 +12,6 @@
 #include <stdexcept>
 #include <string>
 
-using namespace std;
-
 /**
  * @class Estado
  * @brief Classe que representa o estado.
@@ -33,14 +31,14 @@ using namespace std;
 class Estado {
     private:
         // Atributo para armazenar estado.
-        string estado;
+        std::string estado;
         // Método para validar estado.
-        void validar(string);
+        void validar(std::string);
     public:
          // Método para atribuir estado.
-        void setEstado(string estado);
+        void setEstado(std::string estado);
         // Método para recuperar estado.
-        string getEstado() const;
+        std::string getEstado() const;
 };
 
 

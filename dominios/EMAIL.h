@@ -9,7 +9,6 @@
 #define EMAIL_H_INCLUDED
 
 #include <string>
-using namespace std;
 
 /**
  * @brief Representa um endereço de e-mail.
@@ -32,10 +31,10 @@ using namespace std;
  */
 class EMAIL {
 private:
-    string email;
-    bool validar(string email);
-    bool validarParteLocal(string parte_local);
-    bool validarDominio(string dominio);
+    std::string email;
+    bool validar(std::string email);
+    bool validarParteLocal(std::string parte_local);
+    bool validarDominio(std::string dominio);
     static const int TAMANHO_MAX_LOCAL = 64;
     static const int TAMANHO_MAX_DOMINIO = 255;
 
@@ -51,14 +50,14 @@ public:
      * @throws std::invalid_argument Se o endereço apresentar formato
      * inválido.
      */
-    void setEMAIL(string email);
+    void setEMAIL(std::string email);
 
     /**
      * @brief Consulta o endereço de e-mail armazenado.
      *
      * @return O endereço de e-mail atualmente armazenado.
      */
-    string getEMAIL();
+    std::string getEMAIL();
 };
 
 #endif // EMAIL_H_INCLUDED

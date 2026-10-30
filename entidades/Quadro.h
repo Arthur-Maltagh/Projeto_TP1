@@ -5,6 +5,7 @@
 #include "../dominios/nome.h"
 #include "../dominios/Limite.h"
 
+
 class Quadro {
 private:
     Identificador identificador;

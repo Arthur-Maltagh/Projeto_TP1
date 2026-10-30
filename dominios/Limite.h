@@ -8,7 +8,6 @@
 #ifndef LIMITE_H_INCLUDED
 #define LIMITE_H_INCLUDED
 #include <stdexcept>
-using namespace std;
 
 /**
  * @brief Domínio que representa o limite de WIP de um quadro

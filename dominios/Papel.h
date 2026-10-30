@@ -11,7 +11,6 @@
 #include <stdexcept>
 #include <string>
 
-using namespace std;
 
 /**
  * @class Papel
@@ -32,14 +31,14 @@ using namespace std;
 class Papel {
     private:
         // Atributo para armazenar papel.
-        string papel;
+        std::string papel;
         // Método para validar papel.
-        void validar(string);
+        void validar(std::string);
     public:
          // Método para atribuir papel.
-        void setPapel(string papel);
+        void setPapel(std::string papel);
         // Método para recuperar papel.
-        string getPapel() const;
+        std::string getPapel() const;
 };
 
 #endif // PAPEL_H_INCLUDED

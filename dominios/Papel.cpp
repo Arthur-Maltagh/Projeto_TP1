@@ -1,4 +1,6 @@
 #include "Papel.h"
+using namespace std;
+
 
 void Papel::setPapel(string papel){
     validar(papel);

@@ -162,12 +162,3 @@ bool Timestamp::validar_dia_mes_bissexto(string dia_txt, string mes,string ano_t
 
     return true;
 }
-/*DIA-MÊS-ANO-HORÁRIO
-DIA é número 1 a 31.
-MÊS é sigla JAN, FEV, MAR, ABR, MAI, JUN, JUL, AGO, SET, OUT, NOV, DEZ
-ANO é número de 2000 a 2099.
-HORÁRIO é valor de 00:00 a 23:59
-A data deve ser válida considerando anos bissextos.
-*/
-
-//12-JAN-2017-20:21

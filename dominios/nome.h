@@ -8,7 +8,6 @@
 #ifndef NOME_H_INCLUDED
 #define NOME_H_INCLUDED
 #include <string>
-using namespace std;
 
 /**
  * @brief Domínio que responsável por valdiar e armazenar nome de um usuário do sistema.
@@ -25,8 +24,8 @@ using namespace std;
  */
 class Nome{
 private:
-    string nome;
-    bool validar(string nome);
+    std::string nome;
+    bool validar(std::string nome);
 public:
     /**
      * @brief Atribui um valor ao nome.
@@ -34,14 +33,14 @@ public:
      * @param string será validada pelas condições de formato válido
      * @throw invalid_argument Se o formato de @p nome for inválido.
      */
-    void setNome(string nome);
+    void setNome(std::string nome);
 
     /**
      * @brief Retorna o nome armazenado.
      *
      * @return Texto com o nome, de até 15 caracteres.
      */
-    string getNome();
+    std::string getNome();
 };
 
 #endif // NOME_H_INCLUDED

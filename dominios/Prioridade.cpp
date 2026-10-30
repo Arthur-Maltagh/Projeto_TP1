@@ -1,4 +1,6 @@
 #include "Prioridade.h" //Importa header file
+using namespace std;
+
 
 void Prioridade::setPrioridade(string prioridade){
     validar(prioridade);

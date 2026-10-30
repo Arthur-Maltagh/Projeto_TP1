@@ -1,6 +1,7 @@
 #include "EMAIL.h"
 #include <cctype>
 #include <stdexcept>
+using namespace std;
 
 bool EMAIL::validar(string email){
 
@@ -49,7 +50,7 @@ bool EMAIL::validarParteLocal(string parte_local) {
 
 
     //analisando cada posicao para verificar se segue as condicoes propostas
-    for(int i = 0;i < parte_local.length();i++){
+    for(size_t i = 0;i < parte_local.length();i++){
         if(!isalnum(parte_local[i]) && parte_local[i] != '-' && parte_local[i] != '.')
             return false;
 
@@ -79,7 +80,7 @@ bool EMAIL::validarDominio(string dominio) {
 
 
     //analisando os caracteres de dominio
-    for(int i = 0;i < dominio.length();i++){
+    for(size_t i = 0;i < dominio.length();i++){
 
         if(!isalnum(dominio[i]) && dominio[i] != '-' && dominio[i] != '.')
             return false;

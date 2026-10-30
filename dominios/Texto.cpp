@@ -13,7 +13,7 @@ bool Texto::validar(string texto){
     if(!isupper(texto[0]) || texto[texto.length() - 1] != '.')
         return false;
 
-    for(int i = 0;i < texto.length() - 1;i++){
+    for(size_t i = 0;i < texto.length() - 1;i++){
         if(!isalnum(texto[i])){
             if(texto[i] != ',' && texto[i] != ';' && texto[i] != '.' && texto[i] != ':' && texto[i] != '?' && texto[i] != '!' &&  texto[i] != ' '){
                 return false;

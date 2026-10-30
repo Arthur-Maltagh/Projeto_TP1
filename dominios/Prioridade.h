@@ -11,7 +11,6 @@
 #include <stdexcept>
 #include <string>
 
-using namespace std;
 /**
  * @class Prioridade
  * @brief Classe que representa a prioridade.
@@ -30,14 +29,14 @@ using namespace std;
 class Prioridade {
     private:
         // Atributo para armazenar prioridade.
-        string prioridade;
+        std::string prioridade;
         // Método para validar prioridade.
-        void validar(string);
+        void validar(std::string);
     public:
          // Método para atribuir prioridade.
-        void setPrioridade(string prioridade);
+        void setPrioridade(std::string prioridade);
         // Método para recuperar prioridade.
-        string getPrioridade() const;
+        std::string getPrioridade() const;
 };
 
 #endif // PRIORIDADE_H_INCLUDED

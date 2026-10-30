@@ -11,7 +11,6 @@
 #include <stdexcept>
 #include <string>
 
-using namespace std;
 
 /**
  * @class Tamanho
@@ -32,14 +31,14 @@ using namespace std;
 class Tamanho {
     private:
         // Atributo para armazenar tamanho.
-        string tamanho;
+        std::string tamanho;
         // Método para validar tamanho.
-        void validar(string);
+        void validar(std::string);
     public:
          // Método para atribuir tamanho.
-        void setTamanho(string tamanho);
+        void setTamanho(std::string tamanho);
         // Método para recuperar tamanho.
-        string getTamanho() const;
+        std::string getTamanho() const;
 };
 
 

@@ -4,15 +4,15 @@
 #include "../dominios/Identificador.h"
 #include "../dominios/nome.h"
 #include "../dominios/Texto.h"
-//#include "../dominios/Timestamp.h"
+#include "../dominios/Timestamp.h"
 
 class Projeto {
 private:
     Identificador identificador;
     Nome nome;
     Texto descricao;
-    //Timestamp inicio;
-    //Timestamp termino;
+    Timestamp inicio;
+    Timestamp termino;
 
 public:
     void setIdentificador(const Identificador& identificador);
@@ -24,11 +24,11 @@ public:
     void setDescricao(const Texto& descricao);
     Texto getDescricao() const;
 
-    //void setInicio(const Timestamp& inicio);
-    //Timestamp getInicio() const;
+    void setInicio(const Timestamp& inicio);
+    Timestamp getInicio() const;
 
-    //void setTermino(const Timestamp& termino);
-    //Timestamp getTermino() const;
+    void setTermino(const Timestamp& termino);
+    Timestamp getTermino() const;
 };
 
 #endif // PROJETO_H_INCLUDED

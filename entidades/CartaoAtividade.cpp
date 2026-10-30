@@ -23,7 +23,7 @@ void CartaoDeAtividade::setDescricao(const Texto& descricao) {
 Texto CartaoDeAtividade::getDescricao() const {
     return descricao;
 }
-/*
+
 void CartaoDeAtividade::setPrioridade(const Prioridade& prioridade) {
     this->prioridade = prioridade;
 }
@@ -71,4 +71,4 @@ void CartaoDeAtividade::setTermino(const Timestamp& termino) {
 Timestamp CartaoDeAtividade::getTermino() const {
     return termino;
 }
-*/
+

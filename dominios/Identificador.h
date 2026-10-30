@@ -8,7 +8,6 @@
 #ifndef IDENTIFICADOR_H_INCLUDED
 #define IDENTIFICADOR_H_INCLUDED
 #include <string>
-using namespace std;
 
 /**
  * @brief Domínio que representa um identificador de entidade.
@@ -22,8 +21,8 @@ using namespace std;
  */
 class Identificador{
 private:
-    string id;
-    bool validar(string id);
+    std::string id;
+    bool validar(std::string id);
     static const int TAMANHO_ID = 6;
 public:
     /**
@@ -32,14 +31,14 @@ public:
      * @param recebe uma string candidata a ser um id, caso seja válida.
      * @throw invalid_argument Se o formato de @p id for inválido.
      */
-    void setIdentificador(string id);
+    void setIdentificador(std::string id);
 
     /**
      * @brief Retorna o identificador armazenado.
      *
      * @return string texto com formato válido.
      */
-    string getIdentificador();
+    std::string getIdentificador();
 };
 
 #endif // IDENTIFICADOR_H_INCLUDED

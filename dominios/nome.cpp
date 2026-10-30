@@ -21,7 +21,7 @@ bool Nome::validar(string nome){
     if(nome[0] == ' ' || nome[nome.length() - 1] == ' ' || nome.length() > 15)
         return false;
 
-    for(int i = 0;i < nome.length();i++){
+    for(size_t i = 0;i < nome.length();i++){
         bool espaco = nome[i] == ' ';
         if(!isalpha(nome[i]) && !espaco)
             return false;

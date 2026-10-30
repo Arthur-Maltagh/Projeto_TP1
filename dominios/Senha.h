@@ -8,7 +8,6 @@
 #ifndef SENHA_H_INCLUDED
 #define SENHA_H_INCLUDED
 #include <string>
-using namespace std;
 
 /**
  * @brief Domínio que armazena e valida a senha de um usuário.
@@ -22,8 +21,8 @@ using namespace std;
  */
 class Senha{
 private:
-    string senha;
-    bool validar(string senha);
+    std::string senha;
+    bool validar(std::string senha);
     static const int TAMANHO_SENHA = 5;
 public:
     /**
@@ -32,13 +31,13 @@ public:
      * @param string que passará pela validação
      * @throw invalid_argument Se o formato de @p senha for inválido.
      */
-    void setSenha(string senha);
+    void setSenha(std::string senha);
 
     /**
      * @brief Retorna a senha armazenada.
      * @return string senha validada.
      */
-    string getSenha();
+    std::string getSenha();
 };
 
 #endif // SENHA_H_INCLUDED

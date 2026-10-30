@@ -1,4 +1,5 @@
 #include "Estado.h"
+using namespace std;
 
 void Estado::setEstado(string estado){
     validar(estado);

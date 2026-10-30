@@ -8,7 +8,6 @@
 #ifndef TEXTO_H_INCLUDED
 #define TEXTO_H_INCLUDED
 #include <string>
-using namespace std;
 
 /**
  * @brief Domínio que representa e valida um texto, como uma descrição.
@@ -26,8 +25,8 @@ using namespace std;
  */
 class Texto{
 private:
-    string texto;
-    bool validar(string texto);
+    std::string texto;
+    bool validar(std::string texto);
     static const int TAMANHO_MAX = 30;
 public:
     /**
@@ -36,14 +35,14 @@ public:
      * @param string que será um texto que será submetido a validação
      * @throw invalid_argument Se o formato de @p texto for inválido.
      */
-    void setTexto(string texto);
+    void setTexto(std::string texto);
 
     /**
      * @brief Retorna o texto armazenado.
      *
      * @return string validada.
      */
-    string getTexto();
+    std::string getTexto();
 };
 
 #endif // TEXTO_H_INCLUDED

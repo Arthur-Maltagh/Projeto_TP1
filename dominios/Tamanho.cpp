@@ -1,4 +1,5 @@
 #include "Tamanho.h" //Importa header file
+using namespace std;
 
 void Tamanho::setTamanho(string tamanho){
     validar(tamanho);
