@@ -42,14 +42,7 @@ class Tamanho {
         string getTamanho() const;
 };
 
-inline void Tamanho::setTamanho(string tamanho){
-    validar(tamanho);
-    this->tamanho = tamanho;
-}
 
-inline string Tamanho::getTamanho() const{
-    return tamanho;
-}
 
 
 

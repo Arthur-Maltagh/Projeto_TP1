@@ -40,13 +40,4 @@ class Prioridade {
         string getPrioridade() const;
 };
 
-inline void Prioridade::setPrioridade(string prioridade){
-    validar(prioridade);
-    this->prioridade = prioridade;
-}
-
-inline string Prioridade::getPrioridade() const{
-    return prioridade;
-}
-
 #endif // PRIORIDADE_H_INCLUDED

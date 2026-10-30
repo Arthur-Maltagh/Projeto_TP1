@@ -43,14 +43,7 @@ class Estado {
         string getEstado() const;
 };
 
-inline void Estado::setEstado(string estado){
-    validar(estado);
-    this->estado = estado;
-}
 
-inline string Estado::getEstado() const{
-    return estado;
-}
 
 
 #endif // ESTADO_H_INCLUDED

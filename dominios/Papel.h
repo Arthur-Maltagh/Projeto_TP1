@@ -42,13 +42,4 @@ class Papel {
         string getPapel() const;
 };
 
-inline void Papel::setPapel(string papel){
-    validar(papel);
-    this->papel = papel;
-}
-
-inline string Papel::getPapel() const{
-    return papel;
-}
-
 #endif // PAPEL_H_INCLUDED
