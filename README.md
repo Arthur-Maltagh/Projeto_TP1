@@ -6,11 +6,12 @@
 - Classe domínio Identificador
 - Classe domínio Senha
 - Classe domínio EMAIL
+- Classe domínio Timestamp
 - Testes unitários dos domínios acima
+- Documentação das classes acima
 
 ## João Victor
-- Classe domínio Timestamp
-
+-
 
 ## Maria Eduarda
 - Classe domínio Papel
@@ -25,3 +26,5 @@
 - Classe entidade CartaoAtividade
 - Classe entidade Projeto
 - Classe entidade Quadro
+- Documentação das classes acima
+- Testes unitários das classes acima
