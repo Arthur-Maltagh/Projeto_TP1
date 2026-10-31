@@ -3,7 +3,7 @@
 
 #include <stdexcept>
 #include <string>
-#include "../../dominios/Nome.h"
+#include "Nome.h"
 
 using namespace std;
 

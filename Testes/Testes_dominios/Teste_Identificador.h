@@ -3,7 +3,7 @@
 
 #include <stdexcept>
 #include <string>
-#include "../../dominios/Identificador.h"
+#include "Identificador.h"
 
 using namespace std;
 

@@ -1,7 +1,7 @@
 #ifndef TESTE_ESTADO_H_INCLUDED
 #define TESTE_ESTADO_H_INCLUDED
 
-#include "../../dominios/Estado.h"
+#include "Estado.h"
 
 using namespace std;
 

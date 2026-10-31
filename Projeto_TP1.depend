@@ -1,0 +1,388 @@
+# depslib dependency file v1.0
+1793124277 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\main.cpp
+
+1793384375 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\dominios\nome.cpp
+	"nome.h"
+	<stdexcept>
+	<cctype>
+
+1793392997 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\dominios\nome.h
+	<string>
+
+1790721261 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\testes_dominios\teste_nome.cpp
+	<iostream>
+	<stdexcept>
+	"../../dominios/Nome.h"
+	"Teste_Nome.h"
+
+1789944359 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\dominios\limite.cpp
+	"Limite.h"
+	<stdexcept>
+
+1793384306 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\dominios\limite.h
+	<stdexcept>
+
+1790720183 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\testes_dominios\teste_limite.cpp
+	<iostream>
+	<stdexcept>
+	"../../dominios/Limite.h"
+	"Teste_limite.h"
+
+1790026481 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\dominios\identificador.cpp
+	<string>
+	"Identificador.h"
+	<stdexcept>
+	<cctype>
+
+1793384291 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\dominios\identificador.h
+	<string>
+
+1790722296 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\testes_dominios\teste_identificador.cpp
+	<iostream>
+	<stdexcept>
+	"../../dominios/Identificador.h"
+	"Teste_Identificador.h"
+
+1790026481 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\dominios\senha.cpp
+	"Senha.h"
+	<stdexcept>
+	<cctype>
+
+1793384503 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\dominios\senha.h
+	<string>
+
+1790720911 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\testes_dominios\teste_senha.cpp
+	<iostream>
+	<stdexcept>
+	"../../dominios/Senha.h"
+	"teste_Senha.h"
+
+1790721911 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\testes_dominios\teste_texto.cpp
+	<iostream>
+	<stdexcept>
+	"../../dominios/Texto.h"
+	"Teste_Texto.h"
+
+1793384588 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\dominios\texto.h
+	<string>
+
+1793384612 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\dominios\texto.cpp
+	"Texto.h"
+	<stdexcept>
+	<cctype>
+
+1793384183 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\dominios\email.cpp
+	"EMAIL.h"
+	<cctype>
+	<stdexcept>
+
+1793393179 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\dominios\email.h
+	<string>
+
+1790722738 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\testes_dominios\teste_email.cpp
+	<iostream>
+	<stdexcept>
+	"../../dominios/EMAIL.h"
+	"Teste_EMAIL.h"
+
+1793131328 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\teste_entidades\teste_pessoa.cpp
+	<iostream>
+	<stdexcept>
+	"../../entidades/pessoa.h"
+	"teste_pessoa.h"
+
+1793131823 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\entidades\pessoa.cpp
+	"pessoa.h"
+
+1793131747 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\entidades\pessoa.h
+	"../dominios/EMAIL.h"
+	"../dominios/nome.h"
+	"../dominios/Senha.h"
+	"../dominios/Identificador.h"
+	"../dominios/Papel.h"
+
+1793486345 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\main.cpp
+	<iostream>
+	<string>
+	"Teste_limite.h"
+	"teste_Senha.h"
+	"Teste_Nome.h"
+	"Teste_Texto.h"
+	"Teste_Identificador.h"
+	"Teste_EMAIL.h"
+	"Teste_Estado.h"
+	"Teste_Papel.h"
+	"Teste_Prioridade.h"
+	"Teste_Tamanho.h"
+	"Teste_Timestamp.h"
+	"Teste_entidades/Teste_Pessoa.h"
+	"Teste_Projeto.h"
+	"Teste_Quadro.h"
+	"Teste_Cartaoatividade.h"
+	"DriverCntrIAprPessoa.h"
+
+1790042403 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\entidades\quadro.cpp
+	"quadro.h"
+
+1793383857 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\entidades\quadro.h
+	"../dominios/Identificador.h"
+	"../dominios/nome.h"
+	"../dominios/Limite.h"
+
+1793383868 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\entidades\cartaoatividade.cpp
+	"CartaoAtividades.h"
+
+1793485101 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\entidades\cartaoatividades.h
+	"Identificador.h"
+	"nome.h"
+	"Texto.h"
+	"Prioridade.h"
+	"Estado.h"
+	"Tamanho.h"
+	"Timestamp.h"
+
+1793385106 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\entidades\projeto.cpp
+	"projeto.h"
+
+1793382397 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\entidades\projeto.h
+	"../dominios/Identificador.h"
+	"../dominios/nome.h"
+	"../dominios/Texto.h"
+	"../dominios/Timestamp.h"
+
+1793470809 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\testes_dominios\teste_limite.h
+	<stdexcept>
+	"Limite.h"
+
+1793470835 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\testes_dominios\teste_senha.h
+	<stdexcept>
+	<string>
+	"Senha.h"
+
+1793470816 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\testes_dominios\teste_nome.h
+	<stdexcept>
+	<string>
+	"Nome.h"
+
+1793470850 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\testes_dominios\teste_texto.h
+	<stdexcept>
+	<string>
+	"Texto.h"
+
+1793470803 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\testes_dominios\teste_identificador.h
+	<stdexcept>
+	<string>
+	"Identificador.h"
+
+1793469760 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\testes_dominios\teste_email.h
+	<stdexcept>
+	<string>
+	"EMAIL.h"
+
+1793131226 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\teste_entidades\teste_pessoa.h
+	<stdexcept>
+	<string>
+	"../../entidades/pessoa.h"
+
+1793384238 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\dominios\estado.cpp
+	"Estado.h"
+
+1793384230 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\dominios\estado.h
+	<stdexcept>
+	<string>
+
+1793384469 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\dominios\prioridade.cpp
+	"Prioridade.h"
+
+1793384463 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\dominios\prioridade.h
+	<stdexcept>
+	<string>
+
+1793384551 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\dominios\tamanho.cpp
+	"Tamanho.h"
+
+1793384540 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\dominios\tamanho.h
+	<stdexcept>
+	<string>
+
+1793384416 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\dominios\papel.cpp
+	"Papel.h"
+
+1793384408 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\dominios\papel.h
+	<stdexcept>
+	<string>
+
+1793129317 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\testes_dominios\teste_estado.cpp
+	"Teste_Estado.h"
+
+1793470794 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\testes_dominios\teste_estado.h
+	"Estado.h"
+
+1793129952 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\testes_dominios\teste_papel.cpp
+	"Teste_Papel.h"
+
+1793470822 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\testes_dominios\teste_papel.h
+	<string>
+	"Papel.h"
+
+1793130227 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\testes_dominios\teste_prioridade.cpp
+	"Teste_Prioridade.h"
+
+1793470828 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\testes_dominios\teste_prioridade.h
+	<string>
+	"Prioridade.h"
+
+1793470841 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\testes_dominios\teste_tamanho.h
+	<string>
+	"Tamanho.h"
+
+1793130730 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\testes_dominios\teste_tamanho.cpp
+	"Teste_Tamanho.h"
+
+1793383953 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\dominios\timestamp.cpp
+	"Timestamp.h"
+	<cctype>
+	<stdexcept>
+
+1793393287 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\dominios\timestamp.h
+	<string>
+
+1793394820 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\testes_dominios\teste_timestamp.cpp
+	<iostream>
+	<stdexcept>
+	"../../dominios/Timestamp.h"
+	"Teste_Timestamp.h"
+
+1793473434 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\testes_dominios\teste_timestamp.h
+	<stdexcept>
+	<string>
+	"Timestamp.h"
+
+1793470651 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\teste_entidades\teste_projeto.h
+	<stdexcept>
+	<string>
+	"projeto.h"
+	"Identificador.h"
+	"nome.h"
+	"Texto.h"
+	"Timestamp.h"
+
+1793470736 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\teste_entidades\teste_quadro.h
+	<stdexcept>
+	<string>
+	"quadro.h"
+	"Identificador.h"
+	"nome.h"
+	"Limite.h"
+
+1793402723 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\teste_entidades\teste_cartaoatividade.h
+	<stdexcept>
+	<string>
+	"../../entidades/CartaoAtividades.h"
+	"../../dominios/Identificador.h"
+	"../../dominios/nome.h"
+	"../../dominios/Texto.h"
+	"../../dominios/Prioridade.h"
+	"../../dominios/Estado.h"
+	"../../dominios/Tamanho.h"
+	"../../dominios/Timestamp.h"
+
+1793402327 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\teste_entidades\teste_cartaoatividade.cpp
+	<iostream>
+	<stdexcept>
+	"Teste_Cartaoatividade.h"
+
+1793393671 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\teste_entidades\teste_projeto.cpp
+	<iostream>
+	<stdexcept>
+	"teste_projeto.h"
+
+1793394083 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\teste_entidades\teste_quadro.cpp
+	<iostream>
+	<stdexcept>
+	"teste_quadro.h"
+
+1793484033 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\serviços\mspe\containerpessoa.cpp
+	"ContainerPessoa.h"
+
+1793483973 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\serviços\mspe\containerpessoa.h
+	<list>
+	<map>
+	<string>
+	"EMAIL.h"
+	"Pessoa.h"
+
+1793481666 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\stubs\stubiserpessoa.cpp
+	"StubISerPessoa.h"
+
+1793481572 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\stubs\stubiserpessoa.h
+	<list>
+	"EMAIL.h"
+	"ISerPessoa.h"
+	"Pessoa.h"
+
+1793479267 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\interfaces\iserpessoa.h
+	<list>
+	"EMAIL.h"
+	"Pessoa.h"
+
+1793484352 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\apresentação\mape\controladoraiaprpessoa.cpp
+	"ControladoraIAprPessoa.h"
+	<iostream>
+	<list>
+	<stdexcept>
+	<string>
+	"Nome.h"
+	"Papel.h"
+	"Senha.h"
+
+1793483538 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\apresentação\mape\controladoraiaprpessoa.h
+	"EMAIL.h"
+	"IAprPessoa.h"
+	"ISerPessoa.h"
+	"Pessoa.h"
+
+1793478995 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\interfaces\iaprpessoa.h
+	"EMAIL.h"
+	"ISerPessoa.h"
+
+1793486349 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\drivers\drivercntriaprpessoa.cpp
+	<iostream>
+	<stdexcept>
+	<string>
+	"ControladoraIAprPessoa.h"
+	"DriverCntrIAprPessoa.h"
+	"EMAIL.h"
+	"Nome.h"
+	"Papel.h"
+	"Pessoa.h"
+	"Senha.h"
+	"StubISerPessoa.h"
+
+1793484389 source:c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\serviços\mspe\controladoraiserpessoa.cpp
+	"ControladoraISerPessoa.h"
+	"ISerCartao.h"
+	"ISerProjeto.h"
+
+1793483763 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\serviços\mspe\controladoraiserpessoa.h
+	<list>
+	"ContainerPessoa.h"
+	"EMAIL.h"
+	"ISerPessoa.h"
+	"Pessoa.h"
+
+1793485280 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\interfaces\isercartao.h
+	<list>
+	"CartaoAtividades.h"
+	"EMAIL.h"
+	"Estado.h"
+	"Identificador.h"
+
+1793479628 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\interfaces\iserprojeto.h
+	<list>
+	"EMAIL.h"
+	"Identificador.h"
+	"Projeto.h"
+
+1793486276 c:\users\pichau\onedrive\desktop\engenharia_da_computacao\projeto_tp1\testes\drivers\drivercntriaprpessoa.h
+

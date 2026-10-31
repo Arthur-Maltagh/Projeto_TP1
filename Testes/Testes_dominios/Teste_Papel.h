@@ -2,7 +2,7 @@
 #define TESTE_PAPEL_H_INCLUDED
 
 #include <string>
-#include "../../dominios/Papel.h" //Importa header file
+#include "Papel.h" //Importa header file
 
 using namespace std;
 

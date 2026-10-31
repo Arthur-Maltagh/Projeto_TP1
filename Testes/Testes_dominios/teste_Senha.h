@@ -3,7 +3,7 @@
 
 #include <stdexcept>
 #include <string>
-#include "../../dominios/Senha.h"
+#include "Senha.h"
 
 using namespace std;
 

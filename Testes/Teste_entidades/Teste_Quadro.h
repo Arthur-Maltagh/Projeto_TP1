@@ -3,11 +3,12 @@
 
 #include <stdexcept>
 #include <string>
-#include "../../entidades/quadro.h"
 
-#include "../../dominios/Identificador.h"
-#include "../../dominios/nome.h"
-#include "../../dominios/Limite.h"
+#include "quadro.h"
+
+#include "Identificador.h"
+#include "nome.h"
+#include "Limite.h"
 
 using namespace std;
 

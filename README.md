@@ -9,6 +9,12 @@
 - Classe domínio Timestamp
 - Testes unitários dos domínios acima
 - Documentação das classes acima
+- Interfaces
+- Documentação das interfaces
+- Diagrama UML
+- Módulo de apresentação da entidade Pessoa
+- Módulo de apresentação da entidade Pessoa
+- Stub e Driver de Pessoa
 
 ## João Victor
 -

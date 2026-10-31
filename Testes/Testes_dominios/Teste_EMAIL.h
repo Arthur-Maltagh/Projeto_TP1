@@ -3,7 +3,7 @@
 
 #include <stdexcept>
 #include <string>
-#include "../../dominios/EMAIL.h"
+#include "EMAIL.h"
 
 using namespace std;
 

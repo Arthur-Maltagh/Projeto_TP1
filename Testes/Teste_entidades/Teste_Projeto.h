@@ -3,12 +3,12 @@
 
 #include <stdexcept>
 #include <string>
-#include "../../entidades/projeto.h"
 
-#include "../../dominios/Identificador.h"
-#include "../../dominios/nome.h"
-#include "../../dominios/Texto.h"
-#include "../../dominios/Timestamp.h"
+#include "projeto.h"
+#include "Identificador.h"
+#include "nome.h"
+#include "Texto.h"
+#include "Timestamp.h"
 
 using namespace std;
 

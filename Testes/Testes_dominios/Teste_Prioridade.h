@@ -3,7 +3,7 @@
 
 // Incluir cabeçalhos.
 #include <string>
-#include "../../dominios/Prioridade.h" //Importa header file
+#include "Prioridade.h" //Importa header file
 
 using namespace std;
 

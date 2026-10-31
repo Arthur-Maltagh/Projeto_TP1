@@ -1,0 +1,89 @@
+@startuml arquitetura
+title TP1 Kanban - Modelo de arquitetura (camadas x módulos)
+skinparam componentStyle uml2
+skinparam shadowing false
+skinparam packageStyle rectangle
+
+package "Camada de Apresentação" as APR {
+  component MAIC
+  component MAAU
+  component MAPE
+  component MAPR
+  component MAQU
+}
+
+package "Camada de Serviço" as SER {
+  component MSAU
+  component MSPE
+  component MSPR
+  component MSQU
+}
+
+package "Domínios e Entidades (compartilhado)" as DE {
+  component "Domínios" as DOM
+  component "Entidades" as ENT
+}
+
+' ---------- Interfaces de apresentação ----------
+interface "IAprAutenticacao" as IAAU
+interface "IAprPessoa" as IAPE
+interface "IAprProjeto" as IAPR
+interface "IAprQuadro" as IAQU
+
+' ---------- Interfaces de serviço ----------
+interface "ISerAutenticacao" as ISAU
+interface "ISerPessoa" as ISPE
+interface "ISerProjeto" as ISPR
+interface "ISerQuadro" as ISQU
+interface "ISerCartao" as ISCA
+
+' ---------- Módulos de apresentação provêm IApr* ----------
+IAAU -- MAAU
+IAPE -- MAPE
+IAPR -- MAPR
+IAQU -- MAQU
+
+' ---------- MAIC usa as interfaces de apresentação ----------
+MAIC ..> IAAU
+MAIC ..> IAPE
+MAIC ..> IAPR
+
+' ---------- Navegação hierárquica (opção A): Projeto -> Quadro ----------
+MAPR ..> IAQU
+
+' ---------- Apresentação usa interfaces de serviço ----------
+MAAU ..> ISAU
+MAPE ..> ISPE
+MAPR ..> ISPR
+MAPR ..> ISPE : papel
+MAQU ..> ISQU
+MAQU ..> ISCA
+MAQU ..> ISPE : papel e\ndesenvolvedor
+
+' ---------- Módulos de serviço provêm ISer* ----------
+ISAU -- MSAU
+ISPE -- MSPE
+ISPR -- MSPR
+ISQU -- MSQU
+ISCA -- MSQU
+
+' ---------- Dependências entre módulos de serviço (sem ciclos) ----------
+MSPE ..> ISPR : exclusão de pessoa
+MSPE ..> ISCA : exclusão de pessoa
+MSPR ..> ISQU : exclusão em cascata
+
+' ---------- Tipos compartilhados ----------
+APR ..> DE : usa tipos
+SER ..> DE : usa tipos
+
+legend right
+  **Apresentação**
+  MAIC: módulo principal (menu e navegação)
+  MAAU: autenticação | MAPE: pessoas
+  MAPR: projetos | MAQU: quadros e cartões
+  **Serviço**
+  MSAU: autenticação | MSPE: pessoas
+  MSPR: projetos | MSQU: quadros e cartões
+  Linha tracejada = dependência (interface requerida)
+endlegend
+@enduml

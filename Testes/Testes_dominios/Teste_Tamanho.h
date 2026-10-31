@@ -3,7 +3,7 @@
 
 // Incluir cabeçalhos.
 #include <string>
-#include "../../dominios/Tamanho.h" //Importa header file
+#include "Tamanho.h" //Importa header file
 
 using namespace std;
 

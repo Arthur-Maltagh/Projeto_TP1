@@ -1,130 +1,106 @@
 #include <iostream>
 #include <string>
-#include "Testes_dominios/Teste_limite.h"
-#include "Testes_dominios/teste_Senha.h"
-#include "Testes_dominios/Teste_Nome.h"
-#include "Testes_dominios/Teste_Texto.h"
-#include "Testes_dominios/Teste_Identificador.h"
-#include "Testes_dominios/Teste_EMAIL.h"
-#include "Testes_dominios/Teste_Estado.h"
-#include "Testes_dominios/Teste_Papel.h"
-#include "Testes_dominios/Teste_Prioridade.h"
-#include "Testes_dominios/Teste_Tamanho.h"
-#include "Testes_dominios/Teste_Timestamp.h"
+#include "Teste_limite.h"
+#include "teste_Senha.h"
+#include "Teste_Nome.h"
+#include "Teste_Texto.h"
+#include "Teste_Identificador.h"
+#include "Teste_EMAIL.h"
+#include "Teste_Estado.h"
+#include "Teste_Papel.h"
+#include "Teste_Prioridade.h"
+#include "Teste_Tamanho.h"
+#include "Teste_Timestamp.h"
 
 #include "Teste_entidades/Teste_Pessoa.h"
-#include "Teste_entidades/Teste_Projeto.h"
-#include "Teste_entidades/Teste_Quadro.h"
-#include "Teste_entidades/Teste_Cartaoatividade.h"
+#include "Teste_Projeto.h"
+#include "Teste_Quadro.h"
+#include "Teste_Cartaoatividade.h"
 
+#include "DriverCntrIAprPessoa.h"
 
 using namespace std;
 
-Teste_Limite limite;
-Teste_Senha senha;
-Teste_Nome nome;
-Teste_Texto texto;
-Teste_Identificador identificador;
-Teste_EMAIL Email;
-Teste_Estado estado;
-Teste_Prioridade prioridade;
-Teste_Papel papel;
-Teste_Tamanho tamanho;
-Teste_Timestamp timestamp;
+// Mostra o resultado de um teste. Cada run() devolve 0 quando aprovado.
+static void mostrarResultado(const string &descricao, int resultado) {
+    cout << "Teste " << descricao << ": "
+         << (resultado == 0 ? "Aprovado!" : "Falhou!") << endl;
+}
 
-Teste_Pessoa pessoa;
-Teste_Projeto projeto;
-Teste_Quadro quadro;
-Teste_CartaoDeAtividade cartaodeatividade;
+static void executarTestesDominios() {
+    Teste_Limite limite;
+    Teste_Senha senha;
+    Teste_Nome nome;
+    Teste_Texto texto;
+    Teste_Identificador identificador;
+    Teste_EMAIL email;
+    Teste_Estado estado;
+    Teste_Prioridade prioridade;
+    Teste_Papel papel;
+    Teste_Tamanho tamanho;
+    Teste_Timestamp timestamp;
+
+    cout << "\n--- Testes dos dominios ---\n";
+    mostrarResultado("do Dominio Limite", limite.run());
+    mostrarResultado("do Dominio Nome", nome.run());
+    mostrarResultado("do Dominio Senha", senha.run());
+    mostrarResultado("do Dominio Texto", texto.run());
+    mostrarResultado("do Dominio Identificador", identificador.run());
+    mostrarResultado("do Dominio EMAIL", email.run());
+    mostrarResultado("do Dominio Estado", estado.run());
+    mostrarResultado("do Dominio Papel", papel.run());
+    mostrarResultado("do Dominio Prioridade", prioridade.run());
+    mostrarResultado("do Dominio Tamanho", tamanho.run());
+    mostrarResultado("do Dominio Timestamp", timestamp.run());
+}
+
+static void executarTestesEntidades() {
+    Teste_Pessoa pessoa;
+    Teste_Projeto projeto;
+    Teste_Quadro quadro;
+    Teste_CartaoDeAtividade cartaodeatividade;
+
+    cout << "\n--- Testes das entidades ---\n";
+    mostrarResultado("da Entidade Pessoa", pessoa.run());
+    mostrarResultado("da Entidade Quadro", quadro.run());
+    mostrarResultado("da Entidade Projeto", projeto.run());
+    mostrarResultado("da Entidade Cartao de Atividade", cartaodeatividade.run());
+}
 
 int main() {
+    bool continuar = true;
 
-    //teste dominios
-    if (limite.run() == 0) {
-        cout << "Teste do Dominio Limite: Aprovado!" << endl;
-    } else {
-        cout << "Teste do Dominio Limite: Falhou!" << endl;
-    }
+    while (continuar) {
+        cout << "\n=== TESTES ===\n"
+             << "1 - Testes dos dominios\n"
+             << "2 - Testes das entidades\n"
+             << "3 - Testes dos dominios e das entidades\n"
+             << "4 - Driver da apresentacao de pessoas\n"
+             << "0 - Sair\n"
+             << "Opcao: ";
 
-     if (nome.run() == 0) {
-        cout << "Teste do Dominio Nome: Aprovado!" << endl;
-    } else {
-        cout << "Teste do Dominio Nome: Falhou!" << endl;
-    }
+        string opcao;
+        getline(cin, opcao);
 
-
-     if (senha.run() == 0) {
-        cout << "Teste do Dominio Senha: Aprovado!" << endl;
-    } else {
-        cout << "Teste do Dominio Senha: Falhou!" << endl;
-    }
-
-    if (texto.run() == 0) {
-        cout << "Teste do Dominio Texto: Aprovado!" << endl;
-    } else {
-        cout << "Teste do Dominio Texto: Falhou!" << endl;
-    }
-
-    if (identificador.run() == 0) {
-        cout << "Teste do Dominio Identificador: Aprovado!" << endl;
-    } else {
-        cout << "Teste do Dominio Identificador: Falhou!" << endl;
-    }
-
-    if(Email.run() == 0){
-        cout << "Teste do Dominio EMAIL: Aprovado!" << endl;
-    } else {
-        cout << "Teste do Dominio EMAIL: Falhou!" << endl;
-    }
-
-      if (estado.run() == 0) {
-        cout << "Teste do Dominio Estado: Aprovado!" << endl;
-    } else {
-        cout << "Teste do Dominio Estado: Falhou!" << endl;
-    }
-     if(papel.run() == 0) {
-        cout << "Teste do Dominio Papel: Aprovado!" << endl;
-    } else {
-        cout << "Teste do Dominio Papel: Falhou!" << endl;
-    }
-     if(prioridade.run() == 0) {
-        cout << "Teste do Dominio Prioridade: Aprovado!" << endl;
-    } else {
-        cout << "Teste do Dominio Prioridade: Falhou" << endl;
-    }
-     if(tamanho.run() == 0) {
-        cout << "Teste do Dominio tamanho: Aprovado!" << endl;
-    } else {
-        cout << "Teste do Dominio tamanho: Falhou" << endl;
-    }
-     if(timestamp.run() == 0) {
-        cout << "Teste do Dominio Timestamp: Aprovado!" << endl;
-    } else {
-        cout << "Teste do Dominio Timestamp: Falhou" << endl;
-    }
-
-
-
-    //teste das entidades
-    if(pessoa.run() == 0){
-        cout << "Teste da Entidade Pessoa: Aprovado!" << endl;
-    } else {
-        cout << "Teste da Entidade Pessoa: Falhou!" << endl;
-    }
-    if(quadro.run() == 0){
-        cout << "Teste da Entidade Quadro: Aprovado!" << endl;
-    } else {
-        cout << "Teste da Entidade Quadro: Falhou!" << endl;
-    }
-    if(projeto.run() == 0){
-        cout << "Teste da Entidade Projeto: Aprovado!" << endl;
-    } else {
-        cout << "Teste da Entidade Projeto: Falhou!" << endl;
-    }
-    if(cartaodeatividade.run() == 0){
-        cout << "Teste da Entidade Cartão de Atividade: Aprovado!" << endl;
-    } else {
-        cout << "Teste da Entidade Cartão de atividade: Falhou!" << endl;
+        if (opcao == "1") {
+            executarTestesDominios();
+        }
+        else if (opcao == "2") {
+            executarTestesEntidades();
+        }
+        else if (opcao == "3") {
+            executarTestesDominios();
+            executarTestesEntidades();
+        }
+        else if (opcao == "4") {
+            executarDriverPessoa();
+        }
+        else if (opcao == "0") {
+            continuar = false;
+        }
+        else {
+            cout << "Opcao invalida.\n";
+        }
     }
 
     cout << "\nPressione ENTER para sair...";
@@ -132,16 +108,3 @@ int main() {
 
     return 0;
 }
-
-/*Timestamp timestamp;
-    string data;
-    cout << "digite uma data: ";
-    cin >> data;
-
-    try{
-        timestamp.setTimestamp(data);
-    }catch(invalid_argument &e){
-        cout << e.what();
-    }
-    cout << timestamp.getTimestamp() << endl;
-    */

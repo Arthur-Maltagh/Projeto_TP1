@@ -2,7 +2,7 @@
 #define TESTE_LIMITE_H_INCLUDED
 
 #include <stdexcept>
-#include "../../dominios/Limite.h"
+#include "Limite.h"
 
 using namespace std;
 
