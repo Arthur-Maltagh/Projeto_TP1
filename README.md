@@ -11,10 +11,10 @@
 - Documentação das classes acima
 - Interfaces
 - Documentação das interfaces
-- Diagrama UML
-- Módulo de apresentação da entidade Pessoa
-- Módulo de apresentação da entidade Pessoa
-- Stub e Driver de Pessoa
+- Diagrama UML da arquitetura de software
+- Módulo de apresentação da entidade Pessoa (MAPE)
+- Módulo de serviço da entidade Pessoa (MSPE)
+- Stub e Driver da entidade Pessoa
 
 ## João Victor
 -
