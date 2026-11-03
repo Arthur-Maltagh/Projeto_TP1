@@ -14,15 +14,15 @@
  * @brief Interface de serviço do módulo de pessoas.
  * @ingroup Interfaces
  *
- * Provida pelo módulo MSPE. Corresponde aos serviços 1 a 5 da
- * especificação. Todos os métodos retornam false quando o serviço
- * não pôde ser realizado.
+ * Provida pelo módulo MSPE. Corresponde aos serviços da entidade
+ * pessoa. Todos os métodos retornam false quando o serviço
+ * não pode ser realizado.
  */
 class ISerPessoa {
 public:
     /**
      * @brief Cria uma pessoa.
-     * @param pessoa Dados da nova pessoa.
+     * @param Dados da nova pessoa.
      * @return false se já existe pessoa com o mesmo email.
      */
     virtual bool criar(const Pessoa &pessoa) = 0;
@@ -40,7 +40,7 @@ public:
      *
      * O email identifica a pessoa e não pode ser alterado.
      *
-     * @param pessoa Novos dados, com o email da pessoa a atualizar.
+     * @param novos dados da pessoa, usando o email como referência.
      * @return false se não existe pessoa com o email informado.
      */
     virtual bool atualizar(const Pessoa &pessoa) = 0;
@@ -48,7 +48,7 @@ public:
     /**
      * @brief Exclui uma pessoa.
      *
-     * A exclusão não pode gerar inconsistência: é recusada se a pessoa
+     * A exclusão é recusada se a pessoa
      * é gestora de algum projeto ou desenvolvedora de algum cartão.
      *
      * @param email Email da pessoa a excluir.

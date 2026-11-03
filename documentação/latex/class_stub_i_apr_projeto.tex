@@ -1,0 +1,128 @@
+\doxysection{Stub\+IApr\+Projeto Class Reference}
+\hypertarget{class_stub_i_apr_projeto}{}\label{class_stub_i_apr_projeto}\index{StubIAprProjeto@{StubIAprProjeto}}
+
+
+Implementacao falsa de \doxylink{class_i_apr_projeto}{IApr\+Projeto} para testar o MAIC.  
+
+
+
+
+{\ttfamily \+\#include $<$Stub\+IApr\+Projeto.\+h$>$}
+
+Inheritance diagram for Stub\+IApr\+Projeto:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_stub_i_apr_projeto}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_stub_i_apr_projeto_a1ab4c8096fa4361ff9a14af36c7e93cb}{executar}} (const \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \&email)
+\begin{DoxyCompactList}\small\item\em Executa os serviços de projeto para um usuário autenticado. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_stub_i_apr_projeto_ad2051bdde2f3afdd290303b8337cd0e7}{set\+Cntr\+ISer\+Projeto}} (\doxymbox{\hyperlink{class_i_ser_projeto}{ISer\+Projeto}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Informa qual implementação do serviço de projetos usar. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_stub_i_apr_projeto_a79bcd918329fde5db40d64cc307bafab}{set\+Cntr\+ISer\+Pessoa}} (\doxymbox{\hyperlink{class_i_ser_pessoa}{ISer\+Pessoa}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Informa qual implementação do serviço de pessoas usar. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_stub_i_apr_projeto_ae2d24ab707b3d1c7954f62e30d6c943b}{set\+Cntr\+IApr\+Quadro}} (\doxymbox{\hyperlink{class_i_apr_quadro}{IApr\+Quadro}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Informa qual implementação da apresentação de quadros usar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_i_apr_projeto}{IApr\+Projeto}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IApr\+Projeto} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementacao falsa de \doxylink{class_i_apr_projeto}{IApr\+Projeto} para testar o MAIC. 
+
+Apenas informa que foi chamada e mostra o email recebido. Substitui o modulo de projetos enquanto ele nao existe. 
+
+\label{class_stub_i_apr_projeto_doc-func-members}
+\Hypertarget{class_stub_i_apr_projeto_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_stub_i_apr_projeto_a1ab4c8096fa4361ff9a14af36c7e93cb}\index{StubIAprProjeto@{StubIAprProjeto}!executar@{executar}}
+\index{executar@{executar}!StubIAprProjeto@{StubIAprProjeto}}
+\doxysubsubsection{\texorpdfstring{executar()}{executar()}}
+{\footnotesize\ttfamily \label{class_stub_i_apr_projeto_a1ab4c8096fa4361ff9a14af36c7e93cb} 
+void Stub\+IApr\+Projeto::\+executar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \&}]{email}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Executa os serviços de projeto para um usuário autenticado. 
+
+Permite ler, listar e, conforme o papel do usuário, criar, atualizar e excluir projetos, além de acessar os quadros de um projeto.
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & Email do usuário autenticado. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \doxymbox{\hyperlink{class_i_apr_projeto_aeef9ce28c88c4f5b899ba51b6b937a91}{IApr\+Projeto}}.
+
+\Hypertarget{class_stub_i_apr_projeto_ae2d24ab707b3d1c7954f62e30d6c943b}\index{StubIAprProjeto@{StubIAprProjeto}!setCntrIAprQuadro@{setCntrIAprQuadro}}
+\index{setCntrIAprQuadro@{setCntrIAprQuadro}!StubIAprProjeto@{StubIAprProjeto}}
+\doxysubsubsection{\texorpdfstring{setCntrIAprQuadro()}{setCntrIAprQuadro()}}
+{\footnotesize\ttfamily \label{class_stub_i_apr_projeto_ae2d24ab707b3d1c7954f62e30d6c943b} 
+void Stub\+IApr\+Projeto::\+set\+Cntr\+IApr\+Quadro (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_i_apr_quadro}{IApr\+Quadro}} \texorpdfstring{$\ast$}{*}}]{cntr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Informa qual implementação da apresentação de quadros usar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cntr} & Ponteiro para uma implementação de \doxylink{class_i_apr_quadro}{IApr\+Quadro}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \doxymbox{\hyperlink{class_i_apr_projeto_a7b5088b079ae713e300524f4066776f9}{IApr\+Projeto}}.
+
+\Hypertarget{class_stub_i_apr_projeto_a79bcd918329fde5db40d64cc307bafab}\index{StubIAprProjeto@{StubIAprProjeto}!setCntrISerPessoa@{setCntrISerPessoa}}
+\index{setCntrISerPessoa@{setCntrISerPessoa}!StubIAprProjeto@{StubIAprProjeto}}
+\doxysubsubsection{\texorpdfstring{setCntrISerPessoa()}{setCntrISerPessoa()}}
+{\footnotesize\ttfamily \label{class_stub_i_apr_projeto_a79bcd918329fde5db40d64cc307bafab} 
+void Stub\+IApr\+Projeto::\+set\+Cntr\+ISer\+Pessoa (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_i_ser_pessoa}{ISer\+Pessoa}} \texorpdfstring{$\ast$}{*}}]{cntr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Informa qual implementação do serviço de pessoas usar. 
+
+Usada para consultar o papel do usuário autenticado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cntr} & Ponteiro para uma implementação de \doxylink{class_i_ser_pessoa}{ISer\+Pessoa}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \doxymbox{\hyperlink{class_i_apr_projeto_ae6b88c447b29c45513680f16e32d2bbb}{IApr\+Projeto}}.
+
+\Hypertarget{class_stub_i_apr_projeto_ad2051bdde2f3afdd290303b8337cd0e7}\index{StubIAprProjeto@{StubIAprProjeto}!setCntrISerProjeto@{setCntrISerProjeto}}
+\index{setCntrISerProjeto@{setCntrISerProjeto}!StubIAprProjeto@{StubIAprProjeto}}
+\doxysubsubsection{\texorpdfstring{setCntrISerProjeto()}{setCntrISerProjeto()}}
+{\footnotesize\ttfamily \label{class_stub_i_apr_projeto_ad2051bdde2f3afdd290303b8337cd0e7} 
+void Stub\+IApr\+Projeto::\+set\+Cntr\+ISer\+Projeto (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_i_ser_projeto}{ISer\+Projeto}} \texorpdfstring{$\ast$}{*}}]{cntr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Informa qual implementação do serviço de projetos usar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cntr} & Ponteiro para uma implementação de \doxylink{class_i_ser_projeto}{ISer\+Projeto}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \doxymbox{\hyperlink{class_i_apr_projeto_a37c5df7b528cb1a979a347a485e669c7}{IApr\+Projeto}}.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+Testes/\+\+Stubs/\doxymbox{\hyperlink{_stub_i_apr_projeto_8h}{Stub\+IApr\+Projeto.\+h}}\end{DoxyCompactItemize}

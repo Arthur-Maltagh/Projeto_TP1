@@ -1,0 +1,106 @@
+\doxysection{IApr\+Quadro Class Reference}
+\hypertarget{class_i_apr_quadro}{}\label{class_i_apr_quadro}\index{IAprQuadro@{IAprQuadro}}
+
+
+Interface de apresentação do módulo de quadros e cartões.  
+
+
+
+
+{\ttfamily \+\#include $<$IApr\+Quadro.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \doxymbox{\hyperlink{class_i_apr_quadro_aa30c195891404df08e01f1207a811b0e}{executar}} (const \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \&email, const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&projeto)=0
+\begin{DoxyCompactList}\small\item\em Executa os serviços de quadro e de cartão de um projeto. \end{DoxyCompactList}\item 
+virtual void \doxymbox{\hyperlink{class_i_apr_quadro_a40bc287cde78e12f17f80589375ffba6}{set\+Cntr\+ISer\+Quadro}} (\doxymbox{\hyperlink{class_i_ser_quadro}{ISer\+Quadro}} \texorpdfstring{$\ast$}{*}cntr)=0
+\begin{DoxyCompactList}\small\item\em Informa qual implementação do serviço de quadros usar. \end{DoxyCompactList}\item 
+virtual void \doxymbox{\hyperlink{class_i_apr_quadro_a2b83f24e0883e967fab56785e3fa9ce1}{set\+Cntr\+ISer\+Cartao}} (\doxymbox{\hyperlink{class_i_ser_cartao}{ISer\+Cartao}} \texorpdfstring{$\ast$}{*}cntr)=0
+\begin{DoxyCompactList}\small\item\em Informa qual implementação do serviço de cartões usar. \end{DoxyCompactList}\item 
+virtual void \doxymbox{\hyperlink{class_i_apr_quadro_a22bc7994c664757e92d8bd1e8c02bb48}{set\+Cntr\+ISer\+Pessoa}} (\doxymbox{\hyperlink{class_i_ser_pessoa}{ISer\+Pessoa}} \texorpdfstring{$\ast$}{*}cntr)=0
+\begin{DoxyCompactList}\small\item\em Informa qual implementação do serviço de pessoas usar. \end{DoxyCompactList}\item 
+\Hypertarget{class_i_apr_quadro_aa007ad567689d65af5e526eecf597431}\label{class_i_apr_quadro_aa007ad567689d65af5e526eecf597431} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IApr\+Quadro} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface de apresentação do módulo de quadros e cartões. 
+
+Provida pelo módulo MAQU e usada pelo módulo MAPR. Os serviços de cartão de atividade são oferecidos a partir de um quadro. 
+
+\label{class_i_apr_quadro_doc-func-members}
+\Hypertarget{class_i_apr_quadro_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_i_apr_quadro_aa30c195891404df08e01f1207a811b0e}\index{IAprQuadro@{IAprQuadro}!executar@{executar}}
+\index{executar@{executar}!IAprQuadro@{IAprQuadro}}
+\doxysubsubsection{\texorpdfstring{executar()}{executar()}}
+{\footnotesize\ttfamily \label{class_i_apr_quadro_aa30c195891404df08e01f1207a811b0e} 
+virtual void IApr\+Quadro::\+executar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \&}]{email}{, }\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{projeto}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Executa os serviços de quadro e de cartão de um projeto. 
+
+Permite ler e listar quadros e, conforme o papel do usuário, criar, atualizar e excluir quadros e cartões, além de mover cartões e consultar tempo de ciclo, lead time e WIP.
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & Email do usuário autenticado. \\
+\hline
+{\em projeto} & \doxylink{class_identificador}{Identificador} do projeto cujos quadros serão tratados. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_i_apr_quadro_a2b83f24e0883e967fab56785e3fa9ce1}\index{IAprQuadro@{IAprQuadro}!setCntrISerCartao@{setCntrISerCartao}}
+\index{setCntrISerCartao@{setCntrISerCartao}!IAprQuadro@{IAprQuadro}}
+\doxysubsubsection{\texorpdfstring{setCntrISerCartao()}{setCntrISerCartao()}}
+{\footnotesize\ttfamily \label{class_i_apr_quadro_a2b83f24e0883e967fab56785e3fa9ce1} 
+virtual void IApr\+Quadro::\+set\+Cntr\+ISer\+Cartao (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_i_ser_cartao}{ISer\+Cartao}} \texorpdfstring{$\ast$}{*}}]{cntr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Informa qual implementação do serviço de cartões usar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cntr} & Ponteiro para uma implementação de \doxylink{class_i_ser_cartao}{ISer\+Cartao}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_i_apr_quadro_a22bc7994c664757e92d8bd1e8c02bb48}\index{IAprQuadro@{IAprQuadro}!setCntrISerPessoa@{setCntrISerPessoa}}
+\index{setCntrISerPessoa@{setCntrISerPessoa}!IAprQuadro@{IAprQuadro}}
+\doxysubsubsection{\texorpdfstring{setCntrISerPessoa()}{setCntrISerPessoa()}}
+{\footnotesize\ttfamily \label{class_i_apr_quadro_a22bc7994c664757e92d8bd1e8c02bb48} 
+virtual void IApr\+Quadro::\+set\+Cntr\+ISer\+Pessoa (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_i_ser_pessoa}{ISer\+Pessoa}} \texorpdfstring{$\ast$}{*}}]{cntr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Informa qual implementação do serviço de pessoas usar. 
+
+Usada para consultar o papel do usuário e validar o desenvolvedor de um cartão.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cntr} & Ponteiro para uma implementação de \doxylink{class_i_ser_pessoa}{ISer\+Pessoa}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_i_apr_quadro_a40bc287cde78e12f17f80589375ffba6}\index{IAprQuadro@{IAprQuadro}!setCntrISerQuadro@{setCntrISerQuadro}}
+\index{setCntrISerQuadro@{setCntrISerQuadro}!IAprQuadro@{IAprQuadro}}
+\doxysubsubsection{\texorpdfstring{setCntrISerQuadro()}{setCntrISerQuadro()}}
+{\footnotesize\ttfamily \label{class_i_apr_quadro_a40bc287cde78e12f17f80589375ffba6} 
+virtual void IApr\+Quadro::\+set\+Cntr\+ISer\+Quadro (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_i_ser_quadro}{ISer\+Quadro}} \texorpdfstring{$\ast$}{*}}]{cntr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Informa qual implementação do serviço de quadros usar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cntr} & Ponteiro para uma implementação de \doxylink{class_i_ser_quadro}{ISer\+Quadro}. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+Interfaces/\doxymbox{\hyperlink{_i_apr_quadro_8h}{IApr\+Quadro.\+h}}\end{DoxyCompactItemize}

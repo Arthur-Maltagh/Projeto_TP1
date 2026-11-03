@@ -1,0 +1,96 @@
+\doxysection{Cntr\+IApr\+Principal Class Reference}
+\hypertarget{class_cntr_i_apr_principal}{}\label{class_cntr_i_apr_principal}\index{CntrIAprPrincipal@{CntrIAprPrincipal}}
+
+
+Controladora do modulo de apresentacao principal (MAIC).  
+
+
+
+
+{\ttfamily \+\#include $<$Controladora\+IApr\+Principal.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_cntr_i_apr_principal_a1381c3f3a93514b9583ba611e9a4caf4}\label{class_cntr_i_apr_principal_a1381c3f3a93514b9583ba611e9a4caf4} 
+{\bfseries Cntr\+IApr\+Principal} ()
+\begin{DoxyCompactList}\small\item\em Cria a controladora sem modulos associados. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_cntr_i_apr_principal_a8087b10304bc7fc060820389731b83ea}{executar}} ()
+\begin{DoxyCompactList}\small\item\em Executa o sistema ate o usuario encerrar. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_cntr_i_apr_principal_a6506562225f5fa81510b49017e9ffe0b}{set\+Cntr\+IApr\+Autenticacao}} (\doxymbox{\hyperlink{class_i_apr_autenticacao}{IApr\+Autenticacao}} \texorpdfstring{$\ast$}{*}cntr)
+\begin{DoxyCompactList}\small\item\em Informa o modulo de apresentacao de autenticacao. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_cntr_i_apr_principal_aac275f6455a4e74ab116421050b90585}{set\+Cntr\+IApr\+Pessoa}} (\doxymbox{\hyperlink{class_i_apr_pessoa}{IApr\+Pessoa}} \texorpdfstring{$\ast$}{*}cntr)
+\begin{DoxyCompactList}\small\item\em Informa o modulo de apresentacao de pessoas. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_cntr_i_apr_principal_aa1a0f7411c8fc883675f0fbee55ee260}{set\+Cntr\+IApr\+Projeto}} (\doxymbox{\hyperlink{class_i_apr_projeto}{IApr\+Projeto}} \texorpdfstring{$\ast$}{*}cntr)
+\begin{DoxyCompactList}\small\item\em Informa o modulo de apresentacao de projetos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controladora do modulo de apresentacao principal (MAIC). 
+
+E a porta de entrada do sistema. Apresenta o menu inicial (entrar ou criar conta) e, depois da autenticacao, o menu principal que leva aos demais modulos de apresentacao. Conhece os outros modulos apenas pelas interfaces \doxylink{class_i_apr_autenticacao}{IApr\+Autenticacao}, \doxylink{class_i_apr_pessoa}{IApr\+Pessoa} e \doxylink{class_i_apr_projeto}{IApr\+Projeto}. 
+
+\label{class_cntr_i_apr_principal_doc-func-members}
+\Hypertarget{class_cntr_i_apr_principal_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_cntr_i_apr_principal_a8087b10304bc7fc060820389731b83ea}\index{CntrIAprPrincipal@{CntrIAprPrincipal}!executar@{executar}}
+\index{executar@{executar}!CntrIAprPrincipal@{CntrIAprPrincipal}}
+\doxysubsubsection{\texorpdfstring{executar()}{executar()}}
+{\footnotesize\ttfamily \label{class_cntr_i_apr_principal_a8087b10304bc7fc060820389731b83ea} 
+void Cntr\+IApr\+Principal::\+executar (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Executa o sistema ate o usuario encerrar. 
+
+Os tres modulos devem ter sido informados antes da chamada. \Hypertarget{class_cntr_i_apr_principal_a6506562225f5fa81510b49017e9ffe0b}\index{CntrIAprPrincipal@{CntrIAprPrincipal}!setCntrIAprAutenticacao@{setCntrIAprAutenticacao}}
+\index{setCntrIAprAutenticacao@{setCntrIAprAutenticacao}!CntrIAprPrincipal@{CntrIAprPrincipal}}
+\doxysubsubsection{\texorpdfstring{setCntrIAprAutenticacao()}{setCntrIAprAutenticacao()}}
+{\footnotesize\ttfamily \label{class_cntr_i_apr_principal_a6506562225f5fa81510b49017e9ffe0b} 
+void Cntr\+IApr\+Principal::\+set\+Cntr\+IApr\+Autenticacao (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_i_apr_autenticacao}{IApr\+Autenticacao}} \texorpdfstring{$\ast$}{*}}]{cntr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Informa o modulo de apresentacao de autenticacao. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cntr} & Ponteiro para uma implementacao de \doxylink{class_i_apr_autenticacao}{IApr\+Autenticacao}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_cntr_i_apr_principal_aac275f6455a4e74ab116421050b90585}\index{CntrIAprPrincipal@{CntrIAprPrincipal}!setCntrIAprPessoa@{setCntrIAprPessoa}}
+\index{setCntrIAprPessoa@{setCntrIAprPessoa}!CntrIAprPrincipal@{CntrIAprPrincipal}}
+\doxysubsubsection{\texorpdfstring{setCntrIAprPessoa()}{setCntrIAprPessoa()}}
+{\footnotesize\ttfamily \label{class_cntr_i_apr_principal_aac275f6455a4e74ab116421050b90585} 
+void Cntr\+IApr\+Principal::\+set\+Cntr\+IApr\+Pessoa (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_i_apr_pessoa}{IApr\+Pessoa}} \texorpdfstring{$\ast$}{*}}]{cntr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Informa o modulo de apresentacao de pessoas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cntr} & Ponteiro para uma implementacao de \doxylink{class_i_apr_pessoa}{IApr\+Pessoa}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_cntr_i_apr_principal_aa1a0f7411c8fc883675f0fbee55ee260}\index{CntrIAprPrincipal@{CntrIAprPrincipal}!setCntrIAprProjeto@{setCntrIAprProjeto}}
+\index{setCntrIAprProjeto@{setCntrIAprProjeto}!CntrIAprPrincipal@{CntrIAprPrincipal}}
+\doxysubsubsection{\texorpdfstring{setCntrIAprProjeto()}{setCntrIAprProjeto()}}
+{\footnotesize\ttfamily \label{class_cntr_i_apr_principal_aa1a0f7411c8fc883675f0fbee55ee260} 
+void Cntr\+IApr\+Principal::\+set\+Cntr\+IApr\+Projeto (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_i_apr_projeto}{IApr\+Projeto}} \texorpdfstring{$\ast$}{*}}]{cntr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Informa o modulo de apresentacao de projetos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cntr} & Ponteiro para uma implementacao de \doxylink{class_i_apr_projeto}{IApr\+Projeto}. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Apresentação/\+\+MAIC/Controladora\+IApr\+Principal.\+h\item 
+Apresentação/\+\+MAIC/Controladora\+IApr\+Principal.\+cpp\end{DoxyCompactItemize}

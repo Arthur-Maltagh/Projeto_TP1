@@ -1,0 +1,85 @@
+\doxysection{IApr\+Autenticacao Class Reference}
+\hypertarget{class_i_apr_autenticacao}{}\label{class_i_apr_autenticacao}\index{IAprAutenticacao@{IAprAutenticacao}}
+
+
+Interface de apresentação do módulo de autenticação.  
+
+
+
+
+{\ttfamily \+\#include $<$IApr\+Autenticacao.\+h$>$}
+
+Inheritance diagram for IApr\+Autenticacao:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_i_apr_autenticacao}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \doxymbox{\hyperlink{class_i_apr_autenticacao_a13906958319721ff36ca442be393e358}{autenticar}} (\doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \texorpdfstring{$\ast$}{*}email)=0
+\begin{DoxyCompactList}\small\item\em Executa o fluxo de autenticação com o usuário. \end{DoxyCompactList}\item 
+virtual void \doxymbox{\hyperlink{class_i_apr_autenticacao_aa85a3e8e39e9bd45d382e074ac923be6}{set\+Cntr\+ISer\+Autenticacao}} (\doxymbox{\hyperlink{class_i_ser_autenticacao}{ISer\+Autenticacao}} \texorpdfstring{$\ast$}{*}cntr)=0
+\begin{DoxyCompactList}\small\item\em Informa qual implementação do serviço de autenticação usar. \end{DoxyCompactList}\item 
+\Hypertarget{class_i_apr_autenticacao_aec11357437aedea624983909e1387a37}\label{class_i_apr_autenticacao_aec11357437aedea624983909e1387a37} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IApr\+Autenticacao} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface de apresentação do módulo de autenticação. 
+
+Provida pelo módulo MAAU e usada pelo módulo MAIC. 
+
+\label{class_i_apr_autenticacao_doc-func-members}
+\Hypertarget{class_i_apr_autenticacao_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_i_apr_autenticacao_a13906958319721ff36ca442be393e358}\index{IAprAutenticacao@{IAprAutenticacao}!autenticar@{autenticar}}
+\index{autenticar@{autenticar}!IAprAutenticacao@{IAprAutenticacao}}
+\doxysubsubsection{\texorpdfstring{autenticar()}{autenticar()}}
+{\footnotesize\ttfamily \label{class_i_apr_autenticacao_a13906958319721ff36ca442be393e358} 
+virtual bool IApr\+Autenticacao::\+autenticar (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \texorpdfstring{$\ast$}{*}}]{email}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Executa o fluxo de autenticação com o usuário. 
+
+Solicita email e senha, valida o formato dos dados digitados e consulta o serviço de autenticação.
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & Recebe o email do usuário autenticado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se o usuário foi autenticado; false caso contrário. 
+\end{DoxyReturn}
+
+
+Implemented in \doxymbox{\hyperlink{class_cntr_i_apr_autenticacao_a0e81dd6f4f29be9e06da008615cdf10d}{Cntr\+IApr\+Autenticacao}}.
+
+\Hypertarget{class_i_apr_autenticacao_aa85a3e8e39e9bd45d382e074ac923be6}\index{IAprAutenticacao@{IAprAutenticacao}!setCntrISerAutenticacao@{setCntrISerAutenticacao}}
+\index{setCntrISerAutenticacao@{setCntrISerAutenticacao}!IAprAutenticacao@{IAprAutenticacao}}
+\doxysubsubsection{\texorpdfstring{setCntrISerAutenticacao()}{setCntrISerAutenticacao()}}
+{\footnotesize\ttfamily \label{class_i_apr_autenticacao_aa85a3e8e39e9bd45d382e074ac923be6} 
+virtual void IApr\+Autenticacao::\+set\+Cntr\+ISer\+Autenticacao (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_i_ser_autenticacao}{ISer\+Autenticacao}} \texorpdfstring{$\ast$}{*}}]{cntr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Informa qual implementação do serviço de autenticação usar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cntr} & Ponteiro para uma implementação de \doxylink{class_i_ser_autenticacao}{ISer\+Autenticacao}. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \doxymbox{\hyperlink{class_cntr_i_apr_autenticacao_a2dc9f306fd79daecc59cfe3fcbb90b6c}{Cntr\+IApr\+Autenticacao}}.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+Interfaces/\doxymbox{\hyperlink{_i_apr_autenticacao_8h}{IApr\+Autenticacao.\+h}}\end{DoxyCompactItemize}

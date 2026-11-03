@@ -15,6 +15,12 @@
 - Módulo de apresentação da entidade Pessoa (MAPE)
 - Módulo de serviço da entidade Pessoa (MSPE)
 - Stub e Driver da entidade Pessoa
+- container da entidade pessoa
+- Módulo de Apresentação da Interface de Controle (MAIC)
+- Módulo de Apresentação da Autenticação (MAAU)
+- Módulo de serviço da Autenticação (MSAU)
+- stub e driver do módulo de autenticação
+- driver do módulo MAIC
 
 ## João Victor
 -

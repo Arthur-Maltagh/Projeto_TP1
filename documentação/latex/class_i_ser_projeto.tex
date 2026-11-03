@@ -1,0 +1,156 @@
+\doxysection{ISer\+Projeto Class Reference}
+\hypertarget{class_i_ser_projeto}{}\label{class_i_ser_projeto}\index{ISerProjeto@{ISerProjeto}}
+
+
+Interface de serviço do módulo de projetos.  
+
+
+
+
+{\ttfamily \+\#include $<$ISer\+Projeto.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \doxymbox{\hyperlink{class_i_ser_projeto_a025b951f25b80624a2e21a886d290542}{criar}} (const \doxymbox{\hyperlink{class_projeto}{Projeto}} \&projeto, const \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \&gestor)=0
+\begin{DoxyCompactList}\small\item\em Cria um projeto. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_i_ser_projeto_ab7058dda5484615b71659fdea35b8f33}{ler}} (\doxymbox{\hyperlink{class_projeto}{Projeto}} \texorpdfstring{$\ast$}{*}projeto)=0
+\begin{DoxyCompactList}\small\item\em Lê os dados de um projeto. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_i_ser_projeto_ac415977680f05fc46bab96d922e32b22}{atualizar}} (const \doxymbox{\hyperlink{class_projeto}{Projeto}} \&projeto)=0
+\begin{DoxyCompactList}\small\item\em Atualiza os dados de um projeto. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_i_ser_projeto_a84e1dd12c588ff9a2babdd96b8e4e650}{excluir}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&projeto)=0
+\begin{DoxyCompactList}\small\item\em Exclui um projeto e, em cascata, os seus quadros e cartões. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_i_ser_projeto_aa4da673291326b27b8e5ecb3c438f307}{listar}} (std::\+list$<$ \doxymbox{\hyperlink{class_identificador}{Identificador}} $>$ \texorpdfstring{$\ast$}{*}projetos)=0
+\begin{DoxyCompactList}\small\item\em Lista os identificadores de todos os projetos. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_i_ser_projeto_af9560d9d622b5ca99e9c3cd8ea76c30e}{possui\+Projetos}} (const \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \&gestor)=0
+\begin{DoxyCompactList}\small\item\em Informa se uma pessoa é gestora de algum projeto. \end{DoxyCompactList}\item 
+\Hypertarget{class_i_ser_projeto_abe80be5a7ec45ef1f56d12ace57ac216}\label{class_i_ser_projeto_abe80be5a7ec45ef1f56d12ace57ac216} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+ISer\+Projeto} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface de serviço do módulo de projetos. 
+
+Provida pelo módulo MSPR. Corresponde aos serviços 6 a 10 da especificação. Todos os métodos retornam false quando o serviço não pôde ser realizado. 
+
+\label{class_i_ser_projeto_doc-func-members}
+\Hypertarget{class_i_ser_projeto_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_i_ser_projeto_ac415977680f05fc46bab96d922e32b22}\index{ISerProjeto@{ISerProjeto}!atualizar@{atualizar}}
+\index{atualizar@{atualizar}!ISerProjeto@{ISerProjeto}}
+\doxysubsubsection{\texorpdfstring{atualizar()}{atualizar()}}
+{\footnotesize\ttfamily \label{class_i_ser_projeto_ac415977680f05fc46bab96d922e32b22} 
+virtual bool ISer\+Projeto::\+atualizar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_projeto}{Projeto}} \&}]{projeto}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Atualiza os dados de um projeto. 
+
+O identificador não pode ser alterado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em projeto} & Novos dados, com o identificador do projeto. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se o projeto não existe. 
+\end{DoxyReturn}
+\Hypertarget{class_i_ser_projeto_a025b951f25b80624a2e21a886d290542}\index{ISerProjeto@{ISerProjeto}!criar@{criar}}
+\index{criar@{criar}!ISerProjeto@{ISerProjeto}}
+\doxysubsubsection{\texorpdfstring{criar()}{criar()}}
+{\footnotesize\ttfamily \label{class_i_ser_projeto_a025b951f25b80624a2e21a886d290542} 
+virtual bool ISer\+Projeto::\+criar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_projeto}{Projeto}} \&}]{projeto}{, }\item[{const \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \&}]{gestor}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Cria um projeto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em projeto} & Dados do novo projeto. \\
+\hline
+{\em gestor} & Email da pessoa que cria o projeto e passa a ser o seu gestor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se já existe projeto com o mesmo identificador. 
+\end{DoxyReturn}
+\Hypertarget{class_i_ser_projeto_a84e1dd12c588ff9a2babdd96b8e4e650}\index{ISerProjeto@{ISerProjeto}!excluir@{excluir}}
+\index{excluir@{excluir}!ISerProjeto@{ISerProjeto}}
+\doxysubsubsection{\texorpdfstring{excluir()}{excluir()}}
+{\footnotesize\ttfamily \label{class_i_ser_projeto_a84e1dd12c588ff9a2babdd96b8e4e650} 
+virtual bool ISer\+Projeto::\+excluir (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{projeto}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Exclui um projeto e, em cascata, os seus quadros e cartões. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em projeto} & \doxylink{class_identificador}{Identificador} do projeto a excluir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se o projeto não existe. 
+\end{DoxyReturn}
+\Hypertarget{class_i_ser_projeto_ab7058dda5484615b71659fdea35b8f33}\index{ISerProjeto@{ISerProjeto}!ler@{ler}}
+\index{ler@{ler}!ISerProjeto@{ISerProjeto}}
+\doxysubsubsection{\texorpdfstring{ler()}{ler()}}
+{\footnotesize\ttfamily \label{class_i_ser_projeto_ab7058dda5484615b71659fdea35b8f33} 
+virtual bool ISer\+Projeto::\+ler (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_projeto}{Projeto}} \texorpdfstring{$\ast$}{*}}]{projeto}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Lê os dados de um projeto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em projeto} & Na entrada, contém o identificador do projeto. Na saída, contém todos os dados do projeto. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se o projeto não existe. 
+\end{DoxyReturn}
+\Hypertarget{class_i_ser_projeto_aa4da673291326b27b8e5ecb3c438f307}\index{ISerProjeto@{ISerProjeto}!listar@{listar}}
+\index{listar@{listar}!ISerProjeto@{ISerProjeto}}
+\doxysubsubsection{\texorpdfstring{listar()}{listar()}}
+{\footnotesize\ttfamily \label{class_i_ser_projeto_aa4da673291326b27b8e5ecb3c438f307} 
+virtual bool ISer\+Projeto::\+listar (\begin{DoxyParamCaption}\item[{std::\+list$<$ \doxymbox{\hyperlink{class_identificador}{Identificador}} $>$ \texorpdfstring{$\ast$}{*}}]{projetos}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Lista os identificadores de todos os projetos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em projetos} & Recebe os identificadores dos projetos. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se a listagem foi realizada. 
+\end{DoxyReturn}
+\Hypertarget{class_i_ser_projeto_af9560d9d622b5ca99e9c3cd8ea76c30e}\index{ISerProjeto@{ISerProjeto}!possuiProjetos@{possuiProjetos}}
+\index{possuiProjetos@{possuiProjetos}!ISerProjeto@{ISerProjeto}}
+\doxysubsubsection{\texorpdfstring{possuiProjetos()}{possuiProjetos()}}
+{\footnotesize\ttfamily \label{class_i_ser_projeto_af9560d9d622b5ca99e9c3cd8ea76c30e} 
+virtual bool ISer\+Projeto::\+possui\+Projetos (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \&}]{gestor}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Informa se uma pessoa é gestora de algum projeto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gestor} & Email da pessoa consultada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se existe ao menos um projeto sob a gestão da pessoa. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+Interfaces/\doxymbox{\hyperlink{_i_ser_projeto_8h}{ISer\+Projeto.\+h}}\end{DoxyCompactItemize}

@@ -17,14 +17,21 @@
 #include "Teste_Quadro.h"
 #include "Teste_Cartaoatividade.h"
 
-#include "DriverCntrIAprPessoa.h"
+#include "DriverAutenticacao.h"
+#include "DriverPessoa.h"
+#include "DriverAutenticacao.h"
+#include "DriverMaic.h"
 
 using namespace std;
 
 // Mostra o resultado de um teste. Cada run() devolve 0 quando aprovado.
 static void mostrarResultado(const string &descricao, int resultado) {
-    cout << "Teste " << descricao << ": "
-         << (resultado == 0 ? "Aprovado!" : "Falhou!") << endl;
+    if(resultado == 0){
+        cout << "Teste " << descricao << ": Aprovado!" << endl;
+    }else{
+         cout << "Teste " << descricao << ": Falhou!" << endl;
+    }
+
 }
 
 static void executarTestesDominios() {
@@ -67,39 +74,55 @@ static void executarTestesEntidades() {
     mostrarResultado("da Entidade Cartao de Atividade", cartaodeatividade.run());
 }
 
+
+
+ static char lerOpcao(const string &mensagem) {
+    string linha;
+    cout << mensagem;
+    getline(cin, linha);
+    if(linha.length() == 1 && isdigit(linha[0])){
+        return linha[0];
+    }else{
+        return '?';
+    }
+}
+
 int main() {
     bool continuar = true;
 
     while (continuar) {
         cout << "\n=== TESTES ===\n"
-             << "1 - Testes dos dominios\n"
-             << "2 - Testes das entidades\n"
-             << "3 - Testes dos dominios e das entidades\n"
-             << "4 - Driver da apresentacao de pessoas\n"
-             << "0 - Sair\n"
-             << "Opcao: ";
+             << "1 - Testes dos dominios e das entidades\n"
+             << "2 - Teste do servico de autenticacao\n"
+             << "3 - Driver da apresentacao de pessoas\n"
+             << "4 - Driver da apresentacao de autenticacao\n"
+             << "5 - Driver do MAIC (autenticacao e pessoas reais)\n"
+             << "0 - Sair\n";
 
-        string opcao;
-        getline(cin, opcao);
+         char opcao = lerOpcao("Opcao: ");
 
-        if (opcao == "1") {
-            executarTestesDominios();
-        }
-        else if (opcao == "2") {
-            executarTestesEntidades();
-        }
-        else if (opcao == "3") {
-            executarTestesDominios();
-            executarTestesEntidades();
-        }
-        else if (opcao == "4") {
-            executarDriverPessoa();
-        }
-        else if (opcao == "0") {
-            continuar = false;
-        }
-        else {
-            cout << "Opcao invalida.\n";
+        switch (opcao) {
+            case '1':
+                executarTestesDominios();
+                executarTestesEntidades();
+                break;
+            case '2':
+                executarTesteServicoAutenticacao();
+                break;
+            case '3':
+                executarDriverPessoa();
+                break;
+            case '4':
+                executarDriverAutenticacao();
+                break;
+            case '5':
+                executarDriverMAIC();
+                break;
+            case '0':
+                continuar = false;
+                break;
+            default:
+                cout << "Opcao invalida.\n";
         }
     }
 

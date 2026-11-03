@@ -1,0 +1,55 @@
+\doxysection{ISercartao.\+h}
+\hypertarget{_i_sercartao_8h_source}{}\label{_i_sercartao_8h_source}\index{Interfaces/ISercartao.h@{Interfaces/ISercartao.h}}
+\doxymbox{\hyperlink{_i_sercartao_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ ISERCARTAO\_H\_INCLUDED}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ ISERCARTAO\_H\_INCLUDED}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <list>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}CartaoAtividades.h"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_e_m_a_i_l_8h}{EMAIL.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_estado_8h}{Estado.h}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_identificador_8h}{Identificador.h}}"{}}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_i_ser_cartao}{ISerCartao}}\ \{}
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_i_ser_cartao_a0bc48f47415ae9ceaab70b4815d5292d}{criar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_cartao_de_atividade}{CartaoDeAtividade}}\ \&cartao,}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&quadro,}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}}\ \&desenvolvedor)\ =\ 0;}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_i_ser_cartao_a4a93e115edd812e159540e44cda62b25}{ler}}(\doxymbox{\hyperlink{class_cartao_de_atividade}{CartaoDeAtividade}}\ *cartao)\ =\ 0;}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_i_ser_cartao_aa59b153d91b8b771c81d4b8373fdc779}{atualizar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_cartao_de_atividade}{CartaoDeAtividade}}\ \&cartao)\ =\ 0;}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_i_ser_cartao_a765e679b6504a2ee685b4d9c8b2e32ea}{excluir}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&cartao)\ =\ 0;}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_i_ser_cartao_a7ac8f0dca45981465e846204231d5f5f}{listar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&quadro,}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::list<Identificador>\ *cartoes)\ =\ 0;}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_i_ser_cartao_a360d2282bd2ded7a0654e7bbfebf9851}{mover}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&cartao,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_estado}{Estado}}\ \&destino)\ =\ 0;}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_i_ser_cartao_ac8d9de7ec7fc0c6c8f5c01271c25048b}{lerTempoCiclo}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&cartao,\ \textcolor{keywordtype}{int}\ *minutos)\ =\ 0;}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_i_ser_cartao_a7f85cd2e539d2847464154f83b256acf}{lerTempoCicloMedio}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&quadro,}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ *minutos)\ =\ 0;}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_i_ser_cartao_a73d7b18fcf1d19abc1e64eed6856823b}{lerLeadTime}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&cartao,\ \textcolor{keywordtype}{int}\ *minutos)\ =\ 0;}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_i_ser_cartao_a7b73be96b59efdd271877a4d6b7e9d82}{lerLeadTimeMedio}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&quadro,}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ *minutos)\ =\ 0;}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00142\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_i_ser_cartao_a01220356b09b14cd10bc256bd7756ffd}{lerWIP}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&quadro,\ \textcolor{keywordtype}{int}\ *wip)\ =\ 0;}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00150\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_i_ser_cartao_aac3312ec653327911feefe5b6f51c443}{possuiCartoes}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}}\ \&desenvolvedor)\ =\ 0;}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00153\ \ \ \ \ \textcolor{keyword}{virtual}\ \doxymbox{\hyperlink{class_i_ser_cartao_a58a9d8221bdf8b3dd5f24d57e44b588d}{\string~ISerCartao}}()\ \{\}}
+\DoxyCodeLine{00154\ \};}
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00157\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ISERCARTAO\_H\_INCLUDED}}
+
+\end{DoxyCode}

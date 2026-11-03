@@ -1,0 +1,28 @@
+\doxysection{Controladora\+ISer\+Autenticacao.\+h}
+\hypertarget{_controladora_i_ser_autenticacao_8h_source}{}\label{_controladora_i_ser_autenticacao_8h_source}\index{Serviços/MSAU/ControladoraISerAutenticacao.h@{Serviços/MSAU/ControladoraISerAutenticacao.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CONTROLADORAISERAUTENTICACAO\_H\_INCLUDED}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CONTROLADORAISERAUTENTICACAO\_H\_INCLUDED}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_e_m_a_i_l_8h}{EMAIL.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_i_ser_autenticacao_8h}{ISerAutenticacao.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_senha_8h}{Senha.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_i_ser_pessoa}{ISerPessoa}};}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_cntr_i_ser_autenticacao_a4b4a9a729f23b1f6b1a51e1f0985c613}{CntrISerAutenticacao}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_i_ser_autenticacao}{ISerAutenticacao}}\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ \doxymbox{\hyperlink{class_i_ser_pessoa}{ISerPessoa}}\ *cntrISerPessoa;}
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \doxymbox{\hyperlink{class_cntr_i_ser_autenticacao_a4b4a9a729f23b1f6b1a51e1f0985c613}{CntrISerAutenticacao}}()\ :\ cntrISerPessoa(nullptr)\ \{\}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_cntr_i_ser_autenticacao_a8812f979b6fc66ee2a2027bf7ab72e34}{autenticar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}}\ \&email,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_senha}{Senha}}\ \&senha);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_cntr_i_ser_autenticacao_a0b7d8ca6761deb0ffe08c6db9bce1754}{setCntrISerPessoa}}(\doxymbox{\hyperlink{class_i_ser_pessoa}{ISerPessoa}}\ *cntr)\ \{\ cntrISerPessoa\ =\ cntr;\ \}}
+\DoxyCodeLine{00035\ \};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CONTROLADORAISERAUTENTICACAO\_H\_INCLUDED}}
+
+\end{DoxyCode}

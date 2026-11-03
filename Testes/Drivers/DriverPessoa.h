@@ -2,7 +2,7 @@
 #define DRIVERCNTRIAPRPESSOA_H_INCLUDED
 
 /**
- * @file DriverCntrIAprPessoa.h
+ * @file DriverPessoa.h
  * @brief Declaracao do driver da controladora de apresentacao de pessoas.
  */
 

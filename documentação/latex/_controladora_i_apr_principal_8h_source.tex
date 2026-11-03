@@ -1,0 +1,35 @@
+\doxysection{Controladora\+IApr\+Principal.\+h}
+\hypertarget{_controladora_i_apr_principal_8h_source}{}\label{_controladora_i_apr_principal_8h_source}\index{Apresentação/MAIC/ControladoraIAprPrincipal.h@{Apresentação/MAIC/ControladoraIAprPrincipal.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CONTROLADORAIAPRPRINCIPAL\_H\_INCLUDED}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CONTROLADORAIAPRPRINCIPAL\_H\_INCLUDED}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_e_m_a_i_l_8h}{EMAIL.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_i_apr_autenticacao_8h}{IAprAutenticacao.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_i_apr_pessoa_8h}{IAprPessoa.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_i_apr_projeto_8h}{IAprProjeto.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_cntr_i_apr_principal_a1381c3f3a93514b9583ba611e9a4caf4}{CntrIAprPrincipal}}\ \{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00024\ \ \ \ \ \doxymbox{\hyperlink{class_i_apr_autenticacao}{IAprAutenticacao}}\ *cntrIAprAutenticacao;}
+\DoxyCodeLine{00025\ \ \ \ \ \doxymbox{\hyperlink{class_i_apr_pessoa}{IAprPessoa}}\ *cntrIAprPessoa;}
+\DoxyCodeLine{00026\ \ \ \ \ \doxymbox{\hyperlink{class_i_apr_projeto}{IAprProjeto}}\ *cntrIAprProjeto;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ executarSessao(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}}\ \&email);}
+\DoxyCodeLine{00029\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ \doxymbox{\hyperlink{class_cntr_i_apr_principal_a1381c3f3a93514b9583ba611e9a4caf4}{CntrIAprPrincipal}}():\ cntrIAprAutenticacao(nullptr),cntrIAprPessoa(nullptr),\ cntrIAprProjeto(nullptr)\ \{\}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_cntr_i_apr_principal_a8087b10304bc7fc060820389731b83ea}{executar}}();}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_cntr_i_apr_principal_a6506562225f5fa81510b49017e9ffe0b}{setCntrIAprAutenticacao}}(\doxymbox{\hyperlink{class_i_apr_autenticacao}{IAprAutenticacao}}\ *cntr)\ \{\ cntrIAprAutenticacao\ =\ cntr;\ \}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_cntr_i_apr_principal_aac275f6455a4e74ab116421050b90585}{setCntrIAprPessoa}}(\doxymbox{\hyperlink{class_i_apr_pessoa}{IAprPessoa}}\ *cntr)\ \{\ cntrIAprPessoa\ =\ cntr;\ \}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_cntr_i_apr_principal_aa1a0f7411c8fc883675f0fbee55ee260}{setCntrIAprProjeto}}(\doxymbox{\hyperlink{class_i_apr_projeto}{IAprProjeto}}\ *cntr)\ \{\ cntrIAprProjeto\ =\ cntr;\ \}}
+\DoxyCodeLine{00057\ \};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CONTROLADORAIAPRPRINCIPAL\_H\_INCLUDED}}
+
+\end{DoxyCode}

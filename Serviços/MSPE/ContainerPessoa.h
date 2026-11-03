@@ -7,20 +7,22 @@
  */
 
 #include <list>
-#include <map>
 #include <string>
+#include <vector>
 #include "EMAIL.h"
 #include "Pessoa.h"
 
 /**
  * @brief Conteiner que guarda as pessoas em memoria (armazenamento do MSPE).
  *
- * Cada pessoa e identificada pelo email. O conteiner so armazena e
- * recupera dados; as regras de negocio ficam na controladora.
+ * As pessoas ficam em um vetor, na ordem em que foram incluidas, e cada
+ * uma e identificada pelo email. O conteiner so armazena e recupera dados;
+ * as regras de negocio ficam na controladora.
  */
 class ContainerPessoa {
 private:
-    std::map<std::string, Pessoa> pessoas;
+    std::vector<Pessoa> pessoas;
+    std::vector<Pessoa>::iterator localizar(const std::string &chave);
 public:
     /**
      * @brief Inclui uma pessoa.
@@ -53,9 +55,10 @@ public:
 
     /**
      * @brief Recupera os emails de todas as pessoas armazenadas.
-     * @param emails Recebe os emails.
+     * @param emails Recebe os emails, na ordem de inclusao.
      */
     void listar(std::list<EMAIL> *emails);
 };
+
 
 #endif // CONTAINERPESSOA_H_INCLUDED

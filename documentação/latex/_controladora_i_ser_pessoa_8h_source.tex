@@ -1,0 +1,43 @@
+\doxysection{Controladora\+ISer\+Pessoa.\+h}
+\hypertarget{_controladora_i_ser_pessoa_8h_source}{}\label{_controladora_i_ser_pessoa_8h_source}\index{Serviços/MSPE/ControladoraISerPessoa.h@{Serviços/MSPE/ControladoraISerPessoa.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CONTROLADORAISERPESSOA\_H\_INCLUDED}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CONTROLADORAISERPESSOA\_H\_INCLUDED}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <list>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_container_pessoa_8h}{ContainerPessoa.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_e_m_a_i_l_8h}{EMAIL.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_i_ser_pessoa_8h}{ISerPessoa.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}Pessoa.h"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_i_ser_projeto}{ISerProjeto}};}
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_i_ser_cartao}{ISerCartao}};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_cntr_i_ser_pessoa_a4362467b3623905c17eac2d748c88591}{CntrISerPessoa}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_i_ser_pessoa}{ISerPessoa}}\ \{}
+\DoxyCodeLine{00025\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00026\ \ \ \ \ \doxymbox{\hyperlink{class_container_pessoa}{ContainerPessoa}}\ container;}
+\DoxyCodeLine{00027\ \ \ \ \ \doxymbox{\hyperlink{class_i_ser_projeto}{ISerProjeto}}\ *cntrISerProjeto;}
+\DoxyCodeLine{00028\ \ \ \ \ \doxymbox{\hyperlink{class_i_ser_cartao}{ISerCartao}}\ *cntrISerCartao;}
+\DoxyCodeLine{00029\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_a4362467b3623905c17eac2d748c88591}{CntrISerPessoa}}()\ :\ cntrISerProjeto(nullptr),\ cntrISerCartao(nullptr)\ \{\}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_a9834822a761afe601441400c3cd34262}{criar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ \&pessoa);}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_ad70ee0f3088bb7914f9a4080095b3b26}{ler}}(\doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ *pessoa);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_aaca827dd793464447c5d91b3a8c67a21}{atualizar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ \&pessoa);}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_a7aa584345d78d17dc063e577ecef2692}{excluir}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}}\ \&email);}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_a14ff2f4af2e9f5dcace6e25e7592375a}{listar}}(std::list<EMAIL>\ *emails);}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_aa45016fe3a702f59a302bebeef523f2b}{setCntrISerProjeto}}(\doxymbox{\hyperlink{class_i_ser_projeto}{ISerProjeto}}\ *cntr\_projeto)\ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ cntrISerProjeto\ =\ cntr\_projeto;}
+\DoxyCodeLine{00046\ \ \ \ \ \}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_a322446e2b7c9911203673057e7c20042}{setCntrISerCartao}}(\doxymbox{\hyperlink{class_i_ser_cartao}{ISerCartao}}\ *cntr\_cartao)\{}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ cntrISerCartao\ =\ cntr\_cartao;}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00056\ \};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CONTROLADORAISERPESSOA\_H\_INCLUDED}}
+
+\end{DoxyCode}

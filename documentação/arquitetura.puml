@@ -68,6 +68,7 @@ ISQU -- MSQU
 ISCA -- MSQU
 
 ' ---------- Dependências entre módulos de serviço (sem ciclos) ----------
+MSAU ..> ISPE : lê a pessoa
 MSPE ..> ISPR : exclusão de pessoa
 MSPE ..> ISCA : exclusão de pessoa
 MSPR ..> ISQU : exclusão em cascata

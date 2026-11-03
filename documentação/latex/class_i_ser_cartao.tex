@@ -1,0 +1,302 @@
+\doxysection{ISer\+Cartao Class Reference}
+\hypertarget{class_i_ser_cartao}{}\label{class_i_ser_cartao}\index{ISerCartao@{ISerCartao}}
+
+
+Interface de serviço de cartões de atividade.  
+
+
+
+
+{\ttfamily \+\#include $<$ISercartao.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \doxymbox{\hyperlink{class_i_ser_cartao_a0bc48f47415ae9ceaab70b4815d5292d}{criar}} (const \doxymbox{\hyperlink{class_cartao_de_atividade}{Cartao\+De\+Atividade}} \&cartao, const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&quadro, const \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \&desenvolvedor)=0
+\begin{DoxyCompactList}\small\item\em Cria um cartão em um quadro. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_i_ser_cartao_a4a93e115edd812e159540e44cda62b25}{ler}} (\doxymbox{\hyperlink{class_cartao_de_atividade}{Cartao\+De\+Atividade}} \texorpdfstring{$\ast$}{*}cartao)=0
+\begin{DoxyCompactList}\small\item\em Lê os dados de um cartão. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_i_ser_cartao_aa59b153d91b8b771c81d4b8373fdc779}{atualizar}} (const \doxymbox{\hyperlink{class_cartao_de_atividade}{Cartao\+De\+Atividade}} \&cartao)=0
+\begin{DoxyCompactList}\small\item\em Atualiza os dados de um cartão. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_i_ser_cartao_a765e679b6504a2ee685b4d9c8b2e32ea}{excluir}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&cartao)=0
+\begin{DoxyCompactList}\small\item\em Exclui um cartão. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_i_ser_cartao_a7ac8f0dca45981465e846204231d5f5f}{listar}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&quadro, std::\+list$<$ \doxymbox{\hyperlink{class_identificador}{Identificador}} $>$ \texorpdfstring{$\ast$}{*}cartoes)=0
+\begin{DoxyCompactList}\small\item\em Lista os identificadores dos cartões de um quadro. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_i_ser_cartao_a360d2282bd2ded7a0654e7bbfebf9851}{mover}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&cartao, const \doxymbox{\hyperlink{class_estado}{Estado}} \&destino)=0
+\begin{DoxyCompactList}\small\item\em Move um cartão para a coluna seguinte do quadro. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_i_ser_cartao_ac8d9de7ec7fc0c6c8f5c01271c25048b}{ler\+Tempo\+Ciclo}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&cartao, int \texorpdfstring{$\ast$}{*}minutos)=0
+\begin{DoxyCompactList}\small\item\em Lê o tempo de ciclo de um cartão. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_i_ser_cartao_a7f85cd2e539d2847464154f83b256acf}{ler\+Tempo\+Ciclo\+Medio}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&quadro, double \texorpdfstring{$\ast$}{*}minutos)=0
+\begin{DoxyCompactList}\small\item\em Lê o tempo de ciclo médio dos cartões concluídos de um quadro. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_i_ser_cartao_a73d7b18fcf1d19abc1e64eed6856823b}{ler\+Lead\+Time}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&cartao, int \texorpdfstring{$\ast$}{*}minutos)=0
+\begin{DoxyCompactList}\small\item\em Lê o lead time de um cartão. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_i_ser_cartao_a7b73be96b59efdd271877a4d6b7e9d82}{ler\+Lead\+Time\+Medio}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&quadro, double \texorpdfstring{$\ast$}{*}minutos)=0
+\begin{DoxyCompactList}\small\item\em Lê o lead time médio dos cartões concluídos de um quadro. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_i_ser_cartao_a01220356b09b14cd10bc256bd7756ffd}{ler\+WIP}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&quadro, int \texorpdfstring{$\ast$}{*}wip)=0
+\begin{DoxyCompactList}\small\item\em Lê o WIP de um quadro. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_i_ser_cartao_aac3312ec653327911feefe5b6f51c443}{possui\+Cartoes}} (const \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \&desenvolvedor)=0
+\begin{DoxyCompactList}\small\item\em Informa se uma pessoa é desenvolvedora de algum cartão. \end{DoxyCompactList}\item 
+\Hypertarget{class_i_ser_cartao_a58a9d8221bdf8b3dd5f24d57e44b588d}\label{class_i_ser_cartao_a58a9d8221bdf8b3dd5f24d57e44b588d} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+ISer\+Cartao} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface de serviço de cartões de atividade. 
+
+Provida pelo módulo MSQU. Corresponde aos serviços 16 a 26 da especificação. Todos os métodos retornam false quando o serviço não pôde ser realizado. Durações são expressas em minutos. 
+
+\label{class_i_ser_cartao_doc-func-members}
+\Hypertarget{class_i_ser_cartao_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_i_ser_cartao_aa59b153d91b8b771c81d4b8373fdc779}\index{ISerCartao@{ISerCartao}!atualizar@{atualizar}}
+\index{atualizar@{atualizar}!ISerCartao@{ISerCartao}}
+\doxysubsubsection{\texorpdfstring{atualizar()}{atualizar()}}
+{\footnotesize\ttfamily \label{class_i_ser_cartao_aa59b153d91b8b771c81d4b8373fdc779} 
+virtual bool ISer\+Cartao::\+atualizar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_cartao_de_atividade}{Cartao\+De\+Atividade}} \&}]{cartao}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Atualiza os dados de um cartão. 
+
+O identificador não pode ser alterado. \doxylink{class_estado}{Estado} e tempos só mudam por meio de \doxylink{class_i_ser_cartao_a360d2282bd2ded7a0654e7bbfebf9851}{mover()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cartao} & Novos dados, com o identificador do cartão. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se o cartão não existe. 
+\end{DoxyReturn}
+\Hypertarget{class_i_ser_cartao_a0bc48f47415ae9ceaab70b4815d5292d}\index{ISerCartao@{ISerCartao}!criar@{criar}}
+\index{criar@{criar}!ISerCartao@{ISerCartao}}
+\doxysubsubsection{\texorpdfstring{criar()}{criar()}}
+{\footnotesize\ttfamily \label{class_i_ser_cartao_a0bc48f47415ae9ceaab70b4815d5292d} 
+virtual bool ISer\+Cartao::\+criar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_cartao_de_atividade}{Cartao\+De\+Atividade}} \&}]{cartao}{, }\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{quadro}{, }\item[{const \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \&}]{desenvolvedor}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Cria um cartão em um quadro. 
+
+O serviço define estado A FAZER e registra o instante de entrada. Os demais campos de tempo ficam sem valor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cartao} & Dados do novo cartão. \\
+\hline
+{\em quadro} & \doxylink{class_identificador}{Identificador} do quadro ao qual o cartão pertence. \\
+\hline
+{\em desenvolvedor} & Email da pessoa responsável pelo cartão. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se já existe cartão com o mesmo identificador ou se o quadro não existe. 
+\end{DoxyReturn}
+\Hypertarget{class_i_ser_cartao_a765e679b6504a2ee685b4d9c8b2e32ea}\index{ISerCartao@{ISerCartao}!excluir@{excluir}}
+\index{excluir@{excluir}!ISerCartao@{ISerCartao}}
+\doxysubsubsection{\texorpdfstring{excluir()}{excluir()}}
+{\footnotesize\ttfamily \label{class_i_ser_cartao_a765e679b6504a2ee685b4d9c8b2e32ea} 
+virtual bool ISer\+Cartao::\+excluir (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{cartao}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Exclui um cartão. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cartao} & \doxylink{class_identificador}{Identificador} do cartão a excluir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se o cartão não existe. 
+\end{DoxyReturn}
+\Hypertarget{class_i_ser_cartao_a4a93e115edd812e159540e44cda62b25}\index{ISerCartao@{ISerCartao}!ler@{ler}}
+\index{ler@{ler}!ISerCartao@{ISerCartao}}
+\doxysubsubsection{\texorpdfstring{ler()}{ler()}}
+{\footnotesize\ttfamily \label{class_i_ser_cartao_a4a93e115edd812e159540e44cda62b25} 
+virtual bool ISer\+Cartao::\+ler (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_cartao_de_atividade}{Cartao\+De\+Atividade}} \texorpdfstring{$\ast$}{*}}]{cartao}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Lê os dados de um cartão. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cartao} & Na entrada, contém o identificador do cartão. Na saída, contém todos os dados do cartão. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se o cartão não existe. 
+\end{DoxyReturn}
+\Hypertarget{class_i_ser_cartao_a73d7b18fcf1d19abc1e64eed6856823b}\index{ISerCartao@{ISerCartao}!lerLeadTime@{lerLeadTime}}
+\index{lerLeadTime@{lerLeadTime}!ISerCartao@{ISerCartao}}
+\doxysubsubsection{\texorpdfstring{lerLeadTime()}{lerLeadTime()}}
+{\footnotesize\ttfamily \label{class_i_ser_cartao_a73d7b18fcf1d19abc1e64eed6856823b} 
+virtual bool ISer\+Cartao::\+ler\+Lead\+Time (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{cartao}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{minutos}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Lê o lead time de um cartão. 
+
+Tempo entre a entrada em A FAZER e a chegada em FEITO.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cartao} & \doxylink{class_identificador}{Identificador} do cartão. \\
+\hline
+{\em minutos} & Recebe o lead time, em minutos. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se o cartão não existe ou ainda não foi concluído. 
+\end{DoxyReturn}
+\Hypertarget{class_i_ser_cartao_a7b73be96b59efdd271877a4d6b7e9d82}\index{ISerCartao@{ISerCartao}!lerLeadTimeMedio@{lerLeadTimeMedio}}
+\index{lerLeadTimeMedio@{lerLeadTimeMedio}!ISerCartao@{ISerCartao}}
+\doxysubsubsection{\texorpdfstring{lerLeadTimeMedio()}{lerLeadTimeMedio()}}
+{\footnotesize\ttfamily \label{class_i_ser_cartao_a7b73be96b59efdd271877a4d6b7e9d82} 
+virtual bool ISer\+Cartao::\+ler\+Lead\+Time\+Medio (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{quadro}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{minutos}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Lê o lead time médio dos cartões concluídos de um quadro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em quadro} & \doxylink{class_identificador}{Identificador} do quadro. \\
+\hline
+{\em minutos} & Recebe a média, em minutos. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se o quadro não existe ou não possui cartões concluídos. 
+\end{DoxyReturn}
+\Hypertarget{class_i_ser_cartao_ac8d9de7ec7fc0c6c8f5c01271c25048b}\index{ISerCartao@{ISerCartao}!lerTempoCiclo@{lerTempoCiclo}}
+\index{lerTempoCiclo@{lerTempoCiclo}!ISerCartao@{ISerCartao}}
+\doxysubsubsection{\texorpdfstring{lerTempoCiclo()}{lerTempoCiclo()}}
+{\footnotesize\ttfamily \label{class_i_ser_cartao_ac8d9de7ec7fc0c6c8f5c01271c25048b} 
+virtual bool ISer\+Cartao::\+ler\+Tempo\+Ciclo (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{cartao}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{minutos}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Lê o tempo de ciclo de um cartão. 
+
+Tempo entre a entrada em FAZENDO e a chegada em FEITO.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cartao} & \doxylink{class_identificador}{Identificador} do cartão. \\
+\hline
+{\em minutos} & Recebe o tempo de ciclo, em minutos. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se o cartão não existe ou ainda não foi concluído. 
+\end{DoxyReturn}
+\Hypertarget{class_i_ser_cartao_a7f85cd2e539d2847464154f83b256acf}\index{ISerCartao@{ISerCartao}!lerTempoCicloMedio@{lerTempoCicloMedio}}
+\index{lerTempoCicloMedio@{lerTempoCicloMedio}!ISerCartao@{ISerCartao}}
+\doxysubsubsection{\texorpdfstring{lerTempoCicloMedio()}{lerTempoCicloMedio()}}
+{\footnotesize\ttfamily \label{class_i_ser_cartao_a7f85cd2e539d2847464154f83b256acf} 
+virtual bool ISer\+Cartao::\+ler\+Tempo\+Ciclo\+Medio (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{quadro}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{minutos}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Lê o tempo de ciclo médio dos cartões concluídos de um quadro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em quadro} & \doxylink{class_identificador}{Identificador} do quadro. \\
+\hline
+{\em minutos} & Recebe a média, em minutos. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se o quadro não existe ou não possui cartões concluídos. 
+\end{DoxyReturn}
+\Hypertarget{class_i_ser_cartao_a01220356b09b14cd10bc256bd7756ffd}\index{ISerCartao@{ISerCartao}!lerWIP@{lerWIP}}
+\index{lerWIP@{lerWIP}!ISerCartao@{ISerCartao}}
+\doxysubsubsection{\texorpdfstring{lerWIP()}{lerWIP()}}
+{\footnotesize\ttfamily \label{class_i_ser_cartao_a01220356b09b14cd10bc256bd7756ffd} 
+virtual bool ISer\+Cartao::\+ler\+WIP (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{quadro}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{wip}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Lê o WIP de um quadro. 
+
+Número de cartões na coluna FAZENDO.
+
+
+\begin{DoxyParams}{Parameters}
+{\em quadro} & \doxylink{class_identificador}{Identificador} do quadro. \\
+\hline
+{\em wip} & Recebe o número de cartões em FAZENDO. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se o quadro não existe. 
+\end{DoxyReturn}
+\Hypertarget{class_i_ser_cartao_a7ac8f0dca45981465e846204231d5f5f}\index{ISerCartao@{ISerCartao}!listar@{listar}}
+\index{listar@{listar}!ISerCartao@{ISerCartao}}
+\doxysubsubsection{\texorpdfstring{listar()}{listar()}}
+{\footnotesize\ttfamily \label{class_i_ser_cartao_a7ac8f0dca45981465e846204231d5f5f} 
+virtual bool ISer\+Cartao::\+listar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{quadro}{, }\item[{std::\+list$<$ \doxymbox{\hyperlink{class_identificador}{Identificador}} $>$ \texorpdfstring{$\ast$}{*}}]{cartoes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Lista os identificadores dos cartões de um quadro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em quadro} & \doxylink{class_identificador}{Identificador} do quadro. \\
+\hline
+{\em cartoes} & Recebe os identificadores dos cartões do quadro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se a listagem foi realizada. 
+\end{DoxyReturn}
+\Hypertarget{class_i_ser_cartao_a360d2282bd2ded7a0654e7bbfebf9851}\index{ISerCartao@{ISerCartao}!mover@{mover}}
+\index{mover@{mover}!ISerCartao@{ISerCartao}}
+\doxysubsubsection{\texorpdfstring{mover()}{mover()}}
+{\footnotesize\ttfamily \label{class_i_ser_cartao_a360d2282bd2ded7a0654e7bbfebf9851} 
+virtual bool ISer\+Cartao::\+mover (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{cartao}{, }\item[{const \doxymbox{\hyperlink{class_estado}{Estado}} \&}]{destino}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Move um cartão para a coluna seguinte do quadro. 
+
+Movimentos permitidos: A FAZER para FAZENDO e FAZENDO para FEITO. Ao entrar em FAZENDO registra o início; ao entrar em FEITO, registra o término.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cartao} & \doxylink{class_identificador}{Identificador} do cartão. \\
+\hline
+{\em destino} & Coluna de destino. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se o cartão não existe, se o movimento não é permitido ou se o destino é FAZENDO e o quadro já atingiu o limite de WIP. 
+\end{DoxyReturn}
+\Hypertarget{class_i_ser_cartao_aac3312ec653327911feefe5b6f51c443}\index{ISerCartao@{ISerCartao}!possuiCartoes@{possuiCartoes}}
+\index{possuiCartoes@{possuiCartoes}!ISerCartao@{ISerCartao}}
+\doxysubsubsection{\texorpdfstring{possuiCartoes()}{possuiCartoes()}}
+{\footnotesize\ttfamily \label{class_i_ser_cartao_aac3312ec653327911feefe5b6f51c443} 
+virtual bool ISer\+Cartao::\+possui\+Cartoes (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \&}]{desenvolvedor}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Informa se uma pessoa é desenvolvedora de algum cartão. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em desenvolvedor} & Email da pessoa consultada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se existe ao menos um cartão sob responsabilidade da pessoa. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+Interfaces/\doxymbox{\hyperlink{_i_sercartao_8h}{ISercartao.\+h}}\end{DoxyCompactItemize}

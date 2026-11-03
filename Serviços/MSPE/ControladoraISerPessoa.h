@@ -27,7 +27,7 @@ private:
     ISerProjeto *cntrISerProjeto;
     ISerCartao *cntrISerCartao;
 public:
-    /** @brief Cria a controladora sem servicos de projeto e de cartao. */
+    /** @brief Método construtor que inicializa a controladora sem servicos de projeto e de cartao. */
     CntrISerPessoa() : cntrISerProjeto(nullptr), cntrISerCartao(nullptr) {}
 
     bool criar(const Pessoa &pessoa);
@@ -41,14 +41,18 @@ public:
      * @param cntr Ponteiro para uma implementacao de ISerProjeto. Se for
      *        nulo, a existencia de projetos nao e verificada.
      */
-    void setCntrISerProjeto(ISerProjeto *cntr) { cntrISerProjeto = cntr; }
+    void setCntrISerProjeto(ISerProjeto *cntr_projeto) {
+         cntrISerProjeto = cntr_projeto;
+    }
 
     /**
      * @brief Informa o servico de cartoes, usado na exclusao de pessoa.
      * @param cntr Ponteiro para uma implementacao de ISerCartao. Se for
      *        nulo, a existencia de cartoes nao e verificada.
      */
-    void setCntrISerCartao(ISerCartao *cntr) { cntrISerCartao = cntr; }
+    void setCntrISerCartao(ISerCartao *cntr_cartao){
+         cntrISerCartao = cntr_cartao;
+        }
 };
 
 #endif // CONTROLADORAISERPESSOA_H_INCLUDED

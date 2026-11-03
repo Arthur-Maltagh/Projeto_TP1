@@ -13,7 +13,10 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
-					<Add directory="C:/Users/Pichau/OneDrive/Desktop/Engenharia_da_Computacao/Projeto_TP1/Headers" />
+					<Add directory="dominios" />
+					<Add directory="entidades" />
+					<Add directory="Testes/Teste_dominios" />
+					<Add directory="Testes/Testes_entidades" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -33,13 +36,64 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Option use_console_runner="0" />
+				<Compiler>
+					<Add directory="dominios" />
+					<Add directory="entidades" />
+					<Add directory="Testes/testes_dominios" />
+					<Add directory="Testes/teste_entidades" />
+					<Add directory="Interfaces" />
+					<Add directory="Serviços/MSPE" />
+					<Add directory="Apresentação/MAPE" />
+					<Add directory="Testes/Stubs" />
+					<Add directory="Testes/Drivers" />
+					<Add directory="Apresentação/MAIC" />
+					<Add directory="Apresentação/MAAU" />
+					<Add directory="Serviços/MSAU" />
+				</Compiler>
 			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 			<Add directory="C:/Users/Pichau/OneDrive/Desktop/Engenharia_da_Computacao/Projeto_TP1/Headers" />
+			<Add directory="C:/Users/Pichau/OneDrive/Desktop/Engenharia_da_Computacao/Projeto_TP1/headers/dominios" />
+			<Add directory="C:/Users/Pichau/OneDrive/Desktop/Engenharia_da_Computacao/Projeto_TP1/headers/entidades" />
+			<Add directory="C:/Users/Pichau/OneDrive/Desktop/Engenharia_da_Computacao/Projeto_TP1/headers/testes/testes_dominios" />
+			<Add directory="C:/Users/Pichau/OneDrive/Desktop/Engenharia_da_Computacao/Projeto_TP1/headers/testes/testes_entidades" />
 		</Compiler>
+		<Unit filename="Apresentação/MAAU/ControladoraIAprAutenticacao.cpp" />
+		<Unit filename="Apresentação/MAAU/ControladoraIAprAutenticacao.h" />
+		<Unit filename="Apresentação/MAIC/ControladoraIAprPrincipal.cpp" />
+		<Unit filename="Apresentação/MAIC/ControladoraIAprPrincipal.h" />
+		<Unit filename="Apresentação/MAPE/ControladoraIAprPessoa.cpp" />
+		<Unit filename="Apresentação/MAPE/ControladoraIAprPessoa.h" />
+		<Unit filename="Interfaces/IAprAutenticacao.h" />
+		<Unit filename="Interfaces/IAprPessoa.h" />
+		<Unit filename="Interfaces/IAprProjeto.h" />
+		<Unit filename="Interfaces/IAprQuadro.h" />
+		<Unit filename="Interfaces/ISerAutenticacao.h" />
+		<Unit filename="Interfaces/ISerPessoa.h" />
+		<Unit filename="Interfaces/ISerProjeto.h" />
+		<Unit filename="Interfaces/ISerQuadro.h" />
+		<Unit filename="Interfaces/ISercartao.h" />
+		<Unit filename="Serviços/ControladoraSerPessoa" />
+		<Unit filename="Serviços/MSAU/ControladoraISerAutenticacao.h" />
+		<Unit filename="Serviços/MSAU/ControladotaISerAutenticacao.cpp" />
+		<Unit filename="Serviços/MSPE/ContainerPessoa.cpp" />
+		<Unit filename="Serviços/MSPE/ContainerPessoa.h" />
+		<Unit filename="Serviços/MSPE/ControladoraISerPessoa.cpp" />
+		<Unit filename="Serviços/MSPE/ControladoraISerPessoa.h" />
+		<Unit filename="Testes/Drivers/DriverAutenticacao.cpp" />
+		<Unit filename="Testes/Drivers/DriverAutenticacao.h" />
+		<Unit filename="Testes/Drivers/DriverMaic.cpp" />
+		<Unit filename="Testes/Drivers/DriverMaic.h" />
+		<Unit filename="Testes/Drivers/DriverPessoa.cpp" />
+		<Unit filename="Testes/Drivers/DriverPessoa.h" />
+		<Unit filename="Testes/Stubs/StubIAprProjeto.h" />
+		<Unit filename="Testes/Stubs/StubISerPessoa.cpp" />
+		<Unit filename="Testes/Stubs/StubISerPessoa.h" />
+		<Unit filename="Testes/Stubs/StubSerAutenticacao.cpp" />
+		<Unit filename="Testes/Stubs/StubSerAutenticacao.h" />
 		<Unit filename="Testes/Teste_entidades/Teste_CartaoAtividade.cpp" />
 		<Unit filename="Testes/Teste_entidades/Teste_Cartaoatividade.h" />
 		<Unit filename="Testes/Teste_entidades/Teste_Pessoa.h" />

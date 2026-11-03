@@ -1,0 +1,30 @@
+\doxysection{ISer\+Pessoa.\+h}
+\hypertarget{_i_ser_pessoa_8h_source}{}\label{_i_ser_pessoa_8h_source}\index{Interfaces/ISerPessoa.h@{Interfaces/ISerPessoa.h}}
+\doxymbox{\hyperlink{_i_ser_pessoa_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ISERPESSOA\_H\_INCLUDED}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ISERPESSOA\_H\_INCLUDED}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <list>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_e_m_a_i_l_8h}{EMAIL.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}Pessoa.h"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_i_ser_pessoa}{ISerPessoa}}\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_i_ser_pessoa_a6a60e3f8300f31977bcecd5ff5f7e4e4}{criar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ \&pessoa)\ =\ 0;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_i_ser_pessoa_ae71e16f2c3d5c3e31e3288c7b6497d19}{ler}}(\doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ *pessoa)\ =\ 0;}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_i_ser_pessoa_a1c56a5a3fdd2cd3acddc9aa0646c4998}{atualizar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ \&pessoa)\ =\ 0;}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_i_ser_pessoa_aa91f97b0175c2d3b8d5b7295cdeb2709}{excluir}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}}\ \&email)\ =\ 0;}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_i_ser_pessoa_a5d4548078b29df36ee790763a64f9d66}{listar}}(std::list<EMAIL>\ *emails)\ =\ 0;}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keyword}{virtual}\ \doxymbox{\hyperlink{class_i_ser_pessoa_a4e5996bd072420042a18c62fcfc05f41}{\string~ISerPessoa}}()\ \{\}}
+\DoxyCodeLine{00069\ \};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ISERPESSOA\_H\_INCLUDED}}
+
+\end{DoxyCode}

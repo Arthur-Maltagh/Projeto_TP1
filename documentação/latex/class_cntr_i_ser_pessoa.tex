@@ -1,0 +1,365 @@
+\doxysection{Cntr\+ISer\+Pessoa Class Reference}
+\hypertarget{class_cntr_i_ser_pessoa}{}\label{class_cntr_i_ser_pessoa}\index{CntrISerPessoa@{CntrISerPessoa}}
+
+
+Controladora de servico do modulo de pessoas (MSPE).  
+
+
+
+
+{\ttfamily \+\#include $<$Controladora\+ISer\+Pessoa.\+h$>$}
+
+Inheritance diagram for Cntr\+ISer\+Pessoa:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cntr_i_ser_pessoa}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_cntr_i_ser_pessoa_a4362467b3623905c17eac2d748c88591}\label{class_cntr_i_ser_pessoa_a4362467b3623905c17eac2d748c88591} 
+{\bfseries Cntr\+ISer\+Pessoa} ()
+\begin{DoxyCompactList}\small\item\em Método construtor que inicializa a controladora sem servicos de projeto e de cartao. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_a9834822a761afe601441400c3cd34262}{criar}} (const \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&pessoa)
+\begin{DoxyCompactList}\small\item\em Cria uma pessoa. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_ad70ee0f3088bb7914f9a4080095b3b26}{ler}} (\doxymbox{\hyperlink{class_pessoa}{Pessoa}} \texorpdfstring{$\ast$}{*}pessoa)
+\begin{DoxyCompactList}\small\item\em Lê os dados de uma pessoa. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_aaca827dd793464447c5d91b3a8c67a21}{atualizar}} (const \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&pessoa)
+\begin{DoxyCompactList}\small\item\em Atualiza os dados de uma pessoa. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_a7aa584345d78d17dc063e577ecef2692}{excluir}} (const \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \&email)
+\begin{DoxyCompactList}\small\item\em Exclui uma pessoa. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_a14ff2f4af2e9f5dcace6e25e7592375a}{listar}} (std::\+list$<$ \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} $>$ \texorpdfstring{$\ast$}{*}emails)
+\begin{DoxyCompactList}\small\item\em Lista os emails de todas as pessoas. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_aa45016fe3a702f59a302bebeef523f2b}{set\+Cntr\+ISer\+Projeto}} (\doxymbox{\hyperlink{class_i_ser_projeto}{ISer\+Projeto}} \texorpdfstring{$\ast$}{*}cntr\+\_\+projeto)
+\begin{DoxyCompactList}\small\item\em Informa o servico de projetos, usado na exclusao de pessoa. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_a322446e2b7c9911203673057e7c20042}{set\+Cntr\+ISer\+Cartao}} (\doxymbox{\hyperlink{class_i_ser_cartao}{ISer\+Cartao}} \texorpdfstring{$\ast$}{*}cntr\+\_\+cartao)
+\begin{DoxyCompactList}\small\item\em Informa o servico de cartoes, usado na exclusao de pessoa. \end{DoxyCompactList}\item 
+\Hypertarget{class_cntr_i_ser_pessoa_a4362467b3623905c17eac2d748c88591}\label{class_cntr_i_ser_pessoa_a4362467b3623905c17eac2d748c88591} 
+{\bfseries Cntr\+ISer\+Pessoa} ()
+\begin{DoxyCompactList}\small\item\em Cria a controladora sem servicos de projeto e de cartao. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_a9834822a761afe601441400c3cd34262}{criar}} (const \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&pessoa)
+\begin{DoxyCompactList}\small\item\em Cria uma pessoa. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_ad70ee0f3088bb7914f9a4080095b3b26}{ler}} (\doxymbox{\hyperlink{class_pessoa}{Pessoa}} \texorpdfstring{$\ast$}{*}pessoa)
+\begin{DoxyCompactList}\small\item\em Lê os dados de uma pessoa. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_aaca827dd793464447c5d91b3a8c67a21}{atualizar}} (const \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&pessoa)
+\begin{DoxyCompactList}\small\item\em Atualiza os dados de uma pessoa. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_a7aa584345d78d17dc063e577ecef2692}{excluir}} (const \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \&email)
+\begin{DoxyCompactList}\small\item\em Exclui uma pessoa. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_a14ff2f4af2e9f5dcace6e25e7592375a}{listar}} (std::\+list$<$ \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} $>$ \texorpdfstring{$\ast$}{*}emails)
+\begin{DoxyCompactList}\small\item\em Lista os emails de todas as pessoas. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_a609a12fe6b9272d0162d5957cee04dbe}{set\+Cntr\+ISer\+Projeto}} (\doxymbox{\hyperlink{class_i_ser_projeto}{ISer\+Projeto}} \texorpdfstring{$\ast$}{*}cntr)
+\begin{DoxyCompactList}\small\item\em Informa o servico de projetos, usado na exclusao de pessoa. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_a0ae057833699ded891eefb3d6fc4fd3a}{set\+Cntr\+ISer\+Cartao}} (\doxymbox{\hyperlink{class_i_ser_cartao}{ISer\+Cartao}} \texorpdfstring{$\ast$}{*}cntr)
+\begin{DoxyCompactList}\small\item\em Informa o servico de cartoes, usado na exclusao de pessoa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_i_ser_pessoa}{ISer\+Pessoa}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+ISer\+Pessoa} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controladora de servico do modulo de pessoas (MSPE). 
+
+Realiza a interface \doxylink{class_i_ser_pessoa}{ISer\+Pessoa}. Aplica a logica de negocio e usa um \doxylink{class_container_pessoa}{Container\+Pessoa} para armazenar os dados. Nao interage com o usuario. 
+
+\label{class_cntr_i_ser_pessoa_doc-func-members}
+\Hypertarget{class_cntr_i_ser_pessoa_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_cntr_i_ser_pessoa_aaca827dd793464447c5d91b3a8c67a21}\index{CntrISerPessoa@{CntrISerPessoa}!atualizar@{atualizar}}
+\index{atualizar@{atualizar}!CntrISerPessoa@{CntrISerPessoa}}
+\doxysubsubsection{\texorpdfstring{atualizar()}{atualizar()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_cntr_i_ser_pessoa_aaca827dd793464447c5d91b3a8c67a21} 
+bool Cntr\+ISer\+Pessoa::\+atualizar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&}]{pessoa}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Atualiza os dados de uma pessoa. 
+
+O email identifica a pessoa e não pode ser alterado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em novos} & dados da pessoa, usando o email como referência. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se não existe pessoa com o email informado. 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{class_i_ser_pessoa_a1c56a5a3fdd2cd3acddc9aa0646c4998}{ISer\+Pessoa}}.
+
+\Hypertarget{class_cntr_i_ser_pessoa_aaca827dd793464447c5d91b3a8c67a21}\index{CntrISerPessoa@{CntrISerPessoa}!atualizar@{atualizar}}
+\index{atualizar@{atualizar}!CntrISerPessoa@{CntrISerPessoa}}
+\doxysubsubsection{\texorpdfstring{atualizar()}{atualizar()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_cntr_i_ser_pessoa_aaca827dd793464447c5d91b3a8c67a21} 
+bool Cntr\+ISer\+Pessoa::\+atualizar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&}]{pessoa}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Atualiza os dados de uma pessoa. 
+
+O email identifica a pessoa e não pode ser alterado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em novos} & dados da pessoa, usando o email como referência. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se não existe pessoa com o email informado. 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{class_i_ser_pessoa_a1c56a5a3fdd2cd3acddc9aa0646c4998}{ISer\+Pessoa}}.
+
+\Hypertarget{class_cntr_i_ser_pessoa_a9834822a761afe601441400c3cd34262}\index{CntrISerPessoa@{CntrISerPessoa}!criar@{criar}}
+\index{criar@{criar}!CntrISerPessoa@{CntrISerPessoa}}
+\doxysubsubsection{\texorpdfstring{criar()}{criar()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_cntr_i_ser_pessoa_a9834822a761afe601441400c3cd34262} 
+bool Cntr\+ISer\+Pessoa::\+criar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&}]{pessoa}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Cria uma pessoa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Dados} & da nova pessoa. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se já existe pessoa com o mesmo email. 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{class_i_ser_pessoa_a6a60e3f8300f31977bcecd5ff5f7e4e4}{ISer\+Pessoa}}.
+
+\Hypertarget{class_cntr_i_ser_pessoa_a9834822a761afe601441400c3cd34262}\index{CntrISerPessoa@{CntrISerPessoa}!criar@{criar}}
+\index{criar@{criar}!CntrISerPessoa@{CntrISerPessoa}}
+\doxysubsubsection{\texorpdfstring{criar()}{criar()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_cntr_i_ser_pessoa_a9834822a761afe601441400c3cd34262} 
+bool Cntr\+ISer\+Pessoa::\+criar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&}]{pessoa}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Cria uma pessoa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Dados} & da nova pessoa. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se já existe pessoa com o mesmo email. 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{class_i_ser_pessoa_a6a60e3f8300f31977bcecd5ff5f7e4e4}{ISer\+Pessoa}}.
+
+\Hypertarget{class_cntr_i_ser_pessoa_a7aa584345d78d17dc063e577ecef2692}\index{CntrISerPessoa@{CntrISerPessoa}!excluir@{excluir}}
+\index{excluir@{excluir}!CntrISerPessoa@{CntrISerPessoa}}
+\doxysubsubsection{\texorpdfstring{excluir()}{excluir()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_cntr_i_ser_pessoa_a7aa584345d78d17dc063e577ecef2692} 
+bool Cntr\+ISer\+Pessoa::\+excluir (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \&}]{email}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Exclui uma pessoa. 
+
+A exclusão é recusada se a pessoa é gestora de algum projeto ou desenvolvedora de algum cartão.
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & Email da pessoa a excluir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se a pessoa não existe ou se possui projetos ou cartões associados. 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{class_i_ser_pessoa_aa91f97b0175c2d3b8d5b7295cdeb2709}{ISer\+Pessoa}}.
+
+\Hypertarget{class_cntr_i_ser_pessoa_a7aa584345d78d17dc063e577ecef2692}\index{CntrISerPessoa@{CntrISerPessoa}!excluir@{excluir}}
+\index{excluir@{excluir}!CntrISerPessoa@{CntrISerPessoa}}
+\doxysubsubsection{\texorpdfstring{excluir()}{excluir()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_cntr_i_ser_pessoa_a7aa584345d78d17dc063e577ecef2692} 
+bool Cntr\+ISer\+Pessoa::\+excluir (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \&}]{email}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Exclui uma pessoa. 
+
+A exclusão é recusada se a pessoa é gestora de algum projeto ou desenvolvedora de algum cartão.
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & Email da pessoa a excluir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se a pessoa não existe ou se possui projetos ou cartões associados. 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{class_i_ser_pessoa_aa91f97b0175c2d3b8d5b7295cdeb2709}{ISer\+Pessoa}}.
+
+\Hypertarget{class_cntr_i_ser_pessoa_ad70ee0f3088bb7914f9a4080095b3b26}\index{CntrISerPessoa@{CntrISerPessoa}!ler@{ler}}
+\index{ler@{ler}!CntrISerPessoa@{CntrISerPessoa}}
+\doxysubsubsection{\texorpdfstring{ler()}{ler()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_cntr_i_ser_pessoa_ad70ee0f3088bb7914f9a4080095b3b26} 
+bool Cntr\+ISer\+Pessoa::\+ler (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_pessoa}{Pessoa}} \texorpdfstring{$\ast$}{*}}]{pessoa}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Lê os dados de uma pessoa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pessoa} & Na entrada, contém o email da pessoa procurada. Na saída, contém todos os dados da pessoa. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se não existe pessoa com o email informado. 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{class_i_ser_pessoa_ae71e16f2c3d5c3e31e3288c7b6497d19}{ISer\+Pessoa}}.
+
+\Hypertarget{class_cntr_i_ser_pessoa_ad70ee0f3088bb7914f9a4080095b3b26}\index{CntrISerPessoa@{CntrISerPessoa}!ler@{ler}}
+\index{ler@{ler}!CntrISerPessoa@{CntrISerPessoa}}
+\doxysubsubsection{\texorpdfstring{ler()}{ler()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_cntr_i_ser_pessoa_ad70ee0f3088bb7914f9a4080095b3b26} 
+bool Cntr\+ISer\+Pessoa::\+ler (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_pessoa}{Pessoa}} \texorpdfstring{$\ast$}{*}}]{pessoa}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Lê os dados de uma pessoa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pessoa} & Na entrada, contém o email da pessoa procurada. Na saída, contém todos os dados da pessoa. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se não existe pessoa com o email informado. 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{class_i_ser_pessoa_ae71e16f2c3d5c3e31e3288c7b6497d19}{ISer\+Pessoa}}.
+
+\Hypertarget{class_cntr_i_ser_pessoa_a14ff2f4af2e9f5dcace6e25e7592375a}\index{CntrISerPessoa@{CntrISerPessoa}!listar@{listar}}
+\index{listar@{listar}!CntrISerPessoa@{CntrISerPessoa}}
+\doxysubsubsection{\texorpdfstring{listar()}{listar()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_cntr_i_ser_pessoa_a14ff2f4af2e9f5dcace6e25e7592375a} 
+bool Cntr\+ISer\+Pessoa::\+listar (\begin{DoxyParamCaption}\item[{std::\+list$<$ \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} $>$ \texorpdfstring{$\ast$}{*}}]{emails}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Lista os emails de todas as pessoas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em emails} & Recebe os emails das pessoas cadastradas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se a listagem foi realizada. 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{class_i_ser_pessoa_a5d4548078b29df36ee790763a64f9d66}{ISer\+Pessoa}}.
+
+\Hypertarget{class_cntr_i_ser_pessoa_a14ff2f4af2e9f5dcace6e25e7592375a}\index{CntrISerPessoa@{CntrISerPessoa}!listar@{listar}}
+\index{listar@{listar}!CntrISerPessoa@{CntrISerPessoa}}
+\doxysubsubsection{\texorpdfstring{listar()}{listar()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_cntr_i_ser_pessoa_a14ff2f4af2e9f5dcace6e25e7592375a} 
+bool Cntr\+ISer\+Pessoa::\+listar (\begin{DoxyParamCaption}\item[{std::\+list$<$ \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} $>$ \texorpdfstring{$\ast$}{*}}]{emails}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Lista os emails de todas as pessoas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em emails} & Recebe os emails das pessoas cadastradas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se a listagem foi realizada. 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{class_i_ser_pessoa_a5d4548078b29df36ee790763a64f9d66}{ISer\+Pessoa}}.
+
+\Hypertarget{class_cntr_i_ser_pessoa_a0ae057833699ded891eefb3d6fc4fd3a}\index{CntrISerPessoa@{CntrISerPessoa}!setCntrISerCartao@{setCntrISerCartao}}
+\index{setCntrISerCartao@{setCntrISerCartao}!CntrISerPessoa@{CntrISerPessoa}}
+\doxysubsubsection{\texorpdfstring{setCntrISerCartao()}{setCntrISerCartao()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_cntr_i_ser_pessoa_a0ae057833699ded891eefb3d6fc4fd3a} 
+void Cntr\+ISer\+Pessoa::\+set\+Cntr\+ISer\+Cartao (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_i_ser_cartao}{ISer\+Cartao}} \texorpdfstring{$\ast$}{*}}]{cntr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Informa o servico de cartoes, usado na exclusao de pessoa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cntr} & Ponteiro para uma implementacao de \doxylink{class_i_ser_cartao}{ISer\+Cartao}. Se for nulo, a existencia de cartoes nao e verificada. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_cntr_i_ser_pessoa_a322446e2b7c9911203673057e7c20042}\index{CntrISerPessoa@{CntrISerPessoa}!setCntrISerCartao@{setCntrISerCartao}}
+\index{setCntrISerCartao@{setCntrISerCartao}!CntrISerPessoa@{CntrISerPessoa}}
+\doxysubsubsection{\texorpdfstring{setCntrISerCartao()}{setCntrISerCartao()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_cntr_i_ser_pessoa_a322446e2b7c9911203673057e7c20042} 
+void Cntr\+ISer\+Pessoa::\+set\+Cntr\+ISer\+Cartao (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_i_ser_cartao}{ISer\+Cartao}} \texorpdfstring{$\ast$}{*}}]{cntr\+\_\+cartao}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Informa o servico de cartoes, usado na exclusao de pessoa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cntr} & Ponteiro para uma implementacao de \doxylink{class_i_ser_cartao}{ISer\+Cartao}. Se for nulo, a existencia de cartoes nao e verificada. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_cntr_i_ser_pessoa_a609a12fe6b9272d0162d5957cee04dbe}\index{CntrISerPessoa@{CntrISerPessoa}!setCntrISerProjeto@{setCntrISerProjeto}}
+\index{setCntrISerProjeto@{setCntrISerProjeto}!CntrISerPessoa@{CntrISerPessoa}}
+\doxysubsubsection{\texorpdfstring{setCntrISerProjeto()}{setCntrISerProjeto()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_cntr_i_ser_pessoa_a609a12fe6b9272d0162d5957cee04dbe} 
+void Cntr\+ISer\+Pessoa::\+set\+Cntr\+ISer\+Projeto (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_i_ser_projeto}{ISer\+Projeto}} \texorpdfstring{$\ast$}{*}}]{cntr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Informa o servico de projetos, usado na exclusao de pessoa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cntr} & Ponteiro para uma implementacao de \doxylink{class_i_ser_projeto}{ISer\+Projeto}. Se for nulo, a existencia de projetos nao e verificada. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_cntr_i_ser_pessoa_aa45016fe3a702f59a302bebeef523f2b}\index{CntrISerPessoa@{CntrISerPessoa}!setCntrISerProjeto@{setCntrISerProjeto}}
+\index{setCntrISerProjeto@{setCntrISerProjeto}!CntrISerPessoa@{CntrISerPessoa}}
+\doxysubsubsection{\texorpdfstring{setCntrISerProjeto()}{setCntrISerProjeto()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_cntr_i_ser_pessoa_aa45016fe3a702f59a302bebeef523f2b} 
+void Cntr\+ISer\+Pessoa::\+set\+Cntr\+ISer\+Projeto (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_i_ser_projeto}{ISer\+Projeto}} \texorpdfstring{$\ast$}{*}}]{cntr\+\_\+projeto}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Informa o servico de projetos, usado na exclusao de pessoa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cntr} & Ponteiro para uma implementacao de \doxylink{class_i_ser_projeto}{ISer\+Projeto}. Se for nulo, a existencia de projetos nao e verificada. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+ServiÃ§os/\+\+MSPE/Controladora\+ISer\+Pessoa.\+h\item 
+ServiÃ§os/\+\+MSPE/Controladora\+Ser\+Pessoa.\+h\item 
+ServiÃ§os/\+\+MSPE/Controladora\+ISer\+Pessoa.\+cpp\item 
+ServiÃ§os/\+\+MSPE/Controladora\+Ser\+Pessoa.\+cpp\end{DoxyCompactItemize}

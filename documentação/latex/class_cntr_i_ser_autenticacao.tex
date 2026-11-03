@@ -1,0 +1,87 @@
+\doxysection{Cntr\+ISer\+Autenticacao Class Reference}
+\hypertarget{class_cntr_i_ser_autenticacao}{}\label{class_cntr_i_ser_autenticacao}\index{CntrISerAutenticacao@{CntrISerAutenticacao}}
+
+
+Controladora de servico do modulo de autenticacao (MSAU).  
+
+
+
+
+{\ttfamily \+\#include $<$Controladora\+ISer\+Autenticacao.\+h$>$}
+
+Inheritance diagram for Cntr\+ISer\+Autenticacao:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cntr_i_ser_autenticacao}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_cntr_i_ser_autenticacao_a4b4a9a729f23b1f6b1a51e1f0985c613}\label{class_cntr_i_ser_autenticacao_a4b4a9a729f23b1f6b1a51e1f0985c613} 
+{\bfseries Cntr\+ISer\+Autenticacao} ()
+\begin{DoxyCompactList}\small\item\em Cria a controladora sem servico de pessoas associado. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_cntr_i_ser_autenticacao_a8812f979b6fc66ee2a2027bf7ab72e34}{autenticar}} (const \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \&email, const \doxymbox{\hyperlink{class_senha}{Senha}} \&senha)
+\begin{DoxyCompactList}\small\item\em Verifica se as credenciais correspondem a uma conta. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_cntr_i_ser_autenticacao_a0b7d8ca6761deb0ffe08c6db9bce1754}{set\+Cntr\+ISer\+Pessoa}} (\doxymbox{\hyperlink{class_i_ser_pessoa}{ISer\+Pessoa}} \texorpdfstring{$\ast$}{*}cntr)
+\begin{DoxyCompactList}\small\item\em Informa o servico de pessoas usado para consultar as contas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_i_ser_autenticacao}{ISer\+Autenticacao}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+ISer\+Autenticacao} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controladora de servico do modulo de autenticacao (MSAU). 
+
+Realiza a interface \doxylink{class_i_ser_autenticacao}{ISer\+Autenticacao}. Nao guarda dados: consulta a pessoa pelo servico de pessoas (\doxylink{class_i_ser_pessoa}{ISer\+Pessoa}) e compara a senha. 
+
+\label{class_cntr_i_ser_autenticacao_doc-func-members}
+\Hypertarget{class_cntr_i_ser_autenticacao_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_cntr_i_ser_autenticacao_a8812f979b6fc66ee2a2027bf7ab72e34}\index{CntrISerAutenticacao@{CntrISerAutenticacao}!autenticar@{autenticar}}
+\index{autenticar@{autenticar}!CntrISerAutenticacao@{CntrISerAutenticacao}}
+\doxysubsubsection{\texorpdfstring{autenticar()}{autenticar()}}
+{\footnotesize\ttfamily \label{class_cntr_i_ser_autenticacao_a8812f979b6fc66ee2a2027bf7ab72e34} 
+bool Cntr\+ISer\+Autenticacao::\+autenticar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \&}]{email}{, }\item[{const \doxymbox{\hyperlink{class_senha}{Senha}} \&}]{senha}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Verifica se as credenciais correspondem a uma conta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & Email informado pelo usu·rio. \\
+\hline
+{\em senha} & \doxylink{class_senha}{Senha} informada pelo usu·rio. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se existe pessoa com o email e a senha informados; false caso contr·rio. 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{class_i_ser_autenticacao_ad15e1ccddeaa1bf0f2717cc30a7764e2}{ISer\+Autenticacao}}.
+
+\Hypertarget{class_cntr_i_ser_autenticacao_a0b7d8ca6761deb0ffe08c6db9bce1754}\index{CntrISerAutenticacao@{CntrISerAutenticacao}!setCntrISerPessoa@{setCntrISerPessoa}}
+\index{setCntrISerPessoa@{setCntrISerPessoa}!CntrISerAutenticacao@{CntrISerAutenticacao}}
+\doxysubsubsection{\texorpdfstring{setCntrISerPessoa()}{setCntrISerPessoa()}}
+{\footnotesize\ttfamily \label{class_cntr_i_ser_autenticacao_a0b7d8ca6761deb0ffe08c6db9bce1754} 
+void Cntr\+ISer\+Autenticacao::\+set\+Cntr\+ISer\+Pessoa (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_i_ser_pessoa}{ISer\+Pessoa}} \texorpdfstring{$\ast$}{*}}]{cntr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Informa o servico de pessoas usado para consultar as contas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cntr} & Ponteiro para uma implementacao de \doxylink{class_i_ser_pessoa}{ISer\+Pessoa}. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Servi√ßos/\+\+MSAU/Controladora\+ISer\+Autenticacao.\+h\item 
+Servi√ßos/\+\+MSAU/Controladota\+ISer\+Autenticacao.\+cpp\end{DoxyCompactItemize}

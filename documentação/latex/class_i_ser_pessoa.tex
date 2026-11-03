@@ -1,0 +1,162 @@
+\doxysection{ISer\+Pessoa Class Reference}
+\hypertarget{class_i_ser_pessoa}{}\label{class_i_ser_pessoa}\index{ISerPessoa@{ISerPessoa}}
+
+
+Interface de serviço do módulo de pessoas.  
+
+
+
+
+{\ttfamily \+\#include $<$ISer\+Pessoa.\+h$>$}
+
+Inheritance diagram for ISer\+Pessoa:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_i_ser_pessoa}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \doxymbox{\hyperlink{class_i_ser_pessoa_a6a60e3f8300f31977bcecd5ff5f7e4e4}{criar}} (const \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&pessoa)=0
+\begin{DoxyCompactList}\small\item\em Cria uma pessoa. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_i_ser_pessoa_ae71e16f2c3d5c3e31e3288c7b6497d19}{ler}} (\doxymbox{\hyperlink{class_pessoa}{Pessoa}} \texorpdfstring{$\ast$}{*}pessoa)=0
+\begin{DoxyCompactList}\small\item\em Lê os dados de uma pessoa. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_i_ser_pessoa_a1c56a5a3fdd2cd3acddc9aa0646c4998}{atualizar}} (const \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&pessoa)=0
+\begin{DoxyCompactList}\small\item\em Atualiza os dados de uma pessoa. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_i_ser_pessoa_aa91f97b0175c2d3b8d5b7295cdeb2709}{excluir}} (const \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \&email)=0
+\begin{DoxyCompactList}\small\item\em Exclui uma pessoa. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_i_ser_pessoa_a5d4548078b29df36ee790763a64f9d66}{listar}} (std::\+list$<$ \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} $>$ \texorpdfstring{$\ast$}{*}emails)=0
+\begin{DoxyCompactList}\small\item\em Lista os emails de todas as pessoas. \end{DoxyCompactList}\item 
+\Hypertarget{class_i_ser_pessoa_a4e5996bd072420042a18c62fcfc05f41}\label{class_i_ser_pessoa_a4e5996bd072420042a18c62fcfc05f41} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+ISer\+Pessoa} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface de serviço do módulo de pessoas. 
+
+Provida pelo módulo MSPE. Corresponde aos serviços da entidade pessoa. Todos os métodos retornam false quando o serviço não pode ser realizado. 
+
+\label{class_i_ser_pessoa_doc-func-members}
+\Hypertarget{class_i_ser_pessoa_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_i_ser_pessoa_a1c56a5a3fdd2cd3acddc9aa0646c4998}\index{ISerPessoa@{ISerPessoa}!atualizar@{atualizar}}
+\index{atualizar@{atualizar}!ISerPessoa@{ISerPessoa}}
+\doxysubsubsection{\texorpdfstring{atualizar()}{atualizar()}}
+{\footnotesize\ttfamily \label{class_i_ser_pessoa_a1c56a5a3fdd2cd3acddc9aa0646c4998} 
+virtual bool ISer\+Pessoa::\+atualizar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&}]{pessoa}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Atualiza os dados de uma pessoa. 
+
+O email identifica a pessoa e não pode ser alterado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em novos} & dados da pessoa, usando o email como referência. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se não existe pessoa com o email informado. 
+\end{DoxyReturn}
+
+
+Implemented in \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_aaca827dd793464447c5d91b3a8c67a21}{Cntr\+ISer\+Pessoa}}, \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_aaca827dd793464447c5d91b3a8c67a21}{Cntr\+ISer\+Pessoa}}, and \doxymbox{\hyperlink{class_stub_i_ser_pessoa_a6a3df1020f1e761de39ac1a8d7c5201f}{Stub\+ISer\+Pessoa}}.
+
+\Hypertarget{class_i_ser_pessoa_a6a60e3f8300f31977bcecd5ff5f7e4e4}\index{ISerPessoa@{ISerPessoa}!criar@{criar}}
+\index{criar@{criar}!ISerPessoa@{ISerPessoa}}
+\doxysubsubsection{\texorpdfstring{criar()}{criar()}}
+{\footnotesize\ttfamily \label{class_i_ser_pessoa_a6a60e3f8300f31977bcecd5ff5f7e4e4} 
+virtual bool ISer\+Pessoa::\+criar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&}]{pessoa}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Cria uma pessoa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Dados} & da nova pessoa. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se já existe pessoa com o mesmo email. 
+\end{DoxyReturn}
+
+
+Implemented in \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_a9834822a761afe601441400c3cd34262}{Cntr\+ISer\+Pessoa}}, \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_a9834822a761afe601441400c3cd34262}{Cntr\+ISer\+Pessoa}}, and \doxymbox{\hyperlink{class_stub_i_ser_pessoa_abd34c499fd0e983c62f9d04b9077b3d1}{Stub\+ISer\+Pessoa}}.
+
+\Hypertarget{class_i_ser_pessoa_aa91f97b0175c2d3b8d5b7295cdeb2709}\index{ISerPessoa@{ISerPessoa}!excluir@{excluir}}
+\index{excluir@{excluir}!ISerPessoa@{ISerPessoa}}
+\doxysubsubsection{\texorpdfstring{excluir()}{excluir()}}
+{\footnotesize\ttfamily \label{class_i_ser_pessoa_aa91f97b0175c2d3b8d5b7295cdeb2709} 
+virtual bool ISer\+Pessoa::\+excluir (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \&}]{email}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Exclui uma pessoa. 
+
+A exclusão é recusada se a pessoa é gestora de algum projeto ou desenvolvedora de algum cartão.
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & Email da pessoa a excluir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se a pessoa não existe ou se possui projetos ou cartões associados. 
+\end{DoxyReturn}
+
+
+Implemented in \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_a7aa584345d78d17dc063e577ecef2692}{Cntr\+ISer\+Pessoa}}, \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_a7aa584345d78d17dc063e577ecef2692}{Cntr\+ISer\+Pessoa}}, and \doxymbox{\hyperlink{class_stub_i_ser_pessoa_adb1c6e57647d41b29f034997a33d13d3}{Stub\+ISer\+Pessoa}}.
+
+\Hypertarget{class_i_ser_pessoa_ae71e16f2c3d5c3e31e3288c7b6497d19}\index{ISerPessoa@{ISerPessoa}!ler@{ler}}
+\index{ler@{ler}!ISerPessoa@{ISerPessoa}}
+\doxysubsubsection{\texorpdfstring{ler()}{ler()}}
+{\footnotesize\ttfamily \label{class_i_ser_pessoa_ae71e16f2c3d5c3e31e3288c7b6497d19} 
+virtual bool ISer\+Pessoa::\+ler (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_pessoa}{Pessoa}} \texorpdfstring{$\ast$}{*}}]{pessoa}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Lê os dados de uma pessoa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pessoa} & Na entrada, contém o email da pessoa procurada. Na saída, contém todos os dados da pessoa. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se não existe pessoa com o email informado. 
+\end{DoxyReturn}
+
+
+Implemented in \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_ad70ee0f3088bb7914f9a4080095b3b26}{Cntr\+ISer\+Pessoa}}, \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_ad70ee0f3088bb7914f9a4080095b3b26}{Cntr\+ISer\+Pessoa}}, and \doxymbox{\hyperlink{class_stub_i_ser_pessoa_a9886c87d3fa1290190b4171580541e16}{Stub\+ISer\+Pessoa}}.
+
+\Hypertarget{class_i_ser_pessoa_a5d4548078b29df36ee790763a64f9d66}\index{ISerPessoa@{ISerPessoa}!listar@{listar}}
+\index{listar@{listar}!ISerPessoa@{ISerPessoa}}
+\doxysubsubsection{\texorpdfstring{listar()}{listar()}}
+{\footnotesize\ttfamily \label{class_i_ser_pessoa_a5d4548078b29df36ee790763a64f9d66} 
+virtual bool ISer\+Pessoa::\+listar (\begin{DoxyParamCaption}\item[{std::\+list$<$ \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} $>$ \texorpdfstring{$\ast$}{*}}]{emails}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Lista os emails de todas as pessoas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em emails} & Recebe os emails das pessoas cadastradas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se a listagem foi realizada. 
+\end{DoxyReturn}
+
+
+Implemented in \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_a14ff2f4af2e9f5dcace6e25e7592375a}{Cntr\+ISer\+Pessoa}}, \doxymbox{\hyperlink{class_cntr_i_ser_pessoa_a14ff2f4af2e9f5dcace6e25e7592375a}{Cntr\+ISer\+Pessoa}}, and \doxymbox{\hyperlink{class_stub_i_ser_pessoa_ab0b26e815f119205f56b81bf4c687bf5}{Stub\+ISer\+Pessoa}}.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+Interfaces/\doxymbox{\hyperlink{_i_ser_pessoa_8h}{ISer\+Pessoa.\+h}}\end{DoxyCompactItemize}

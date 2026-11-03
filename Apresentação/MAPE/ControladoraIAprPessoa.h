@@ -14,15 +14,18 @@
 /**
  * @brief Controladora de apresentacao do modulo de pessoas (MAPE).
  *
- * Realiza a interface IAprPessoa. Cuida do dialogo com o usuario (IU) e da
- * validacao dos dados digitados (VAL). A logica de negocio e o armazenamento
- * ficam no servico, acessado somente pela interface ISerPessoa.
+ * Realiza a interface IAprPessoa. Cuida do dialogo com o usuario e da
+ * e controla o fluxo de dados a autenticação fica a serviço dos dominios.
+ * A logica de negocio e o armazenamento ficam no servico,
+ * acessado somente pela interface ISerPessoa e efetuado
+ * pelo módulo MSPE.
  */
+
 class CntrIAprPessoa : public IAprPessoa {
 private:
     ISerPessoa *cntrISerPessoa;
 
-    void mostrar(Pessoa &pessoa);
+    void info_pessoa(Pessoa &pessoa);
     void ler();
     void listar();
     void atualizar(const EMAIL &email);
@@ -31,7 +34,7 @@ public:
     /** @brief Cria a controladora sem servico associado. */
     CntrIAprPessoa() : cntrISerPessoa(nullptr) {}
 
-    /** @brief Executa o fluxo de criacao de conta. */
+    /** @brief Realiza o processo da criacao de conta e validação de dados. */
     void criar();
 
     /**
@@ -44,7 +47,9 @@ public:
      * @brief Informa qual implementacao do servico de pessoas usar.
      * @param cntr Ponteiro para uma implementacao de ISerPessoa.
      */
-    void setCntrISerPessoa(ISerPessoa *cntr) { cntrISerPessoa = cntr; }
+    void setCntrISerPessoa(ISerPessoa *cntr){
+        cntrISerPessoa = cntr;
+    }
 };
 
 

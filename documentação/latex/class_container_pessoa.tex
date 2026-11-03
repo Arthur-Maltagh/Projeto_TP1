@@ -1,0 +1,127 @@
+\doxysection{Container\+Pessoa Class Reference}
+\hypertarget{class_container_pessoa}{}\label{class_container_pessoa}\index{ContainerPessoa@{ContainerPessoa}}
+
+
+Conteiner que guarda as pessoas em memoria (armazenamento do MSPE).  
+
+
+
+
+{\ttfamily \+\#include $<$Container\+Pessoa.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{class_container_pessoa_aa8d94dc54ca42e5c5fd5678175475797}{incluir}} (const \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&pessoa)
+\begin{DoxyCompactList}\small\item\em Inclui uma pessoa. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_container_pessoa_ac79cd3b23ca99dc5693c05340d46d0f1}{remover}} (const \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \&email)
+\begin{DoxyCompactList}\small\item\em Remove uma pessoa. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_container_pessoa_a32fa3da8000c88105634d050153790e0}{pesquisar}} (\doxymbox{\hyperlink{class_pessoa}{Pessoa}} \texorpdfstring{$\ast$}{*}pessoa)
+\begin{DoxyCompactList}\small\item\em Pesquisa uma pessoa pelo email. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_container_pessoa_afedab7918086d2d056a5aac08fa65738}{atualizar}} (const \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&pessoa)
+\begin{DoxyCompactList}\small\item\em Substitui os dados de uma pessoa ja armazenada. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_container_pessoa_a2dd02d2e0aab9e68aaead043fd67fdf7}{listar}} (std::\+list$<$ \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} $>$ \texorpdfstring{$\ast$}{*}emails)
+\begin{DoxyCompactList}\small\item\em Recupera os emails de todas as pessoas armazenadas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Conteiner que guarda as pessoas em memoria (armazenamento do MSPE). 
+
+As pessoas ficam em um vetor, na ordem em que foram incluidas, e cada uma e identificada pelo email. O conteiner so armazena e recupera dados; as regras de negocio ficam na controladora. 
+
+\label{class_container_pessoa_doc-func-members}
+\Hypertarget{class_container_pessoa_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_container_pessoa_afedab7918086d2d056a5aac08fa65738}\index{ContainerPessoa@{ContainerPessoa}!atualizar@{atualizar}}
+\index{atualizar@{atualizar}!ContainerPessoa@{ContainerPessoa}}
+\doxysubsubsection{\texorpdfstring{atualizar()}{atualizar()}}
+{\footnotesize\ttfamily \label{class_container_pessoa_afedab7918086d2d056a5aac08fa65738} 
+bool Container\+Pessoa::\+atualizar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&}]{pessoa}{}\end{DoxyParamCaption})}
+
+
+
+Substitui os dados de uma pessoa ja armazenada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pessoa} & Novos dados, com o email da pessoa a atualizar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se nao existe pessoa com o email informado. 
+\end{DoxyReturn}
+\Hypertarget{class_container_pessoa_aa8d94dc54ca42e5c5fd5678175475797}\index{ContainerPessoa@{ContainerPessoa}!incluir@{incluir}}
+\index{incluir@{incluir}!ContainerPessoa@{ContainerPessoa}}
+\doxysubsubsection{\texorpdfstring{incluir()}{incluir()}}
+{\footnotesize\ttfamily \label{class_container_pessoa_aa8d94dc54ca42e5c5fd5678175475797} 
+bool Container\+Pessoa::\+incluir (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&}]{pessoa}{}\end{DoxyParamCaption})}
+
+
+
+Inclui uma pessoa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pessoa} & \doxylink{class_pessoa}{Pessoa} a incluir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se ja existe pessoa com o mesmo email. 
+\end{DoxyReturn}
+\Hypertarget{class_container_pessoa_a2dd02d2e0aab9e68aaead043fd67fdf7}\index{ContainerPessoa@{ContainerPessoa}!listar@{listar}}
+\index{listar@{listar}!ContainerPessoa@{ContainerPessoa}}
+\doxysubsubsection{\texorpdfstring{listar()}{listar()}}
+{\footnotesize\ttfamily \label{class_container_pessoa_a2dd02d2e0aab9e68aaead043fd67fdf7} 
+void Container\+Pessoa::\+listar (\begin{DoxyParamCaption}\item[{std::\+list$<$ \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} $>$ \texorpdfstring{$\ast$}{*}}]{emails}{}\end{DoxyParamCaption})}
+
+
+
+Recupera os emails de todas as pessoas armazenadas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em emails} & Recebe os emails, na ordem de inclusao. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_container_pessoa_a32fa3da8000c88105634d050153790e0}\index{ContainerPessoa@{ContainerPessoa}!pesquisar@{pesquisar}}
+\index{pesquisar@{pesquisar}!ContainerPessoa@{ContainerPessoa}}
+\doxysubsubsection{\texorpdfstring{pesquisar()}{pesquisar()}}
+{\footnotesize\ttfamily \label{class_container_pessoa_a32fa3da8000c88105634d050153790e0} 
+bool Container\+Pessoa::\+pesquisar (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_pessoa}{Pessoa}} \texorpdfstring{$\ast$}{*}}]{pessoa}{}\end{DoxyParamCaption})}
+
+
+
+Pesquisa uma pessoa pelo email. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pessoa} & Na entrada, contem o email procurado. Na saida, contem todos os dados da pessoa encontrada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se nao existe pessoa com o email informado. 
+\end{DoxyReturn}
+\Hypertarget{class_container_pessoa_ac79cd3b23ca99dc5693c05340d46d0f1}\index{ContainerPessoa@{ContainerPessoa}!remover@{remover}}
+\index{remover@{remover}!ContainerPessoa@{ContainerPessoa}}
+\doxysubsubsection{\texorpdfstring{remover()}{remover()}}
+{\footnotesize\ttfamily \label{class_container_pessoa_ac79cd3b23ca99dc5693c05340d46d0f1} 
+bool Container\+Pessoa::\+remover (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \&}]{email}{}\end{DoxyParamCaption})}
+
+
+
+Remove uma pessoa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & Email da pessoa a remover. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se nao existe pessoa com o email informado. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Serviços/\+\+MSPE/\doxymbox{\hyperlink{_container_pessoa_8h}{Container\+Pessoa.\+h}}\item 
+Serviços/\+\+MSPE/Container\+Pessoa.\+cpp\end{DoxyCompactItemize}

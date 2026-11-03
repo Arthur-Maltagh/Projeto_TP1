@@ -2,38 +2,56 @@
 
 using namespace std;
 
-namespace {
-    // Recebem o objeto por valor para nao exigir getters const.
-    string chaveDe(Pessoa pessoa) { return pessoa.getEmail().getEMAIL(); }
-    string chaveDe(EMAIL email)   { return email.getEMAIL(); }
+
+// Recebem o objeto por valor para nao exigir getters const.
+static string chaveDe(Pessoa pessoa){
+    return pessoa.getEmail().getEMAIL();
+}
+static string chaveDe(EMAIL email){
+    return email.getEMAIL();
+}
+
+vector<Pessoa>::iterator ContainerPessoa::localizar(const string &chave) {
+    for (vector<Pessoa>::iterator indice = pessoas.begin(); indice != pessoas.end(); ++indice) {
+        if (chaveDe(*indice) == chave)
+            return indice;
+    }
+    return pessoas.end();
 }
 
 bool ContainerPessoa::incluir(const Pessoa &pessoa) {
-    return pessoas.insert(make_pair(chaveDe(pessoa), pessoa)).second;
+    if (localizar(chaveDe(pessoa)) != pessoas.end())
+        return false;                   // email ja cadastrado
+    pessoas.push_back(pessoa);
+    return true;
 }
 
 bool ContainerPessoa::remover(const EMAIL &email) {
-    return pessoas.erase(chaveDe(email)) > 0;
+    vector<Pessoa>::iterator indice = localizar(chaveDe(email));
+    if (indice == pessoas.end())
+        return false;
+    pessoas.erase(indice);
+    return true;
 }
 
 bool ContainerPessoa::pesquisar(Pessoa *pessoa) {
-    map<string, Pessoa>::iterator it = pessoas.find(chaveDe(*pessoa));
-    if (it == pessoas.end())
+    vector<Pessoa>::iterator indice = localizar(chaveDe(*pessoa));
+    if (indice == pessoas.end())
         return false;
-    *pessoa = it->second;
+    *pessoa = *indice;                      // devolve todos os dados
     return true;
 }
 
 bool ContainerPessoa::atualizar(const Pessoa &pessoa) {
-    map<string, Pessoa>::iterator it = pessoas.find(chaveDe(pessoa));
-    if (it == pessoas.end())
+    vector<Pessoa>::iterator indice = localizar(chaveDe(pessoa));
+    if (indice == pessoas.end())
         return false;
-    it->second = pessoa;
+    *indice = pessoa;
     return true;
 }
 
 void ContainerPessoa::listar(list<EMAIL> *emails) {
     emails->clear();
-    for (map<string, Pessoa>::iterator it = pessoas.begin(); it != pessoas.end(); ++it)
-        emails->push_back(it->second.getEmail());
+    for (vector<Pessoa>::iterator indice = pessoas.begin(); indice != pessoas.end(); ++indice)
+        emails->push_back(indice->getEmail());
 }

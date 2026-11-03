@@ -1,0 +1,39 @@
+\doxysection{Controladora\+IApr\+Pessoa.\+h}
+\hypertarget{_controladora_i_apr_pessoa_8h_source}{}\label{_controladora_i_apr_pessoa_8h_source}\index{Apresentação/MAPE/ControladoraIAprPessoa.h@{Apresentação/MAPE/ControladoraIAprPessoa.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CONTROLADORAIAPRPESSOA\_H\_INCLUDED}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CONTROLADORAIAPRPESSOA\_H\_INCLUDED}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_e_m_a_i_l_8h}{EMAIL.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_i_apr_pessoa_8h}{IAprPessoa.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_i_ser_pessoa_8h}{ISerPessoa.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}Pessoa.h"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_cntr_i_apr_pessoa_aec3867b5a183a1f500f20831c2086e85}{CntrIAprPessoa}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_i_apr_pessoa}{IAprPessoa}}\ \{}
+\DoxyCodeLine{00025\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00026\ \ \ \ \ \doxymbox{\hyperlink{class_i_ser_pessoa}{ISerPessoa}}\ *cntrISerPessoa;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ info\_pessoa(\doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ \&pessoa);}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ ler();}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ listar();}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ atualizar(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}}\ \&email);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{bool}\ excluir(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}}\ \&email);}
+\DoxyCodeLine{00033\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ \ \ \ \ \doxymbox{\hyperlink{class_cntr_i_apr_pessoa_aec3867b5a183a1f500f20831c2086e85}{CntrIAprPessoa}}()\ :\ cntrISerPessoa(nullptr)\ \{\}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_cntr_i_apr_pessoa_a8c4ec6298b1ac0fc01167d09a317c904}{criar}}();}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_cntr_i_apr_pessoa_a9fc681d123081a0826ebcf1f3bb2c2f1}{executar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}}\ \&email);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_cntr_i_apr_pessoa_a36c7a18274ec5ad55640c05d39f54c8e}{setCntrISerPessoa}}(\doxymbox{\hyperlink{class_i_ser_pessoa}{ISerPessoa}}\ *cntr)\{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ cntrISerPessoa\ =\ cntr;}
+\DoxyCodeLine{00052\ \ \ \ \ \}}
+\DoxyCodeLine{00053\ \};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CONTROLADORAIAPRPESSOA\_H\_INCLUDED}}
+
+\end{DoxyCode}

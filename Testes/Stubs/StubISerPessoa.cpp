@@ -2,18 +2,18 @@
 
 using namespace std;
 
-namespace {
-    // Recebem o objeto por valor para nao exigir getters const nas classes
-    // de dominio e de entidade.
-    string chaveDe(Pessoa pessoa) { return pessoa.getEmail().getEMAIL(); }
-    string chaveDe(EMAIL email)   { return email.getEMAIL(); }
+string chaveDe(Pessoa pessoa) {
+    return pessoa.getEmail().getEMAIL();
+}
+string chaveDe(EMAIL email){
+    return email.getEMAIL();
 }
 
 bool StubISerPessoa::criar(const Pessoa &pessoa) {
     string chave = chaveDe(pessoa);
 
-    for (list<Pessoa>::iterator it = pessoas.begin(); it != pessoas.end(); ++it) {
-        if (chaveDe(*it) == chave)
+    for (list<Pessoa>::iterator indice = pessoas.begin(); indice != pessoas.end(); ++indice) {
+        if (chaveDe(*indice) == chave)
             return false;               // email ja cadastrado
     }
     pessoas.push_back(pessoa);
@@ -23,9 +23,9 @@ bool StubISerPessoa::criar(const Pessoa &pessoa) {
 bool StubISerPessoa::ler(Pessoa *pessoa) {
     string chave = chaveDe(*pessoa);
 
-    for (list<Pessoa>::iterator it = pessoas.begin(); it != pessoas.end(); ++it) {
-        if (chaveDe(*it) == chave) {
-            *pessoa = *it;              // devolve todos os dados
+    for (list<Pessoa>::iterator indice = pessoas.begin(); indice != pessoas.end(); ++indice) {
+        if (chaveDe(*indice) == chave) {
+            *pessoa = *indice;              // devolve todos os dados
             return true;
         }
     }
@@ -35,9 +35,9 @@ bool StubISerPessoa::ler(Pessoa *pessoa) {
 bool StubISerPessoa::atualizar(const Pessoa &pessoa) {
     string chave = chaveDe(pessoa);
 
-    for (list<Pessoa>::iterator it = pessoas.begin(); it != pessoas.end(); ++it) {
-        if (chaveDe(*it) == chave) {
-            *it = pessoa;
+    for (list<Pessoa>::iterator indice = pessoas.begin(); indice != pessoas.end(); ++indice) {
+        if (chaveDe(*indice) == chave) {
+            *indice = pessoa;
             return true;
         }
     }
@@ -47,9 +47,9 @@ bool StubISerPessoa::atualizar(const Pessoa &pessoa) {
 bool StubISerPessoa::excluir(const EMAIL &email) {
     string chave = chaveDe(email);
 
-    for (list<Pessoa>::iterator it = pessoas.begin(); it != pessoas.end(); ++it) {
-        if (chaveDe(*it) == chave) {
-            pessoas.erase(it);
+    for (list<Pessoa>::iterator indice = pessoas.begin(); indice != pessoas.end(); ++indice) {
+        if (chaveDe(*indice) == chave) {
+            pessoas.erase(indice);
             return true;
         }
     }
@@ -58,7 +58,7 @@ bool StubISerPessoa::excluir(const EMAIL &email) {
 
 bool StubISerPessoa::listar(list<EMAIL> *emails) {
     emails->clear();
-    for (list<Pessoa>::iterator it = pessoas.begin(); it != pessoas.end(); ++it)
-        emails->push_back(it->getEmail());
+    for (list<Pessoa>::iterator indice = pessoas.begin(); indice != pessoas.end(); ++indice)
+        emails->push_back(indice->getEmail());
     return true;
 }

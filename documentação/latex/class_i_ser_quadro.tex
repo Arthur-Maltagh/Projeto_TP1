@@ -1,0 +1,160 @@
+\doxysection{ISer\+Quadro Class Reference}
+\hypertarget{class_i_ser_quadro}{}\label{class_i_ser_quadro}\index{ISerQuadro@{ISerQuadro}}
+
+
+Interface de serviço de quadros.  
+
+
+
+
+{\ttfamily \+\#include $<$ISer\+Quadro.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \doxymbox{\hyperlink{class_i_ser_quadro_a9ae0b8581efb38b85e51f5c61c0170a0}{criar}} (const \doxymbox{\hyperlink{class_quadro}{Quadro}} \&quadro, const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&projeto)=0
+\begin{DoxyCompactList}\small\item\em Cria um quadro em um projeto. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_i_ser_quadro_af69a68aa10ce0da84d631326751f057b}{ler}} (\doxymbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}quadro)=0
+\begin{DoxyCompactList}\small\item\em Lê os dados de um quadro. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_i_ser_quadro_a7a23bb94dd26666e8f6077f932b1a8ba}{atualizar}} (const \doxymbox{\hyperlink{class_quadro}{Quadro}} \&quadro)=0
+\begin{DoxyCompactList}\small\item\em Atualiza os dados de um quadro. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_i_ser_quadro_a4623a90fd7a27ec44314fcdcb178787b}{excluir}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&quadro)=0
+\begin{DoxyCompactList}\small\item\em Exclui um quadro e, em cascata, os seus cartões. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_i_ser_quadro_ad7b7ae4b821d83e60c94bcb964196bd0}{listar}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&projeto, std::\+list$<$ \doxymbox{\hyperlink{class_identificador}{Identificador}} $>$ \texorpdfstring{$\ast$}{*}quadros)=0
+\begin{DoxyCompactList}\small\item\em Lista os identificadores dos quadros de um projeto. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_i_ser_quadro_ad19e3b5e7d357698714500ce4cc6b57c}{excluir\+Por\+Projeto}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&projeto)=0
+\begin{DoxyCompactList}\small\item\em Exclui todos os quadros de um projeto, com os seus cartões. \end{DoxyCompactList}\item 
+\Hypertarget{class_i_ser_quadro_ac7495fc19e49e3cce14619a277ec82e0}\label{class_i_ser_quadro_ac7495fc19e49e3cce14619a277ec82e0} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+ISer\+Quadro} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface de serviço de quadros. 
+
+Provida pelo módulo MSQU. Corresponde aos serviços 11 a 15 da especificação. Todos os métodos retornam false quando o serviço não pôde ser realizado. 
+
+\label{class_i_ser_quadro_doc-func-members}
+\Hypertarget{class_i_ser_quadro_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_i_ser_quadro_a7a23bb94dd26666e8f6077f932b1a8ba}\index{ISerQuadro@{ISerQuadro}!atualizar@{atualizar}}
+\index{atualizar@{atualizar}!ISerQuadro@{ISerQuadro}}
+\doxysubsubsection{\texorpdfstring{atualizar()}{atualizar()}}
+{\footnotesize\ttfamily \label{class_i_ser_quadro_a7a23bb94dd26666e8f6077f932b1a8ba} 
+virtual bool ISer\+Quadro::\+atualizar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_quadro}{Quadro}} \&}]{quadro}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Atualiza os dados de um quadro. 
+
+O identificador não pode ser alterado. A atualização é recusada se o novo limite for menor que o número atual de cartões em FAZENDO.
+
+
+\begin{DoxyParams}{Parameters}
+{\em quadro} & Novos dados, com o identificador do quadro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se o quadro não existe ou se o novo limite é menor que o WIP atual. 
+\end{DoxyReturn}
+\Hypertarget{class_i_ser_quadro_a9ae0b8581efb38b85e51f5c61c0170a0}\index{ISerQuadro@{ISerQuadro}!criar@{criar}}
+\index{criar@{criar}!ISerQuadro@{ISerQuadro}}
+\doxysubsubsection{\texorpdfstring{criar()}{criar()}}
+{\footnotesize\ttfamily \label{class_i_ser_quadro_a9ae0b8581efb38b85e51f5c61c0170a0} 
+virtual bool ISer\+Quadro::\+criar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_quadro}{Quadro}} \&}]{quadro}{, }\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{projeto}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Cria um quadro em um projeto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em quadro} & Dados do novo quadro. \\
+\hline
+{\em projeto} & \doxylink{class_identificador}{Identificador} do projeto ao qual o quadro pertence. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se já existe quadro com o mesmo identificador. 
+\end{DoxyReturn}
+\Hypertarget{class_i_ser_quadro_a4623a90fd7a27ec44314fcdcb178787b}\index{ISerQuadro@{ISerQuadro}!excluir@{excluir}}
+\index{excluir@{excluir}!ISerQuadro@{ISerQuadro}}
+\doxysubsubsection{\texorpdfstring{excluir()}{excluir()}}
+{\footnotesize\ttfamily \label{class_i_ser_quadro_a4623a90fd7a27ec44314fcdcb178787b} 
+virtual bool ISer\+Quadro::\+excluir (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{quadro}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Exclui um quadro e, em cascata, os seus cartões. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em quadro} & \doxylink{class_identificador}{Identificador} do quadro a excluir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se o quadro não existe. 
+\end{DoxyReturn}
+\Hypertarget{class_i_ser_quadro_ad19e3b5e7d357698714500ce4cc6b57c}\index{ISerQuadro@{ISerQuadro}!excluirPorProjeto@{excluirPorProjeto}}
+\index{excluirPorProjeto@{excluirPorProjeto}!ISerQuadro@{ISerQuadro}}
+\doxysubsubsection{\texorpdfstring{excluirPorProjeto()}{excluirPorProjeto()}}
+{\footnotesize\ttfamily \label{class_i_ser_quadro_ad19e3b5e7d357698714500ce4cc6b57c} 
+virtual bool ISer\+Quadro::\+excluir\+Por\+Projeto (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{projeto}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Exclui todos os quadros de um projeto, com os seus cartões. 
+
+Usado pelo módulo de projetos na exclusão em cascata.
+
+
+\begin{DoxyParams}{Parameters}
+{\em projeto} & \doxylink{class_identificador}{Identificador} do projeto. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se a exclusão foi realizada (inclusive quando o projeto não possui quadros). 
+\end{DoxyReturn}
+\Hypertarget{class_i_ser_quadro_af69a68aa10ce0da84d631326751f057b}\index{ISerQuadro@{ISerQuadro}!ler@{ler}}
+\index{ler@{ler}!ISerQuadro@{ISerQuadro}}
+\doxysubsubsection{\texorpdfstring{ler()}{ler()}}
+{\footnotesize\ttfamily \label{class_i_ser_quadro_af69a68aa10ce0da84d631326751f057b} 
+virtual bool ISer\+Quadro::\+ler (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}}]{quadro}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Lê os dados de um quadro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em quadro} & Na entrada, contém o identificador do quadro. Na saída, contém todos os dados do quadro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false se o quadro não existe. 
+\end{DoxyReturn}
+\Hypertarget{class_i_ser_quadro_ad7b7ae4b821d83e60c94bcb964196bd0}\index{ISerQuadro@{ISerQuadro}!listar@{listar}}
+\index{listar@{listar}!ISerQuadro@{ISerQuadro}}
+\doxysubsubsection{\texorpdfstring{listar()}{listar()}}
+{\footnotesize\ttfamily \label{class_i_ser_quadro_ad7b7ae4b821d83e60c94bcb964196bd0} 
+virtual bool ISer\+Quadro::\+listar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{projeto}{, }\item[{std::\+list$<$ \doxymbox{\hyperlink{class_identificador}{Identificador}} $>$ \texorpdfstring{$\ast$}{*}}]{quadros}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Lista os identificadores dos quadros de um projeto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em projeto} & \doxylink{class_identificador}{Identificador} do projeto. \\
+\hline
+{\em quadros} & Recebe os identificadores dos quadros do projeto. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se a listagem foi realizada (a lista pode ficar vazia). 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+Interfaces/\doxymbox{\hyperlink{_i_ser_quadro_8h}{ISer\+Quadro.\+h}}\end{DoxyCompactItemize}

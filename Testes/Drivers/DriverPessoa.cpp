@@ -1,5 +1,5 @@
 /**
- * @file DriverCntrIAprPessoa.cpp
+ * @file DriverPessoa.cpp
  * @brief Driver para testar a controladora de apresentacao de pessoas.
  *
  * Liga CntrIAprPessoa a um stub de ISerPessoa e permite exercitar o
@@ -11,7 +11,7 @@
 #include <stdexcept>
 #include <string>
 #include "ControladoraIAprPessoa.h"
-#include "DriverCntrIAprPessoa.h"
+#include "DriverPessoa.h"
 #include "EMAIL.h"
 #include "Nome.h"
 #include "Papel.h"
@@ -22,11 +22,15 @@
 using namespace std;
 
 // Cadastra uma conta inicial para o teste poder entrar direto no menu.
-static void semear(ISerPessoa *servico) {
-    EMAIL email;  email.setEMAIL("ana@teste.com");
-    Nome  nome;   nome.setNome("Ana");
-    Senha senha;  senha.setSenha("abc12");
-    Papel papel;  papel.setPapel("GESTOR");
+static void pessoa_teste(ISerPessoa *servico) {
+    EMAIL email;
+    email.setEMAIL("arthur@teste.com");
+    Nome  nome;
+    nome.setNome("Arthur");
+    Senha senha;
+    senha.setSenha("abc12");
+    Papel papel;
+    papel.setPapel("GESTOR");
 
     Pessoa pessoa;
     pessoa.setEmail(email);
@@ -42,8 +46,8 @@ int executarDriverPessoa() {
     CntrIAprPessoa controladora;    // modulo testado
     controladora.setCntrISerPessoa(&stub);
 
-    semear(&stub);
-    cout << "Conta inicial: ana@teste.com / senha abc12 (GESTOR)\n";
+    pessoa_teste(&stub);
+    cout << "Conta inicial: arthur@teste.com / senha: abc12 / papel: GESTOR\n";
 
     bool continuar = true;
     while (continuar) {
@@ -61,12 +65,12 @@ int executarDriverPessoa() {
         }
         else if (opcao == "2") {
             cout << "Email do usuario autenticado: ";
-            string txt;
-            getline(cin, txt);
+            string emailtxt;
+            getline(cin, emailtxt);
 
             try {
                 EMAIL email;
-                email.setEMAIL(txt);
+                email.setEMAIL(emailtxt);
 
                 Pessoa pessoa;
                 pessoa.setEmail(email);
@@ -83,7 +87,7 @@ int executarDriverPessoa() {
             continuar = false;
         }
         else {
-            cout << "Opcao invalida.\n";
+            cout << "opcao invalida.\n";
         }
     }
     return 0;

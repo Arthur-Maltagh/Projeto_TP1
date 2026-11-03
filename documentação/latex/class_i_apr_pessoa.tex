@@ -1,0 +1,98 @@
+\doxysection{IApr\+Pessoa Class Reference}
+\hypertarget{class_i_apr_pessoa}{}\label{class_i_apr_pessoa}\index{IAprPessoa@{IAprPessoa}}
+
+
+Interface de apresentação do módulo de pessoas.  
+
+
+
+
+{\ttfamily \+\#include $<$IApr\+Pessoa.\+h$>$}
+
+Inheritance diagram for IApr\+Pessoa:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_i_apr_pessoa}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \doxymbox{\hyperlink{class_i_apr_pessoa_a28e163005ebe59761aeebc1a5930da7e}{criar}} ()=0
+\begin{DoxyCompactList}\small\item\em Executa o fluxo de criação de conta. \end{DoxyCompactList}\item 
+virtual void \doxymbox{\hyperlink{class_i_apr_pessoa_ab64e513a881fa2f8ed440c414e17d930}{executar}} (const \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \&email)=0
+\begin{DoxyCompactList}\small\item\em Executa os serviços de pessoa para um usuário autenticado. \end{DoxyCompactList}\item 
+virtual void \doxymbox{\hyperlink{class_i_apr_pessoa_a3ec13a7bc4e6e8d0fb4775058a179b46}{set\+Cntr\+ISer\+Pessoa}} (\doxymbox{\hyperlink{class_i_ser_pessoa}{ISer\+Pessoa}} \texorpdfstring{$\ast$}{*}cntr)=0
+\begin{DoxyCompactList}\small\item\em Informa qual implementação do serviço de pessoas usar. \end{DoxyCompactList}\item 
+\Hypertarget{class_i_apr_pessoa_a4e523b300dd7c7f636b6c8aff9f3f056}\label{class_i_apr_pessoa_a4e523b300dd7c7f636b6c8aff9f3f056} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IApr\+Pessoa} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface de apresentação do módulo de pessoas. 
+
+Provida pelo módulo MAPE e usada pelo módulo MAIC. 
+
+\label{class_i_apr_pessoa_doc-func-members}
+\Hypertarget{class_i_apr_pessoa_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_i_apr_pessoa_a28e163005ebe59761aeebc1a5930da7e}\index{IAprPessoa@{IAprPessoa}!criar@{criar}}
+\index{criar@{criar}!IAprPessoa@{IAprPessoa}}
+\doxysubsubsection{\texorpdfstring{criar()}{criar()}}
+{\footnotesize\ttfamily \label{class_i_apr_pessoa_a28e163005ebe59761aeebc1a5930da7e} 
+virtual void IApr\+Pessoa::\+criar (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Executa o fluxo de criação de conta. 
+
+Não exige autenticação prévia, pois a conta é criada antes do acesso aos demais serviços. 
+
+Implemented in \doxymbox{\hyperlink{class_cntr_i_apr_pessoa_a8c4ec6298b1ac0fc01167d09a317c904}{Cntr\+IApr\+Pessoa}}.
+
+\Hypertarget{class_i_apr_pessoa_ab64e513a881fa2f8ed440c414e17d930}\index{IAprPessoa@{IAprPessoa}!executar@{executar}}
+\index{executar@{executar}!IAprPessoa@{IAprPessoa}}
+\doxysubsubsection{\texorpdfstring{executar()}{executar()}}
+{\footnotesize\ttfamily \label{class_i_apr_pessoa_ab64e513a881fa2f8ed440c414e17d930} 
+virtual void IApr\+Pessoa::\+executar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \&}]{email}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Executa os serviços de pessoa para um usuário autenticado. 
+
+Permite ler, atualizar, excluir e listar pessoas.
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & Email do usuário autenticado. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \doxymbox{\hyperlink{class_cntr_i_apr_pessoa_a9fc681d123081a0826ebcf1f3bb2c2f1}{Cntr\+IApr\+Pessoa}}.
+
+\Hypertarget{class_i_apr_pessoa_a3ec13a7bc4e6e8d0fb4775058a179b46}\index{IAprPessoa@{IAprPessoa}!setCntrISerPessoa@{setCntrISerPessoa}}
+\index{setCntrISerPessoa@{setCntrISerPessoa}!IAprPessoa@{IAprPessoa}}
+\doxysubsubsection{\texorpdfstring{setCntrISerPessoa()}{setCntrISerPessoa()}}
+{\footnotesize\ttfamily \label{class_i_apr_pessoa_a3ec13a7bc4e6e8d0fb4775058a179b46} 
+virtual void IApr\+Pessoa::\+set\+Cntr\+ISer\+Pessoa (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_i_ser_pessoa}{ISer\+Pessoa}} \texorpdfstring{$\ast$}{*}}]{cntr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Informa qual implementação do serviço de pessoas usar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cntr} & Ponteiro para uma implementação de \doxylink{class_i_ser_pessoa}{ISer\+Pessoa}. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \doxymbox{\hyperlink{class_cntr_i_apr_pessoa_a36c7a18274ec5ad55640c05d39f54c8e}{Cntr\+IApr\+Pessoa}}.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+Interfaces/\doxymbox{\hyperlink{_i_apr_pessoa_8h}{IApr\+Pessoa.\+h}}\end{DoxyCompactItemize}

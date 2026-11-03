@@ -1,0 +1,91 @@
+\doxysection{Cntr\+IApr\+Autenticacao Class Reference}
+\hypertarget{class_cntr_i_apr_autenticacao}{}\label{class_cntr_i_apr_autenticacao}\index{CntrIAprAutenticacao@{CntrIAprAutenticacao}}
+
+
+Controladora de apresentacao do modulo de autenticacao (MAAU).  
+
+
+
+
+{\ttfamily \+\#include $<$Controladora\+IApr\+Autenticacao.\+h$>$}
+
+Inheritance diagram for Cntr\+IApr\+Autenticacao:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cntr_i_apr_autenticacao}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_cntr_i_apr_autenticacao_a70e636c9b2b0e8c28b1798a14d320884}\label{class_cntr_i_apr_autenticacao_a70e636c9b2b0e8c28b1798a14d320884} 
+{\bfseries Cntr\+IApr\+Autenticacao} ()
+\begin{DoxyCompactList}\small\item\em Cria a controladora sem servico associado. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_cntr_i_apr_autenticacao_a0e81dd6f4f29be9e06da008615cdf10d}{autenticar}} (\doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \texorpdfstring{$\ast$}{*}email)
+\begin{DoxyCompactList}\small\item\em Executa o fluxo de autenticação com o usuário. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_cntr_i_apr_autenticacao_a2dc9f306fd79daecc59cfe3fcbb90b6c}{set\+Cntr\+ISer\+Autenticacao}} (\doxymbox{\hyperlink{class_i_ser_autenticacao}{ISer\+Autenticacao}} \texorpdfstring{$\ast$}{*}cntr)
+\begin{DoxyCompactList}\small\item\em Informa qual implementacao do servico de autenticacao usar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_i_apr_autenticacao}{IApr\+Autenticacao}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IApr\+Autenticacao} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controladora de apresentacao do modulo de autenticacao (MAAU). 
+
+Realiza a interface \doxylink{class_i_apr_autenticacao}{IApr\+Autenticacao}. Pede email e senha ao usuario, valida o formato dos dados digitados e consulta o servico de autenticacao pela interface \doxylink{class_i_ser_autenticacao}{ISer\+Autenticacao}. 
+
+\label{class_cntr_i_apr_autenticacao_doc-func-members}
+\Hypertarget{class_cntr_i_apr_autenticacao_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_cntr_i_apr_autenticacao_a0e81dd6f4f29be9e06da008615cdf10d}\index{CntrIAprAutenticacao@{CntrIAprAutenticacao}!autenticar@{autenticar}}
+\index{autenticar@{autenticar}!CntrIAprAutenticacao@{CntrIAprAutenticacao}}
+\doxysubsubsection{\texorpdfstring{autenticar()}{autenticar()}}
+{\footnotesize\ttfamily \label{class_cntr_i_apr_autenticacao_a0e81dd6f4f29be9e06da008615cdf10d} 
+bool Cntr\+IApr\+Autenticacao::\+autenticar (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \texorpdfstring{$\ast$}{*}}]{email}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Executa o fluxo de autenticação com o usuário. 
+
+Solicita email e senha, valida o formato dos dados digitados e consulta o serviço de autenticação.
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & Recebe o email do usuário autenticado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se o usuário foi autenticado; false caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{class_i_apr_autenticacao_a13906958319721ff36ca442be393e358}{IApr\+Autenticacao}}.
+
+\Hypertarget{class_cntr_i_apr_autenticacao_a2dc9f306fd79daecc59cfe3fcbb90b6c}\index{CntrIAprAutenticacao@{CntrIAprAutenticacao}!setCntrISerAutenticacao@{setCntrISerAutenticacao}}
+\index{setCntrISerAutenticacao@{setCntrISerAutenticacao}!CntrIAprAutenticacao@{CntrIAprAutenticacao}}
+\doxysubsubsection{\texorpdfstring{setCntrISerAutenticacao()}{setCntrISerAutenticacao()}}
+{\footnotesize\ttfamily \label{class_cntr_i_apr_autenticacao_a2dc9f306fd79daecc59cfe3fcbb90b6c} 
+void Cntr\+IApr\+Autenticacao::\+set\+Cntr\+ISer\+Autenticacao (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_i_ser_autenticacao}{ISer\+Autenticacao}} \texorpdfstring{$\ast$}{*}}]{cntr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Informa qual implementacao do servico de autenticacao usar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cntr} & Ponteiro para uma implementacao de \doxylink{class_i_ser_autenticacao}{ISer\+Autenticacao}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \doxymbox{\hyperlink{class_i_apr_autenticacao_aa85a3e8e39e9bd45d382e074ac923be6}{IApr\+Autenticacao}}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+ApresentaÃ§Ã£o/\+\+MAAU/Controladora\+IApr\+Autenticacao.\+h\item 
+ApresentaÃ§Ã£o/\+\+MAAU/Controladora\+IApr\+Autenticacao.\+cpp\end{DoxyCompactItemize}

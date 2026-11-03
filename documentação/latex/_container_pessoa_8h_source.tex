@@ -1,0 +1,34 @@
+\doxysection{Container\+Pessoa.\+h}
+\hypertarget{_container_pessoa_8h_source}{}\label{_container_pessoa_8h_source}\index{Serviços/MSPE/ContainerPessoa.h@{Serviços/MSPE/ContainerPessoa.h}}
+\doxymbox{\hyperlink{_container_pessoa_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CONTAINERPESSOA\_H\_INCLUDED}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CONTAINERPESSOA\_H\_INCLUDED}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <list>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_e_m_a_i_l_8h}{EMAIL.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}Pessoa.h"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_container_pessoa}{ContainerPessoa}}\ \{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00024\ \ \ \ \ std::vector<Pessoa>\ pessoas;}
+\DoxyCodeLine{00025\ \ \ \ \ std::vector<Pessoa>::iterator\ localizar(\textcolor{keyword}{const}\ std::string\ \&chave);}
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_container_pessoa_aa8d94dc54ca42e5c5fd5678175475797}{incluir}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ \&pessoa);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_container_pessoa_ac79cd3b23ca99dc5693c05340d46d0f1}{remover}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}}\ \&email);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_container_pessoa_a32fa3da8000c88105634d050153790e0}{pesquisar}}(\doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ *pessoa);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_container_pessoa_afedab7918086d2d056a5aac08fa65738}{atualizar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ \&pessoa);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_container_pessoa_a2dd02d2e0aab9e68aaead043fd67fdf7}{listar}}(std::list<EMAIL>\ *emails);}
+\DoxyCodeLine{00061\ \};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CONTAINERPESSOA\_H\_INCLUDED}}
+
+\end{DoxyCode}

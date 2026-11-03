@@ -1,0 +1,67 @@
+\doxysection{Stub\+ISer\+Autenticacao Class Reference}
+\hypertarget{class_stub_i_ser_autenticacao}{}\label{class_stub_i_ser_autenticacao}\index{StubISerAutenticacao@{StubISerAutenticacao}}
+
+
+Implementacao falsa de \doxylink{class_i_ser_autenticacao}{ISer\+Autenticacao} para testar a apresentacao.  
+
+
+
+
+{\ttfamily \+\#include $<$Stub\+Ser\+Autenticacao.\+h$>$}
+
+Inheritance diagram for Stub\+ISer\+Autenticacao:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_stub_i_ser_autenticacao}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{class_stub_i_ser_autenticacao_adccf724933897577ce53b4150311e580}{autenticar}} (const \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \&email, const \doxymbox{\hyperlink{class_senha}{Senha}} \&senha)
+\begin{DoxyCompactList}\small\item\em Verifica se as credenciais correspondem a uma conta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_i_ser_autenticacao}{ISer\+Autenticacao}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+ISer\+Autenticacao} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementacao falsa de \doxylink{class_i_ser_autenticacao}{ISer\+Autenticacao} para testar a apresentacao. 
+
+Aceita uma unica credencial fixa: email \href{mailto:ana@teste.com}{\texttt{ana@teste.\+com}} e senha abc12. 
+
+\label{class_stub_i_ser_autenticacao_doc-func-members}
+\Hypertarget{class_stub_i_ser_autenticacao_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_stub_i_ser_autenticacao_adccf724933897577ce53b4150311e580}\index{StubISerAutenticacao@{StubISerAutenticacao}!autenticar@{autenticar}}
+\index{autenticar@{autenticar}!StubISerAutenticacao@{StubISerAutenticacao}}
+\doxysubsubsection{\texorpdfstring{autenticar()}{autenticar()}}
+{\footnotesize\ttfamily \label{class_stub_i_ser_autenticacao_adccf724933897577ce53b4150311e580} 
+bool Stub\+ISer\+Autenticacao::\+autenticar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_e_m_a_i_l}{EMAIL}} \&}]{email}{, }\item[{const \doxymbox{\hyperlink{class_senha}{Senha}} \&}]{senha}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Verifica se as credenciais correspondem a uma conta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & Email informado pelo usuário. \\
+\hline
+{\em senha} & \doxylink{class_senha}{Senha} informada pelo usuário. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se existe pessoa com o email e a senha informados; false caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{class_i_ser_autenticacao_ad15e1ccddeaa1bf0f2717cc30a7764e2}{ISer\+Autenticacao}}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Testes/\+\+Stubs/Stub\+Ser\+Autenticacao.\+h\item 
+Testes/\+\+Stubs/Stub\+Ser\+Autenticacao.\+cpp\end{DoxyCompactItemize}

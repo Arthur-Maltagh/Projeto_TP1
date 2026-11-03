@@ -5,8 +5,6 @@
 using namespace std;
 
 bool CntrISerPessoa::criar(const Pessoa &pessoa) {
-    // Regra: nao pode haver duas pessoas com o mesmo email.
-    // O conteiner recusa a inclusao se o email ja existe.
     return container.incluir(pessoa);
 }
 
@@ -31,7 +29,7 @@ bool CntrISerPessoa::excluir(const EMAIL &email) {
     if (cntrISerProjeto != nullptr && cntrISerProjeto->possuiProjetos(email))
         return false;                       // e gestora de projeto
     if (cntrISerCartao != nullptr && cntrISerCartao->possuiCartoes(email))
-        return false;                       // e desenvolvedora de cartao
+        return false;
 
     return container.remover(email);
 }
