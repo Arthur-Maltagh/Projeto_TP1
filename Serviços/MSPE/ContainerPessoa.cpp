@@ -2,8 +2,6 @@
 
 using namespace std;
 
-
-// Recebem o objeto por valor para nao exigir getters const.
 static string chaveDe(Pessoa pessoa){
     return pessoa.getEmail().getEMAIL();
 }
@@ -21,7 +19,7 @@ vector<Pessoa>::iterator ContainerPessoa::localizar(const string &chave) {
 
 bool ContainerPessoa::incluir(const Pessoa &pessoa) {
     if (localizar(chaveDe(pessoa)) != pessoas.end())
-        return false;                   // email ja cadastrado
+        return false;
     pessoas.push_back(pessoa);
     return true;
 }
@@ -38,7 +36,7 @@ bool ContainerPessoa::pesquisar(Pessoa *pessoa) {
     vector<Pessoa>::iterator indice = localizar(chaveDe(*pessoa));
     if (indice == pessoas.end())
         return false;
-    *pessoa = *indice;                      // devolve todos os dados
+    *pessoa = *indice;
     return true;
 }
 
